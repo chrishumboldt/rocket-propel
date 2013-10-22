@@ -98,6 +98,25 @@
 	margin: 0px auto;
 }
 
+/* General layout */
+// Single intergers 1 to 100
+.dimensions-loop(@index) when (@index > 0) {
+
+	// Width
+	.pct-w-@{index} {
+		width: (1% * @index);
+	}
+	// Height
+	.pct-h-@{index} {
+		height: (1% * @index);
+	}
+	
+	// Update loop
+	.dimensions-loop(@index - 1);
+}
+.dimensions-loop(0){}
+.dimensions-loop(100);
+
 /* Responsive layout */
 .row:before, .row:after {
 	content: " ";
@@ -132,10 +151,10 @@
 	// Offset loop (12 grid system)
 	.offset-loop(@index) when (@index > 0) {
 
-		.offset-@{index} {
+		.off-@{index} {
 			margin-left: percentage(@index * 0.083333333333333334 );
 		}
-		.offset-r-@{index} {
+		.off-r-@{index} {
 			margin-right: percentage(@index * 0.083333333333333334 );
 		}
 		
@@ -402,10 +421,10 @@
 		// Small offset loop (12 grid system)
 		.small-offset-loop(@index) when (@index > 0) {
 
-			.small-offset-@{index} {
+			.small-off-@{index} {
 				margin-left: percentage(@index * 0.083333333333333334 );
 			}
-			.small-offset-r-@{index} {
+			.small-off-r-@{index} {
 				margin-right: percentage(@index * 0.083333333333333334 );
 			}
 		
