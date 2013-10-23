@@ -52,6 +52,9 @@
 }
 
 /* Alignment classes */
+.float-no {
+	float: none;
+}
 .float-l {
 	float: left;
 }
@@ -96,6 +99,39 @@
 }
 .center-it {
 	margin: 0px auto;
+}
+.back-pos-l {
+	background-position: left;
+}
+.back-pos-r {
+	background-position: right;
+}
+.back-pos-t {
+	background-position: top;
+}
+.back-pos-b {
+	background-position: bottom;
+}
+.back-pos-c {
+	background-position: center;
+}
+.back-repeat-no {
+	background-repeat: no-repeat;
+}
+.back-repeat-y {
+	background-repeat: repeat-y;
+}
+.back-repeat-x {
+	background-repeat: repeat-x;
+}
+.back-single {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.back-cover {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 /* General layout */
@@ -166,8 +202,45 @@
 }
 
 /* Spacing classes */
-.no-pad {
+.spacing-no {
 	padding: 0px;
+	margin: 0px;
+}
+.pad-no {
+	padding: 0px;
+}
+.mgn-no {
+	margin: 0px;
+}
+.pad-1 {
+	padding: 1px;
+}
+.pad-1-r {
+	padding-right: 1px;
+}
+.pad-1-l {
+	padding-left: 1px;
+}
+.pad-1-t {
+	padding-top: 1px;
+}
+.pad-1-b {
+	padding-bottom: 1px;
+}
+.mgn-1 {
+	margin: 1px;
+}
+.mgn-1-r {
+	margin-right: 1px;
+}
+.mgn-1-l {
+	margin-left: 1px;
+}
+.mgn-1-t {
+	margin-top: 1px;
+}
+.mgn-1-b {
+	margin-bottom: 1px;
 }
 
 // Multiples of 100 from 500 to 1000
@@ -262,8 +335,8 @@
 .spacing-loop-50(0){}
 .spacing-loop-50(9);
 
-// Multiples of 5 from 20 to 100
-.spacing-loop-5(@index) when (@index > 3) {
+// Multiples of 5 from 25 to 100
+.spacing-loop-5(@index) when (@index > 4) {
 
 	@multiplication	: 5px;
 	@class_name			: @index * 5;
@@ -308,11 +381,11 @@
 .spacing-loop-5(0){}
 .spacing-loop-5(20);
 
-// Single intergers up to 15
+// Double intergers up to 20
 .spacing-loop-1(@index) when (@index > 0) {
 
-	@multiplication	: 1px;
-	@class_name			: @index;
+	@multiplication	: 2px;
+	@class_name			: (@index * 2);
 	
 	// Padding
 	.pad-@{class_name} {
@@ -352,7 +425,7 @@
 	.spacing-loop-1(@index - 1);
 }
 .spacing-loop-1(0){}
-.spacing-loop-1(15);
+.spacing-loop-1(10);
 
 /* Colour classes */
 .txt-grey {
