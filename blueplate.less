@@ -52,6 +52,18 @@
 }
 
 /* Alignment classes */
+.pos-absolute {
+	position: absolute;
+}
+.pos-relative {
+	position: relative;
+}
+.pos-static {
+	position: static;
+}
+.pos-fixed {
+	position: fixed;
+}
 .float-no {
 	float: none;
 }
@@ -135,8 +147,8 @@
 }
 
 /* General layout */
-// Single intergers 1 to 100
-.dimensions-loop(@index) when (@index > 0) {
+// Multiples of 1 from 51 to 100
+.percentage-loop-1(@index) when (@index > 50) {
 
 	// Width
 	.pct-w-@{index} {
@@ -148,10 +160,44 @@
 	}
 	
 	// Update loop
-	.dimensions-loop(@index - 1);
+	.percentage-loop-1(@index - 1);
 }
-.dimensions-loop(0){}
-.dimensions-loop(100);
+.percentage-loop-1(0){}
+.percentage-loop-1(100);
+
+// Multiples of 1 from 1 to 50
+.percentage-loop-2(@index) when (@index > 0) {
+
+	// Width
+	.pct-w-@{index} {
+		width: (1% * @index);
+	}
+	// Height
+	.pct-h-@{index} {
+		height: (1% * @index);
+	}
+	// Right
+	.pct-r-@{index} {
+		right: (1% * @index);
+	}
+	// Left
+	.pct-l-@{index} {
+		left: (1% * @index);
+	}
+	// Top
+	.pct-t-@{index} {
+		top: (1% * @index);
+	}
+	// Bottom
+	.pct-b-@{index} {
+		bottom: (1% * @index);
+	}
+	
+	// Update loop
+	.percentage-loop-2(@index - 1);
+}
+.percentage-loop-2(0){}
+.percentage-loop-2(50);
 
 /* Responsive layout */
 .row:before, .row:after {
@@ -212,39 +258,9 @@
 .mgn-no {
 	margin: 0px;
 }
-.pad-1 {
-	padding: 1px;
-}
-.pad-1-r {
-	padding-right: 1px;
-}
-.pad-1-l {
-	padding-left: 1px;
-}
-.pad-1-t {
-	padding-top: 1px;
-}
-.pad-1-b {
-	padding-bottom: 1px;
-}
-.mgn-1 {
-	margin: 1px;
-}
-.mgn-1-r {
-	margin-right: 1px;
-}
-.mgn-1-l {
-	margin-left: 1px;
-}
-.mgn-1-t {
-	margin-top: 1px;
-}
-.mgn-1-b {
-	margin-bottom: 1px;
-}
 
 // Multiples of 100 from 500 to 1000
-.spacing-loop-100(@index) when (@index > 4) {
+/*.spacing-loop-100(@index) when (@index > 4) {
 
 	@multiplication	: 100px;
 	@class_name			: @index * 100;
@@ -301,7 +317,7 @@
 	.spacing-loop-100(@index - 1);
 }
 .spacing-loop-100(0){}
-.spacing-loop-100(10);
+.spacing-loop-100(10);*/
 
 // Multiples of 50 from 150 to 450
 .spacing-loop-50(@index) when (@index > 2) {
@@ -361,7 +377,7 @@
 	.spacing-loop-50(@index - 1);
 }
 .spacing-loop-50(0){}
-.spacing-loop-50(9);
+.spacing-loop-50(10);
 
 // Multiples of 5 from 25 to 100
 .spacing-loop-5(@index) when (@index > 4) {
@@ -423,11 +439,11 @@
 .spacing-loop-5(0){}
 .spacing-loop-5(20);
 
-// Double intergers up to 20
+// Multiples of 1 from 1 to 20
 .spacing-loop-1(@index) when (@index > 0) {
 
-	@multiplication	: 2px;
-	@class_name			: (@index * 2);
+	@multiplication	: 1px;
+	@class_name			: (@index * 1);
 	
 	// Padding
 	.pad-@{class_name} {
@@ -481,7 +497,7 @@
 	.spacing-loop-1(@index - 1);
 }
 .spacing-loop-1(0){}
-.spacing-loop-1(10);
+.spacing-loop-1(20);
 
 /* Colour classes */
 .txt-grey {
