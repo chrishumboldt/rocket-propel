@@ -1,7 +1,9 @@
 /**
  * LESS File: 		blueplate.less
  * Author:        Chris Humboldt
+ * Link:				https://getwebplate.com/plugins/blueplate
  * Last Edited:   24 October 2013
+ * Edited By:		Chris Humboldt
  */
 
 // Table of Contents:
@@ -14,14 +16,14 @@
 // Small View
 
 
-/* Variables
---------------------------------------------------------------------------------------- */
+// Variables
+// ---------------------------------------------------------------------------------------
 @page_width							: 1100px;
 
 
-/* Global
---------------------------------------------------------------------------------------- */
-/* Display classes */
+// Global
+// ---------------------------------------------------------------------------------------
+// Display classes
 .display-it {
 	display: block;
 }
@@ -45,7 +47,7 @@
 	overflow: hidden;
 }
 
-/* Position classes */
+// Position classes
 .pos-absolute {
 	position: absolute;
 }
@@ -59,7 +61,7 @@
 	position: fixed;
 }
 
-/* Alignment classes */
+// Alignment classes
 .float-no {
 	float: none;
 }
@@ -85,7 +87,7 @@
 	margin: 0px auto;
 }
 
-/* Text classes */
+// Text classes
 .txt-size-xxl {
 	font-size: 1.444em
 }
@@ -136,7 +138,7 @@
 	color: #fff;
 }
 
-/* Vertical classes */
+// Vertical classes
 .valign-t {
 	vertical-align: top;
 }
@@ -144,7 +146,7 @@
 	vertical-align: bottom;
 }
 
-/* Background classes */
+// Background classes
 .back-pos-l {
 	background-position: left;
 }
@@ -191,7 +193,7 @@
 	background-color: #fff;
 }
 
-/* General layout */
+// General layout
 // For basic shapes
 .block-h-10 {
 	height: 10px;
@@ -242,7 +244,7 @@
 	width: 1000px;
 }
 
-/* Responsive layout */
+// Responsive layout
 .row:before, .row:after {
 	content: " ";
 	display: table;
@@ -290,7 +292,7 @@
 	.offset-loop(11);
 }
 
-/* Spacing classes */
+// Spacing classes
 .spacing-no {
 	padding: 0px;
 	margin: 0px;
@@ -348,14 +350,14 @@
 .spacing-loop-1(0){}
 .spacing-loop-1(20);
 
-/* Colour classes */
+// Colour classes
 .txt-grey {
   color: fadeout(#000, 50%);
 }
 
 
-/* Large View (Desktop and iPad)
---------------------------------------------------------------------------------------- */
+// Large View (Desktop and iPad)
+// ---------------------------------------------------------------------------------------
 @media screen and (min-width: 701px) {
 
 	.small-show {
@@ -369,17 +371,17 @@
 }
 
 
-/* Fluid View (Desktop and iPad)
---------------------------------------------------------------------------------------- */
+// Fluid View (Desktop and iPad)
+// ---------------------------------------------------------------------------------------
 @media screen and (max-width: @page_width) {
 }
 
 
-/* Small View (iPhone)
---------------------------------------------------------------------------------------- */
+// Small View (iPhone)
+// ---------------------------------------------------------------------------------------
 @media only screen and (max-width: 700px), only screen and (max-device-width: 700px), only screen and (-webkit-min-device-pixel-ratio: 2) {
 
-	/* Text classes */
+	// Text classes
 	.small-txt-size-xxl {
 		font-size: 1.444em
 	}
@@ -421,7 +423,7 @@
 		font-style: normal;
 	}
 
-	/* General layout */
+	// General layout
 	.small-hide {
 		display: none;
 	}
