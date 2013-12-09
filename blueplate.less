@@ -2,7 +2,7 @@
  * LESS File: 		blueplate.less
  * Author:        	Chris Humboldt
  * Link:			http://getwebplate.com/plugins/blueplate
- * Last Edited:   	14 November 2013
+ * Last Edited:   	9 December 2013
  * Edited By:		Chris Humboldt
  */
 
@@ -19,6 +19,8 @@
 // Variables
 // ---------------------------------------------------------------------------------------
 @page_width							: 1100px;
+@column_limit						: 12;
+@column_multiplier 					: 1 / @column_limit;
 
 
 // Global
@@ -263,33 +265,33 @@
 		position: relative;
 	}
 	
-	// Span loop (12 grid system)
+	// Span loop
 	.span-loop(@index) when (@index > 0) {
 
 		.span-@{index} {
-			width: percentage(@index * 0.083333333333333334 );
+			width: percentage(@index * @column_multiplier);
 		}
 		// Update loop
 		.span-loop(@index - 1);
 	}
 	.span-loop(0){}
-	.span-loop(12);
+	.span-loop(@column_limit);
 	
 	// Offset loop (12 grid system)
 	.offset-loop(@index) when (@index > 0) {
 
 		.off-@{index} {
-			margin-left: percentage(@index * 0.083333333333333334 );
+			margin-left: percentage(@index * @column_multiplier);
 		}
 		.off-r-@{index} {
-			margin-right: percentage(@index * 0.083333333333333334 );
+			margin-right: percentage(@index * @column_multiplier);
 		}
 		
 		// Update loop
 		.offset-loop(@index - 1);
 	}
 	.offset-loop(0){}
-	.offset-loop(11);
+	.offset-loop(@column_limit - 1);
 }
 
 // Spacing classes
@@ -307,7 +309,7 @@
 // Multiples of 1 from 1 to 20
 .spacing-loop-1(@index) when (@index > 0) {
 
-	@multiplication	: 1px;
+	@multiplication		: 1px;
 	@class_name			: (@index * 1);
 	
 	// Padding
@@ -379,7 +381,7 @@
 
 // Small View (iPhone)
 // ---------------------------------------------------------------------------------------
-@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+@media screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px), screen and (max-width: 700px) {
 
 	// Text classes
 	.small-txt-size-xxl {
@@ -451,28 +453,28 @@
 		.small-span-loop(@index) when (@index > 0) {
 
 			.small-span-@{index} {
-				width: percentage(@index * 0.083333333333333334 );
+				width: percentage(@index * @column_multiplier);
 			}
 			// Update loop
 			.small-span-loop(@index - 1);
 		}
 		.small-span-loop(0){}
-		.small-span-loop(12);
+		.small-span-loop(@column_limit);
 	
 		// Small offset loop (12 grid system)
 		.small-offset-loop(@index) when (@index > 0) {
 
 			.small-off-@{index} {
-				margin-left: percentage(@index * 0.083333333333333334 );
+				margin-left: percentage(@index * @column_multiplier);
 			}
 			.small-off-r-@{index} {
-				margin-right: percentage(@index * 0.083333333333333334 );
+				margin-right: percentage(@index * @column_multiplier);
 			}
 		
 			// Update loop
 			.small-offset-loop(@index - 1);
 		}
 		.small-offset-loop(0){}
-		.small-offset-loop(11);
+		.small-offset-loop(@column_limit - 1);
 	}
 }
