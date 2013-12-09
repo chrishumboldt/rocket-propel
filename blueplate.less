@@ -10,6 +10,7 @@
 // ---------------------------------------------------------------------------------------
 
 // Variables
+// Mixins
 // Global
 // Large View
 // Fluid View
@@ -20,7 +21,19 @@
 // ---------------------------------------------------------------------------------------
 @page_width							: 1100px;
 @column_limit						: 12;
-@column_multiplier 					: 1 / @column_limit;
+
+
+// Mixins
+// ---------------------------------------------------------------------------------------
+.span(@span, @span_column_limit: @column_limit) {
+	width: percentage(@span / @column_limit);
+}
+.offset(@off_by, @span_column_limit: @column_limit) {
+	margin-left: percentage(@off_by / @column_limit);
+}
+.offset-r(@off_by, @span_column_limit: @column_limit) {
+	margin-right: percentage(@off_by / @column_limit);
+}
 
 
 // Global
@@ -269,7 +282,7 @@
 	.span-loop(@index) when (@index > 0) {
 
 		.span-@{index} {
-			width: percentage(@index * @column_multiplier);
+			.span(@index);
 		}
 		// Update loop
 		.span-loop(@index - 1);
@@ -277,14 +290,14 @@
 	.span-loop(0){}
 	.span-loop(@column_limit);
 	
-	// Offset loop (12 grid system)
+	// Offset loop
 	.offset-loop(@index) when (@index > 0) {
 
 		.off-@{index} {
-			margin-left: percentage(@index * @column_multiplier);
+			.offset(@index);
 		}
 		.off-r-@{index} {
-			margin-right: percentage(@index * @column_multiplier);
+			.offset-r(@index);
 		}
 		
 		// Update loop
@@ -449,11 +462,11 @@
 			margin-right: 0%;
 		}
 		
-		// Small span loop (12 grid system)
+		// Small span loop
 		.small-span-loop(@index) when (@index > 0) {
 
 			.small-span-@{index} {
-				width: percentage(@index * @column_multiplier);
+				.span(@index);
 			}
 			// Update loop
 			.small-span-loop(@index - 1);
@@ -461,14 +474,14 @@
 		.small-span-loop(0){}
 		.small-span-loop(@column_limit);
 	
-		// Small offset loop (12 grid system)
+		// Small offset loop
 		.small-offset-loop(@index) when (@index > 0) {
 
 			.small-off-@{index} {
-				margin-left: percentage(@index * @column_multiplier);
+				.offset(@index);
 			}
 			.small-off-r-@{index} {
-				margin-right: percentage(@index * @column_multiplier);
+				.offset-r(@index);
 			}
 		
 			// Update loop
