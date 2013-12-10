@@ -21,6 +21,7 @@
 // ---------------------------------------------------------------------------------------
 @page_width							: 1100px;
 @column_limit						: 12;
+@spacing_limit						: 10;
 
 
 // Mixins
@@ -363,7 +364,7 @@
 	.spacing-loop-1(@index - 1);
 }
 .spacing-loop-1(0){}
-.spacing-loop-1(20);
+.spacing-loop-1(@spacing_limit);
 
 // Colour classes
 .txt-grey {
