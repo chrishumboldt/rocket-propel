@@ -312,7 +312,7 @@ $spacing_limit						: 10;
 }
 
 // Multiples of 1 from 1 to 20
-@for $index from 1 through 20 {
+@for $index from 1 through $spacing_limit {
 	
 	$multiplication		: 1px;
 	$class_name			: ($index * 1);
