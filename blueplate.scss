@@ -26,7 +26,23 @@ $spacing_limit						: 10;
 
 // Mixins
 // ---------------------------------------------------------------------------------------
+@mixin row() {
+	width: 100%;
+	
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+@mixin make-span($span, $span_column_limit: $column_limit) {
+	width: percentage($span / $column_limit);
+}
 @mixin span($span, $span_column_limit: $column_limit) {
+	float: left;
+	position: relative;
 	width: percentage($span / $column_limit);
 }
 @mixin offset($off_by, $span_column_limit: $column_limit) {
@@ -34,6 +50,12 @@ $spacing_limit						: 10;
 }
 @mixin offset-r($off_by, $span_column_limit: $column_limit) {
 	margin-right: percentage($off_by / $column_limit);
+}
+@mixin hide-it() {
+	display: none;
+}
+@mixin show-it() {
+	display: block;
 }
 
 
@@ -283,7 +305,7 @@ $spacing_limit						: 10;
 	@for $index from 1 through $column_limit {
 		
 		.span-#{$index} {
-			@include span($index);
+			@include make-span($index);
 		}
 	}
 	
@@ -453,7 +475,7 @@ $spacing_limit						: 10;
 		@for $index from 1 through $column_limit {
 		
 			.small-span-#{$index} {
-				@include span($index);
+				@include make-span($index);
 			}
 		}
 	
