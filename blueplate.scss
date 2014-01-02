@@ -265,7 +265,7 @@ $limit_width						: 1100px;
 .block-h-1000 {
 	height: 1000px;
 }
-.block-h-10 {
+.block-w-10 {
 	width: 10px;
 }
 .block-w-20 {
@@ -320,10 +320,10 @@ $limit_width						: 1100px;
 	// Offset loop
 	@for $index from 1 through ($column_limit - 1) {
 		
-		.off-#{$index} {
+		.offset-#{$index} {
 			@include offset($index);
 		}
-		.off-r-#{$index} {
+		.offset-r-#{$index} {
 			@include offset-r($index);
 		}
 	}
@@ -475,10 +475,10 @@ $limit_width						: 1100px;
 				display: none;
 			}
 		}
-		[class *= "off-"] {
+		[class *= "offset-"] {
 			margin-left: 0%;
 		}
-		[class *= "off-r-"] {
+		[class *= "offset-r-"] {
 			margin-right: 0%;
 		}
 	
@@ -493,10 +493,10 @@ $limit_width						: 1100px;
 		// Offset loop
 		@for $index from 1 through ($column_limit - 1) {
 		
-			.small-off-#{$index} {
+			.small-offset-#{$index} {
 				@include offset($index);
 			}
-			.small-off-r-#{$index} {
+			.small-offset-r-#{$index} {
 				@include offset-r($index);
 			}
 		}
