@@ -21,7 +21,7 @@
 // ---------------------------------------------------------------------------------------
 $column_limit						: 12;
 $spacing_limit						: 10;
-$page_width							: 1100px;
+$max_width							: 1100px;
 
 
 // Mixins
@@ -58,10 +58,10 @@ $page_width							: 1100px;
 	display: block;
 }
 @mixin limit-it() {
-	width: $page_width;
+	width: $max_width;
 	margin: 0px auto;
 	
-	@media screen and (max-width: $page_width) {
+	@media screen and (max-width: $max_width) {
 		width: 100%;
 	}
 }
@@ -408,7 +408,7 @@ $page_width							: 1100px;
 
 // Fluid View (Desktop and iPad)
 // ---------------------------------------------------------------------------------------
-@media screen and (max-width: $page_width) {
+@media screen and (max-width: $max_width) {
 }
 
 
