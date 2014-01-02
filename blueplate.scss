@@ -2,7 +2,7 @@
  * SASS File: 		blueplate.sass
  * Author:        	Chris Humboldt
  * Link:			http://getwebplate.com/plugins/blueplate
- * Last Edited:   	30 December 2013
+ * Last Edited:   	2 January 2014
  * Edited By:		Chris Humboldt
  */
 
@@ -19,9 +19,9 @@
 
 // Variables
 // ---------------------------------------------------------------------------------------
-$page_width							: 1100px;
 $column_limit						: 12;
 $spacing_limit						: 10;
+$page_width							: 1100px;
 
 
 // Mixins
@@ -56,6 +56,14 @@ $spacing_limit						: 10;
 }
 @mixin show-it() {
 	display: block;
+}
+@mixin limit-it() {
+	width: $page_width;
+	margin: 0px auto;
+	
+	@media screen and (max-width: $page_width) {
+		width: 100%;
+	}
 }
 
 
@@ -319,6 +327,9 @@ $spacing_limit						: 10;
 			@include offset-r($index);
 		}
 	}
+}
+.limit {
+	@include limit-it();
 }
 
 // Spacing classes
