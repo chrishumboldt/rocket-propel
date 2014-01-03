@@ -36,7 +36,7 @@ The above example will show the span blocks occupy 2 columns widths of the full 
 Documentation
 =========
 
-For a detailed explanation and a complete overview of all the options available, read the online documentation at http://getwebplate.com/plugins/blueplate.
+For a more detailed explanation and a complete overview of all the options available, read the online documentation at http://getwebplate.com/plugins/blueplate.
 
 
 Copyright and license
