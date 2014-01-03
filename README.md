@@ -1,7 +1,7 @@
 Blueplate
 =========
 
-A lightweight, responsive CSS layout engine
+A lightweight, responsive CSS layout engine.
 
 Copyright and license
 =========
