@@ -42,7 +42,7 @@ For a more detailed explanation and a complete overview of all the options avail
 Copyright and License
 =========
 
-Copyright 2014 Webplate Project
+Copyright 2014 Savedge Project
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
