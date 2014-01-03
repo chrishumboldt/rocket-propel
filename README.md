@@ -39,10 +39,10 @@ Documentation
 For a more detailed explanation and a complete overview of all the options available, read the online documentation at http://getwebplate.com/plugins/blueplate.
 
 
-Copyright and license
+Copyright and License
 =========
 
-Copyright 2013 Webplate Project
+Copyright 2014 Webplate Project
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
