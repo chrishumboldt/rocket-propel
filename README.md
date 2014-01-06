@@ -7,7 +7,7 @@ A lightweight, responsive CSS layout engine.
 Getting Started
 =========
 
-Using Blueplate is simple and can be done in two ways. You can either include the "blueplate.scss" SASS file in your project and compile accordingly or you can include the "blueplate.css" CSS file within your head tag. Doing the latter wont allow you to edit the options but the library is comprehensive and includes everything you need to get going.
+Using Blueplate is simple and can be done in two ways. You can either include the "blueplate.scss" SASS file in your project and compile accordingly or you can include the "blueplate.css" CSS file within your head tag. Doing the latter wont allow you to edit the options but the plugin is comprehensive and includes everything you need to get going.
 
 For example:
 ```
