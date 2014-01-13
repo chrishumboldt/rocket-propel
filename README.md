@@ -12,7 +12,7 @@ Using Blueplate is simple and can be done in two ways. You can either include th
 For example:
 ```
 <head>
-    <link href="blueplate.css" rel="stylesheet" type="text/css">
+    <link href="css/blueplate.css" rel="stylesheet" type="text/css">
 </head>
 ```
 
