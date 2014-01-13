@@ -19,9 +19,9 @@
 
 // Variables
 // ---------------------------------------------------------------------------------------
-$column_limit						: 12;
-$spacing_limit						: 10;
-$limit_width						: 1100px;
+$column-limit						: 12;
+$spacing-limit						: 10;
+$limit-width						: 1100px;
 
 
 // Mixins
@@ -37,19 +37,19 @@ $limit_width						: 1100px;
 		clear: both;
 	}
 }
-@mixin make-span($span, $span_column_limit: $column_limit) {
-	width: percentage($span / $column_limit);
+@mixin make-span($span, $span-column-limit: $column-limit) {
+	width: percentage($span / $column-limit);
 }
-@mixin span($span, $span_column_limit: $column_limit) {
+@mixin span($span, $span-column-limit: $column-limit) {
 	float: left;
 	position: relative;
-	width: percentage($span / $column_limit);
+	width: percentage($span / $column-limit);
 }
-@mixin offset($off_by, $span_column_limit: $column_limit) {
-	margin-left: percentage($off_by / $column_limit);
+@mixin offset($off-by, $span-column-limit: $column-limit) {
+	margin-left: percentage($off-by / $column-limit);
 }
-@mixin offset-r($off_by, $span_column_limit: $column_limit) {
-	margin-right: percentage($off_by / $column_limit);
+@mixin offset-r($off-by, $span-column-limit: $column-limit) {
+	margin-right: percentage($off-by / $column-limit);
 }
 @mixin reset-span() {
 	@include span(12);
@@ -63,10 +63,10 @@ $limit_width						: 1100px;
 	display: block;
 }
 @mixin limit() {
-	width: $limit_width;
+	width: $limit-width;
 	margin: 0px auto;
 	
-	@media screen and (max-width: $limit_width) {
+	@media screen and (max-width: $limit-width) {
 		width: 100%;
 	}
 }
@@ -315,7 +315,7 @@ $limit_width						: 1100px;
 	}
 	
 	// Span loop
-	@for $index from 1 through $column_limit {
+	@for $index from 1 through $column-limit {
 		
 		.span-#{$index} {
 			@include make-span($index);
@@ -323,7 +323,7 @@ $limit_width						: 1100px;
 	}
 	
 	// Offset loop
-	@for $index from 1 through ($column_limit - 1) {
+	@for $index from 1 through ($column-limit - 1) {
 		
 		.offset-#{$index} {
 			@include offset($index);
@@ -348,42 +348,42 @@ $limit_width						: 1100px;
 .mgn-no {
 	margin: 0px;
 }
-@for $index from 1 through $spacing_limit {
+@for $index from 1 through $spacing-limit {
 	
 	$multiplication		: 1px;
-	$class_name			: ($index * 1);
+	$class-name			: ($index * 1);
 	
 	// Padding
-	.pad-#{$class_name} {
+	.pad-#{$class-name} {
 		padding: ($multiplication * $index);
 	}
-	.pad-r-#{$class_name} {
+	.pad-r-#{$class-name} {
 		padding-right: ($multiplication * $index);
 	}
-	.pad-l-#{$class_name} {
+	.pad-l-#{$class-name} {
 		padding-left: ($multiplication * $index);
 	}
-	.pad-t-#{$class_name} {
+	.pad-t-#{$class-name} {
 		padding-top: ($multiplication * $index);
 	}
-	.pad-b-#{$class_name} {
+	.pad-b-#{$class-name} {
 		padding-bottom: ($multiplication * $index);
 	}
 	
 	// Margin
-	.mgn-#{$class_name} {
+	.mgn-#{$class-name} {
 		margin: ($multiplication * $index);
 	}
-	.mgn-r-#{$class_name} {
+	.mgn-r-#{$class-name} {
 		margin-right: ($multiplication * $index);
 	}
-	.mgn-l-#{$class_name} {
+	.mgn-l-#{$class-name} {
 		margin-left: ($multiplication * $index);
 	}
-	.mgn-t-#{$class_name} {
+	.mgn-t-#{$class-name} {
 		margin-top: ($multiplication * $index);
 	}
-	.mgn-b-#{$class_name} {
+	.mgn-b-#{$class-name} {
 		margin-bottom: ($multiplication * $index);
 	}
 }
@@ -406,7 +406,7 @@ $limit_width						: 1100px;
 
 // Fluid View (Desktop and iPad)
 // ---------------------------------------------------------------------------------------
-@media screen and (max-width: $limit_width) {
+@media screen and (max-width: $limit-width) {
 }
 
 
@@ -481,7 +481,7 @@ $limit_width						: 1100px;
 		}
 	
 		// Small span loop
-		@for $index from 1 through $column_limit {
+		@for $index from 1 through $column-limit {
 		
 			.small-span-#{$index} {
 				@include make-span($index);
@@ -489,7 +489,7 @@ $limit_width						: 1100px;
 		}
 	
 		// Offset loop
-		@for $index from 1 through ($column_limit - 1) {
+		@for $index from 1 through ($column-limit - 1) {
 		
 			.small-offset-#{$index} {
 				@include offset($index);
