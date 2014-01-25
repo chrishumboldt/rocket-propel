@@ -1,0 +1,27 @@
+{
+  "name": "Blueplate",
+  "version": "1.0.0",
+  "description": "A lightweight, responsive CSS layout engine.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrishumboldt/Blueplate.git"
+  },
+  "keywords": [
+    "CSS",
+    "Blueplate",
+    "Webplate",
+    "Responsive",
+    "SASS"
+  ],
+  "author": "Chris Humboldt",
+  "license": "Apache License, Version 2.0",
+  "bugs": {
+    "url": "https://github.com/chrishumboldt/Blueplate/issues"
+  },
+  "homepage": "https://github.com/chrishumboldt/Blueplate",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-sass": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
