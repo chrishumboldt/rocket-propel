@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/chrishumboldt/Blueplate/issues"
   },
-  "homepage": "https://github.com/chrishumboldt/Blueplate",
+  "homepage": "http://getwebplate.com/plugins/blueplate",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-sass": "~0.6.0",
