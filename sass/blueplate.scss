@@ -34,13 +34,13 @@ $limit-width            : 1100px;
     clear: both;
   }
 }
-@mixin make-span($span, $span-column-limit: $column-limit) {
+@mixin make-span($span: $column-limit, $span-column-limit: $column-limit) {
   width: percentage($span / $column-limit);
 }
-@mixin new-span($span, $span-column-limit: $column-limit) {
+@mixin new-span($span: $column-limit, $span-column-limit: $column-limit) {
   width: percentage($span / $column-limit);
 }
-@mixin span($span, $span-column-limit: $column-limit) {
+@mixin span($span: $column-limit, $span-column-limit: $column-limit) {
   float: left;
   position: relative;
   width: percentage($span / $column-limit);
@@ -65,12 +65,12 @@ $limit-width            : 1100px;
 @mixin limit() {
   width: $limit-width;
   margin: 0px auto;
-  
+
   @media screen and (max-width: $limit-width) {
     width: 100%;
   }
 }
-@mixin respond-to($breakpoint) {
+@mixin respond-to($breakpoint, $breakpoint-type: min) {
   
   // Desktop
   @if $breakpoint == 'large' {
@@ -93,8 +93,15 @@ $limit-width            : 1100px;
   }
   @else {
     
-    @media only screen and (max-width: $breakpoint) { 
-      @content; 
+    @if $breakpoint-type == 'max' {
+      @media only screen and (max-width: $breakpoint) { 
+        @content; 
+      }
+    }
+    @else if $breakpoint-type == 'min' {
+      @media only screen and (min-width: $breakpoint) { 
+        @content; 
+      } 
     }
   }
 }
@@ -104,10 +111,10 @@ $limit-width            : 1100px;
 
   // Display classes
   .show {
-    display: block;
+    @include show();
   }
   .hide {
-    display: none;
+    @include hide();
   }
   .opacity-100 {
     opacity: 1;
@@ -126,19 +133,28 @@ $limit-width            : 1100px;
   }
 
   // Respond
-  @include respond-to('large') {
+  @include respond-to(large) {
 
     .small-show {
-      display: none;
+      @include hide();
+    }
+    .large-show {
+      @include show();
+    }
+    .large-hide {
+      @include hide();
     }
   }
-  @include respond-to('small') {
+  @include respond-to(small) {
 
     .small-show {
-      display: block;
+      @include show();
     }
     .small-hide {
-      display: none;
+      @include hide();
+    }
+    .large-show {
+      @include hide();
     }
   }
 }
@@ -203,13 +219,13 @@ $limit-width            : 1100px;
     text-align: right;  
   }
   .txt-size-xxl {
-    font-size: 1.5em
+    font-size: 1.5em;
   }
   .txt-size-xl {
-    font-size: 1.250em
+    font-size: 1.250em;
   }
   .txt-size-l {
-    font-size: 1.125em
+    font-size: 1.125em;
   }
   .txt-size-n {
     font-size: 1em;
@@ -221,7 +237,7 @@ $limit-width            : 1100px;
     font-size: 0.750em;
   }
   .txt-size-xs {
-    font-size: 0.625em
+    font-size: 0.625em;
   }
   .txt-weight-xb {
     font-weight: 900;
@@ -256,45 +272,45 @@ $limit-width            : 1100px;
   }
 
   // Respond
-  @include respond-to('small') {
+  @include respond-to(large) {
 
-    .small-txt-size-xxl {
-      font-size: 1.444em
+    .large-txt-size-xxl {
+      font-size: 1.444em;
     }
-    .small-txt-size-xl {
-      font-size: 1.222em
+    .large-txt-size-xl {
+      font-size: 1.222em;
     }
-    .small-txt-size-l {
-      font-size: 1.111em
+    .large-txt-size-l {
+      font-size: 1.111em;
     }
-    .small-txt-size-n {
+    .large-txt-size-n {
       font-size: 1em;
     }
-    .small-txt-size-m {
+    .large-txt-size-m {
       font-size: 0.889em;
     }
-    .small-txt-size-s {
+    .large-txt-size-s {
       font-size: 0.778em;
     }
-    .small-txt-size-xs {
-      font-size: 0.667em
+    .large-txt-size-xs {
+      font-size: 0.667em;
     }
-    .small-txt-weight-xb {
+    .large-txt-weight-xb {
       font-weight: 900;
     }
-    .small-txt-weight-b, .small-txt-bold {
+    .large-txt-weight-b, .large-txt-bold {
       font-weight: 700;
     }
-    .small-txt-weight-n {
+    .large-txt-weight-n {
       font-weight: 400;
     }
-    .small-txt-weight-l, .small-txt-light {
+    .large-txt-weight-l, .large-txt-light {
       font-weight: 300;
     }
-    .small-txt-weight-xl {
+    .large-txt-weight-xl {
       font-weight: 100;
     }
-    .small-txt-normal {
+    .large-txt-normal {
       font-weight: 400;
       font-style: normal;
     }
@@ -440,26 +456,35 @@ $limit-width            : 1100px;
   }
 
   // Respond
-  @include respond-to('small') {
+  @include respond-to(large) {
     
     .row {
-      [class *= "span-"] {
-        display: block;
-        position: relative;
-        float: left;
-        width: 100%;
-        
-        .small-hide {
-          display: none;
+          
+      // Large span loop
+      @for $index from 1 through $column-limit {
+      
+        .large-span-#{$index} {
+          @include make-span($index);
         }
       }
-      [class *= "offset-"] {
-        margin-left: 0%;
-      }
-      [class *= "offset-r-"] {
-        margin-right: 0%;
-      }
     
+      // Offset loop
+      @for $index from 1 through ($column-limit - 1) {
+      
+        .large-offset-#{$index} {
+          @include offset($index);
+        }
+        .large-offset-r-#{$index} {
+          @include offset-r($index);
+        }
+      }
+    }
+  }
+
+  @include respond-to(small) {
+    
+    .row {
+          
       // Small span loop
       @for $index from 1 through $column-limit {
       
