@@ -16,7 +16,7 @@ For example:
 </head>
 ```
 
-Once included you will have the ability to organize elements vertically and horizontally that will "respond" based on set media queries. It works on a basic row, span grid system and is completely editable. For the basis of the example below we use the default grid column limit of 12 and the classing method to achieve the layout. Resize the window to see the "responsiveness" in action and notice how at smaller screen sizes like mobile, the blocks stack vertically.
+Once included you will have the ability to organize elements vertically and horizontally that will "respond" based on set media queries. It works on a basic row, span grid system and is completely editable. For the basis of the example below we use the default grid column limit of 12 and the classing method to achieve the layout.
 
 For example:
 ```
