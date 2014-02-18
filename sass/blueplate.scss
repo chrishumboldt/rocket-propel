@@ -107,6 +107,9 @@ $limit-width            : 68.750em;
     }
   }
 }
+@mixin center() {
+  margin: 0px auto;
+}
 
 // CSS
 @mixin blueplate-display() {
