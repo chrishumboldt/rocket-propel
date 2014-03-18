@@ -16,7 +16,8 @@ module.exports = function(grunt) {
 					style: 'compressed'
 				},
 				files: {
-					'css/blueplate.css': 'sass/blueplate.scss'
+					'css/blueplate.css': 'sass/blueplate.scss',
+					'css/test.css': 'sass/test.scss'
 				}
 			}
 		}, 
@@ -27,8 +28,13 @@ module.exports = function(grunt) {
 			css: {
 				files: '**/*.scss',
 				tasks: ['sass']
-			}
+			},
 			// End of CSS
+			// Live reload
+			options: {
+				// livereload: true,
+		    } 
+		    // End of live reload
 		} 
 		// End of watch
 	});

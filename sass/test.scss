@@ -1,0 +1,57 @@
+/**
+ * SASS File: 		test.scss
+ * Type: 			test
+ * Author:        	Chris Humboldt
+ * Last Edited:   	18 March 2014
+ */
+
+
+// Table of contents
+// ---------------------------------------------------------------------------------------
+// Imports
+// Global
+
+
+// Imports
+// ---------------------------------------------------------------------------------------
+@import "blueplate";
+
+
+// Global
+// ---------------------------------------------------------------------------------------
+html, body {
+	@include no-spacing();
+}
+.limit {
+	.row, .flex-row, .example {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.flex-row, .example {
+		padding: 2px;
+		background-color: lighten(#000, 90%);
+
+		[class *= "flex-"], .left, .middle, .right {
+			margin: 2px;
+			padding: 10px;
+			text-align: center;
+			background-color: lighten(#000, 95%);
+		}
+	}
+
+	.example {
+		@include flex-column();
+
+		@include respond-to(small) {
+			@include flex-row();
+
+			.left, .right {
+				@include flex(2);
+			}
+			.middle {
+				@include flex(8);
+			}
+		}
+	}
+}

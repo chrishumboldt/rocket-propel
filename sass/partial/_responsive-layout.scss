@@ -28,7 +28,7 @@ $min-max 						: false;
 
 
 
-// Row
+// Containers
 // ---------------------------------------------------------------------------------------
 @mixin row() {
 	width: 100%;
@@ -40,6 +40,26 @@ $min-max 						: false;
 	&:after {
 		clear: both;
 	}
+}
+@mixin flex-container() {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+}
+@mixin flex-row() {
+	@include flex-container();
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+@mixin flex-column() {
+	@include flex-container();
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 
@@ -60,6 +80,22 @@ $min-max 						: false;
 	@include span(12);
 	@include offset(0);
 	@include offset-r(0);
+}
+@mixin flex($span: $column-limit, $span-column-limit: $column-limit) {
+	-webkit-flex-grow: 1;
+	-moz-flex-grow: 1;
+	flex-grow: 1;
+	-webkit-flex-shrink: 1;
+	-moz-flex-shrink: 1;
+	flex-shrink: 1;
+	-webkit-flex-basis: percentage($span / $column-limit);
+	-moz-flex-basis: percentage($span / $column-limit);
+	flex-basis: percentage($span / $column-limit);
+}
+@mixin flex-reset() {
+	-webkit-flex-basis: auto;
+	-moz-flex-basis: auto;
+	flex-basis: auto;
 }
 
 
@@ -85,9 +121,6 @@ $min-max 						: false;
 
 // Layout
 // ---------------------------------------------------------------------------------------
-@mixin center() {
-	margin: 0px auto;
-}
 @mixin limit() {
 	width: $limit-width;
 	margin: 0px auto;
@@ -161,7 +194,7 @@ $min-max 						: false;
 // ---------------------------------------------------------------------------------------
 @mixin blueplate-layout() {
 
-	// Row
+	// Containers
 	.row {
 		@include row();
 
@@ -187,6 +220,20 @@ $min-max 						: false;
 			}
 			.offset-r-#{$index} {
 				@include offset-r($index);
+			}
+		}
+	}
+	.flex-row {
+		@include flex-column();
+
+		@include respond-to(large){
+			@include flex-row();
+
+			// Span loop
+			@for $index from 1 through $column-limit {
+				.flex-#{$index} {
+					@include flex($index);
+				}
 			}
 		}
 	}
