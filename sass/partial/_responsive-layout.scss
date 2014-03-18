@@ -115,11 +115,14 @@ $min-max 						: false;
 		@if $breakpoint-type == false {
 
 			// Large
-			@if $breakpoint == large {
-				$min-max 				: min-width;
+			@if $breakpoint == small {
+				$min-max 				: max-width;
+			}
+			@else if $breakpoint == fluid {
+				$min-max 				: max-width;
 			}
 			@else {
-				$min-max 				: max-width;
+				$min-max 				: min-width;
 			}
 		}
 		@else {
