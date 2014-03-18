@@ -43,7 +43,7 @@ html, body {
 	.example {
 		@include flex-column();
 
-		@include respond-to(small) {
+		@include respond-to(40em) {
 			@include flex-row();
 
 			.left, .right {
