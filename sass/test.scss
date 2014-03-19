@@ -61,10 +61,10 @@ html, body {
 			@include flex-row();
 
 			.left {
-				@include flex(3);
+				@include flex(50%, true); // Set the second parameter to true to use percent based layout
 			}
 			.middle, .right {
-				@include flex(1);
+				@include flex(25%, true); // Set the second parameter to true to use percent based layout
 			}
 		}
 	}

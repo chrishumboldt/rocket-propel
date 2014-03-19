@@ -24,6 +24,7 @@
 // Responsive
 $column-limit 					: 12;
 $default-flex 					: 1;
+$default-flex-percent-option	: false;
 $limit-width 					: 68.750em;
 $break-main 					: 43.813em;
 $min-max 						: false;
@@ -83,21 +84,32 @@ $min-max 						: false;
 	@include offset(0);
 	@include offset-r(0);
 }
-@mixin flex($flex: $default-flex) {
-	-webkit-flex-grow: $flex;
-	-moz-flex-grow: $flex;
-	flex-grow: $flex;
+@mixin flex-size($flex, $percent-check) {
+	@if $percent-check == false {
+		-webkit-flex-grow: $flex;
+		-moz-flex-grow: $flex;
+		flex-grow: $flex;
+		-webkit-flex-basis: 1;
+		-moz-flex-basis: 1;
+		flex-basis: 1;
+	}
+	@else {
+		-webkit-flex-grow: 1;
+		-moz-flex-grow: 1;
+		flex-grow: 1;
+		-webkit-flex-basis: $flex;
+		-moz-flex-basis: $flex;
+		flex-basis: $flex;
+	}
+}
+@mixin flex($flex: $default-flex, $percent-check: $default-flex-percent-option) {
 	-webkit-flex-shrink: 1;
 	-moz-flex-shrink: 1;
 	flex-shrink: 1;
-	-webkit-flex-basis: 1;
-	-moz-flex-basis: 1;
-	flex-basis: 1;
+	@include flex-size($flex, $percent-check);
 }
-@mixin new-flex($flex: $default-flex) {
-	-webkit-flex-grow: $flex;
-	-moz-flex-grow: $flex;
-	flex-grow: $flex;
+@mixin new-flex($flex: $default-flex, $percent-check: $default-flex-percent-option) {
+	@include flex-size($flex, $percent-check);
 }
 @mixin flex-span($span: $column-limit, $span-column-limit: $column-limit) {
 	-webkit-flex-grow: 1;
@@ -116,6 +128,12 @@ $min-max 						: false;
 	flex-basis: percentage($span / $column-limit);
 }
 @mixin flex-reset() {
+	-webkit-flex-grow: auto;
+	-moz-flex-grow: auto;
+	flex-grow: auto;
+	-webkit-flex-shrink: auto;
+	-moz-flex-shrink: auto;
+	flex-shrink: auto;
 	-webkit-flex-basis: auto;
 	-moz-flex-basis: auto;
 	flex-basis: auto;
