@@ -11,6 +11,7 @@
 // Variables
 // Row
 // Span
+// Order
 // Offsets
 // Show / hide
 // Layout
@@ -92,10 +93,24 @@ $min-max 						: false;
 	-moz-flex-basis: percentage($span / $column-limit);
 	flex-basis: percentage($span / $column-limit);
 }
+@mixin new-flex($span: $column-limit, $span-column-limit: $column-limit) {
+	-webkit-flex-basis: percentage($span / $column-limit);
+	-moz-flex-basis: percentage($span / $column-limit);
+	flex-basis: percentage($span / $column-limit);
+}
 @mixin flex-reset() {
 	-webkit-flex-basis: auto;
 	-moz-flex-basis: auto;
 	flex-basis: auto;
+}
+
+
+// Order
+// ---------------------------------------------------------------------------------------
+@mixin flex-order($order-int: 1) {
+	-webkit-order: $order-int;
+	-moz-order: $order-int;
+	order: $order-int;
 }
 
 
@@ -226,20 +241,6 @@ $min-max 						: false;
 			}
 		}
 	}
-	.flex-row {
-		@include flex-column();
-
-		@include respond-to(large){
-			@include flex-row();
-
-			// Span loop
-			@for $index from 1 through $column-limit {
-				.flex-#{$index} {
-					@include flex($index);
-				}
-			}
-		}
-	}
 
 	// Limit
 	.limit {
@@ -287,6 +288,25 @@ $min-max 						: false;
 				}
 				.small-offset-r-#{$index} {
 					@include offset-r($index);
+				}
+			}
+		}
+	}
+}
+
+// Flex layout
+@mixin blueplate-flex-layout() {
+
+	.flex-row {
+		@include flex-column();
+
+		@include respond-to(large){
+			@include flex-row();
+
+			// Span loop
+			@for $index from 1 through $column-limit {
+				.flex-#{$index} {
+					@include flex($index);
 				}
 			}
 		}

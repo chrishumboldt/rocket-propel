@@ -46,11 +46,22 @@ html, body {
 		@include respond-to(40em) {
 			@include flex-row();
 
-			.left, .right {
+			.left {
+				@include flex(6);
+			}
+			.middle, .right {
 				@include flex(2);
 			}
+		}
+		@include respond-to(50em) {
 			.middle {
-				@include flex(8);
+				@include flex-order(1);
+			}
+			.right {
+				@include flex-order(2);
+			}
+			.left {
+				@include flex-order(3);
 			}
 		}
 	}
