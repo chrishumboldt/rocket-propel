@@ -23,6 +23,7 @@
 // ---------------------------------------------------------------------------------------
 // Responsive
 $column-limit 					: 12;
+$default-flex 					: 1;
 $limit-width 					: 68.750em;
 $break-main 					: 43.813em;
 $min-max 						: false;
@@ -82,7 +83,23 @@ $min-max 						: false;
 	@include offset(0);
 	@include offset-r(0);
 }
-@mixin flex($span: $column-limit, $span-column-limit: $column-limit) {
+@mixin flex($flex: $default-flex) {
+	-webkit-flex-grow: $flex;
+	-moz-flex-grow: $flex;
+	flex-grow: $flex;
+	-webkit-flex-shrink: 1;
+	-moz-flex-shrink: 1;
+	flex-shrink: 1;
+	-webkit-flex-basis: 1;
+	-moz-flex-basis: 1;
+	flex-basis: 1;
+}
+@mixin new-flex($flex: $default-flex) {
+	-webkit-flex-grow: $flex;
+	-moz-flex-grow: $flex;
+	flex-grow: $flex;
+}
+@mixin flex-span($span: $column-limit, $span-column-limit: $column-limit) {
 	-webkit-flex-grow: 1;
 	-moz-flex-grow: 1;
 	flex-grow: 1;
@@ -93,7 +110,7 @@ $min-max 						: false;
 	-moz-flex-basis: percentage($span / $column-limit);
 	flex-basis: percentage($span / $column-limit);
 }
-@mixin new-flex($span: $column-limit, $span-column-limit: $column-limit) {
+@mixin new-flex-span($span: $column-limit, $span-column-limit: $column-limit) {
 	-webkit-flex-basis: percentage($span / $column-limit);
 	-moz-flex-basis: percentage($span / $column-limit);
 	flex-basis: percentage($span / $column-limit);
@@ -306,7 +323,7 @@ $min-max 						: false;
 			// Span loop
 			@for $index from 1 through $column-limit {
 				.flex-#{$index} {
-					@include flex($index);
+					@include flex-span($index);
 				}
 			}
 		}

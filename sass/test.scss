@@ -23,16 +23,15 @@ html, body {
 	@include no-spacing();
 }
 .limit {
-	.row, .flex-row, .example {
+	.row, .flex-row, .example, .input-row, .example-2 {
 		margin-top: 40px;
 		margin-bottom: 40px;
-	}
-
-	.flex-row, .example {
 		padding: 2px;
 		background-color: lighten(#000, 90%);
+	}
 
-		[class *= "flex-"], .left, .middle, .right {
+	.flex-row, .example, .input-row, .example-2 {
+		[class *= "flex-"], .left, .middle, .right, .left-col, .right-col {
 			margin: 2px;
 			padding: 10px;
 			text-align: center;
@@ -43,25 +42,59 @@ html, body {
 	.example {
 		@include flex-column();
 
-		@include respond-to(40em) {
+		@include respond-to(large) {
+			@include flex-row();
+
+			.left, .middle, .right {
+				@include flex(1);
+			}
+			.right {
+				@include flex(3);
+			}
+		}
+	}
+
+	.example-2 {
+		@include flex-column();
+
+		@include respond-to(large) {
 			@include flex-row();
 
 			.left {
-				@include flex(6);
+				@include flex(3);
 			}
 			.middle, .right {
-				@include flex(2);
+				@include flex(1);
 			}
 		}
-		@include respond-to(50em) {
-			.middle {
-				@include flex-order(1);
+	}
+
+	.input-row {
+		@include flex-column();
+
+		.left-col, .right-col {
+			@include flex-row();
+
+			input {
+				@include flex(1);
+				@include no-spacing();
+				padding: 12px 3px;
+				border: 1px solid lighten(#000, 80%);
+				border-right: 0px;
 			}
-			.right {
-				@include flex-order(2);
+			button {
+				@include no-spacing();
+				padding: 0px 50px;
+				border: 1px solid lighten(#000, 80%);
+				border-left: 0px;
+				background-color: lighten(#000, 90%);
 			}
-			.left {
-				@include flex-order(3);
+		}
+		@include respond-to(large) {
+			@include flex-row();
+
+			.left-col, .right-col {
+				@include flex(1);
 			}
 		}
 	}
