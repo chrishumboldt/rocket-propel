@@ -1,8 +1,8 @@
 /**
- * SASS File: 		_responsive-layout.scss
+ * SASS File: 		_bp-responsive-layout.scss
  * Type: 			partial
  * Author:        	Chris Humboldt
- * Last Edited:   	18 March 2014
+ * Last Edited:   	19 March 2014
  */
 
 
@@ -11,6 +11,7 @@
 // Variables
 // Row
 // Span
+// Order
 // Offsets
 // Show / hide
 // Layout
@@ -22,13 +23,15 @@
 // ---------------------------------------------------------------------------------------
 // Responsive
 $column-limit 					: 12;
+$default-flex 					: 1;
+$default-flex-percent-option	: false;
 $limit-width 					: 68.750em;
 $break-main 					: 43.813em;
 $min-max 						: false;
 
 
 
-// Row
+// Containers
 // ---------------------------------------------------------------------------------------
 @mixin row() {
 	width: 100%;
@@ -40,6 +43,26 @@ $min-max 						: false;
 	&:after {
 		clear: both;
 	}
+}
+@mixin flex-container() {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+}
+@mixin flex-row() {
+	@include flex-container();
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+@mixin flex-column() {
+	@include flex-container();
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 
@@ -60,6 +83,69 @@ $min-max 						: false;
 	@include span(12);
 	@include offset(0);
 	@include offset-r(0);
+}
+@mixin flex-size($flex, $percent-check) {
+	@if $percent-check == false {
+		-webkit-flex-grow: $flex;
+		-moz-flex-grow: $flex;
+		flex-grow: $flex;
+		-webkit-flex-basis: 1;
+		-moz-flex-basis: 1;
+		flex-basis: 1;
+	}
+	@else {
+		-webkit-flex-grow: 1;
+		-moz-flex-grow: 1;
+		flex-grow: 1;
+		-webkit-flex-basis: $flex;
+		-moz-flex-basis: $flex;
+		flex-basis: $flex;
+	}
+}
+@mixin flex($flex: $default-flex, $percent-check: $default-flex-percent-option) {
+	-webkit-flex-shrink: 1;
+	-moz-flex-shrink: 1;
+	flex-shrink: 1;
+	@include flex-size($flex, $percent-check);
+}
+@mixin new-flex($flex: $default-flex, $percent-check: $default-flex-percent-option) {
+	@include flex-size($flex, $percent-check);
+}
+@mixin flex-span($span: $column-limit, $span-column-limit: $column-limit) {
+	-webkit-flex-grow: 1;
+	-moz-flex-grow: 1;
+	flex-grow: 1;
+	-webkit-flex-shrink: 1;
+	-moz-flex-shrink: 1;
+	flex-shrink: 1;
+	-webkit-flex-basis: percentage($span / $column-limit);
+	-moz-flex-basis: percentage($span / $column-limit);
+	flex-basis: percentage($span / $column-limit);
+}
+@mixin new-flex-span($span: $column-limit, $span-column-limit: $column-limit) {
+	-webkit-flex-basis: percentage($span / $column-limit);
+	-moz-flex-basis: percentage($span / $column-limit);
+	flex-basis: percentage($span / $column-limit);
+}
+@mixin flex-reset() {
+	-webkit-flex-grow: auto;
+	-moz-flex-grow: auto;
+	flex-grow: auto;
+	-webkit-flex-shrink: auto;
+	-moz-flex-shrink: auto;
+	flex-shrink: auto;
+	-webkit-flex-basis: auto;
+	-moz-flex-basis: auto;
+	flex-basis: auto;
+}
+
+
+// Order
+// ---------------------------------------------------------------------------------------
+@mixin flex-order($order-int: 1) {
+	-webkit-order: $order-int;
+	-moz-order: $order-int;
+	order: $order-int;
 }
 
 
@@ -85,9 +171,6 @@ $min-max 						: false;
 
 // Layout
 // ---------------------------------------------------------------------------------------
-@mixin center() {
-	margin: 0px auto;
-}
 @mixin limit() {
 	width: $limit-width;
 	margin: 0px auto;
@@ -164,7 +247,7 @@ $min-max 						: false;
 // ---------------------------------------------------------------------------------------
 @mixin blueplate-layout() {
 
-	// Row
+	// Containers
 	.row {
 		@include row();
 
@@ -240,6 +323,25 @@ $min-max 						: false;
 				}
 				.small-offset-r-#{$index} {
 					@include offset-r($index);
+				}
+			}
+		}
+	}
+}
+
+// Flex layout
+@mixin blueplate-flex-layout() {
+
+	.flex-row {
+		@include flex-column();
+
+		@include respond-to(large){
+			@include flex-row();
+
+			// Span loop
+			@for $index from 1 through $column-limit {
+				.flex-#{$index} {
+					@include flex-span($index);
 				}
 			}
 		}
