@@ -1,6 +1,6 @@
 /**
- * SASS File: 		blueplate.scss
- * Type: 			loader
+ * SASS File: 		_import.scss
+ * Type: 			importer
  * Author:        	Chris Humboldt
  * Last Edited:   	22 March 2014
  */
@@ -9,15 +9,16 @@
 // Table of contents
 // ---------------------------------------------------------------------------------------
 // Imports
-// Call styles
 
 
 // Imports
 // ---------------------------------------------------------------------------------------
-@import "blueplate/import";
-
-
-// Call styles
-// ---------------------------------------------------------------------------------------
-// Call this mixin if you want to load up all the styles
-// @include blueplate-css();
+@import "responsive-layout";
+@import "alignment";
+@import "background";
+@import "display";
+@import "position";
+@import "sizing";
+@import "spacing";
+@import "text";
+@import "execute";
