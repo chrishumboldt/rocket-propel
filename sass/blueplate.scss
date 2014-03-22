@@ -2,7 +2,7 @@
  * SASS File: 		blueplate.scss
  * Type: 			loader
  * Author:        	Chris Humboldt
- * Last Edited:   	20 March 2014
+ * Last Edited:   	22 March 2014
  */
 
 
@@ -22,21 +22,10 @@
 @import "partial/bp-sizing";
 @import "partial/bp-spacing";
 @import "partial/bp-text";
+@import "partial/bp-execute";
 
 
 // Call styles
 // ---------------------------------------------------------------------------------------
-@mixin blueplate-css() {
-	@include blueplate-layout();
-	@include blueplate-flex-layout();
-	@include blueplate-display();
-	@include blueplate-position();
-	@include blueplate-alignment();
-	@include blueplate-text();
-	@include blueplate-background();
-	@include blueplate-sizing();
-	@include blueplate-spacing();
-}
-
-// Call this function if you want to load up all the styles
+// Call this mixin if you want to load up all the styles
 // @include blueplate-css();
