@@ -21,12 +21,12 @@
 // Variables
 // ---------------------------------------------------------------------------------------
 // Responsive
-$column-limit 						: 12;
-$default-flex 						: 1;
-$default-flex-percent-option		: false;
-$limit-width 						: 68.750em;
-$break-main 						: 43.813em;
-$min-max 							: false;
+$column-limit 						: 12 !default;
+$default-flex 						: 1 !default;
+$default-flex-percent-option		: false !default;
+$limit-width 						: 68.750em !default;
+$break-main 						: 43.813em !default;
+$min-max 							: false !default;
 
 
 // Containers
