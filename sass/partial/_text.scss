@@ -9,10 +9,25 @@
 
 // Table of contents
 // ---------------------------------------------------------------------------------------
-// Text mixin
+// Global
+// Text classes
 
 
-// Text mixin
+// Global
+// ---------------------------------------------------------------------------------------
+@mixin text-squared($size) {
+	width: $size;
+	height: $size;
+	line-height: $size;
+	text-align: center;
+}
+@mixin text-hide() {
+	text-indent: -10000px;
+	overflow: hidden;
+}
+
+
+// Text classes
 // ---------------------------------------------------------------------------------------
 @mixin blueplate-text() {
 	.hide-text {

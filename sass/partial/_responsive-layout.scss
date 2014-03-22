@@ -13,7 +13,6 @@
 // Span
 // Order
 // Offsets
-// Show / hide
 // Layout
 // Respond to
 // Call layout classes
@@ -155,16 +154,6 @@ $min-max 							: false;
 }
 @mixin offset-r($off-by, $span-column-limit: $column-limit) {
 	margin-right: percentage($off-by / $column-limit);
-}
-
-
-// Show / hide
-// ---------------------------------------------------------------------------------------
-@mixin hide() {
-	display: none;
-}
-@mixin show($type: block) {
-	display: $type;
 }
 
 

@@ -9,10 +9,30 @@
 
 // Table of contents
 // ---------------------------------------------------------------------------------------
-// Display mixin
+// Show / hide
+// Opacity
+// Display classes
 
 
-// Display mixin
+// Show / hide
+// ---------------------------------------------------------------------------------------
+@mixin hide() {
+	display: none;
+}
+@mixin show($type: block) {
+	display: $type;
+}
+
+
+// Opacity
+// ---------------------------------------------------------------------------------------
+@mixin opacity($opacity: 0.60) {
+	-moz-opacity: $opacity;
+	opacity: $opacity;
+}
+
+
+// Display classes
 // ---------------------------------------------------------------------------------------
 @mixin blueplate-display() {
 	.show {
