@@ -2,7 +2,7 @@
  * SASS File: 		_import.scss
  * Type: 			importer
  * Author:        	Chris Humboldt
- * Last Edited:   	3 May 2014
+ * Last Edited:   	8 May 2014
  */
 
 
@@ -25,9 +25,11 @@
 @import "global";
 @import "gradient";
 @import "ios";
+@import "layout";
 @import "responsive-layout";
 @import "spacing";
 @import "text";
+@import "transform";
 
 
 // CSS imports
