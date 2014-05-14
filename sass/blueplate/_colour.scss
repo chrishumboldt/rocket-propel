@@ -31,7 +31,7 @@ $grey-form 						: lighten(#000, 82%);
 // ---------------------------------------------------------------------------------------
 $aqua 							: #37bc9b;
 $aqua-light						: #48cfad;
-$blue 							: #5d9cec;
+$blue 							: #3498da;
 $blue-light 					: #4fc1e9;
 $green							: #27ae60;
 $green-light 					: #8cc152;
@@ -45,8 +45,6 @@ $red							: #e74c3c;
 $red-light						: #fc6e51;
 $yellow							: #f6bb42;
 $yellow-light 					: #ffce54;
-
-// $blue							: #3498da;
 
 
 // Secondary
@@ -66,20 +64,23 @@ $ar-colours-primary				: (
 	"black"						: $black-base, 
 	"white"						: $white,
 	"aqua"						: $aqua, 
-	"aqua-light"				: $aqua-light, 
 	"blue"						: $blue, 
-	"blue-light"				: $blue-light, 
 	"green"						: $green, 
-	"green-light"				: $green-light, 
 	"orange"					: $orange, 
-	"orange-light"				: $orange-light, 
 	"pink"						: $pink, 
-	"pink-light"				: $pink-light, 
 	"purple"					: $purple, 
-	"purple-light"				: $purple-light, 
 	"red"						: $red, 
+	"yellow"					: $yellow
+);
+
+$ar-colours-primary-light		: (
+	"aqua-light"				: $aqua-light, 
+	"blue-light"				: $blue-light, 
+	"green-light"				: $green-light, 
+	"orange-light"				: $orange-light,
+	"pink-light"				: $pink-light, 
+	"purple-light"				: $purple-light, 
 	"red-light"					: $red-light, 
-	"yellow"					: $yellow,
 	"yellow-light"				: $yellow-light
 );
 
