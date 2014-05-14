@@ -29,32 +29,45 @@ $grey-form 						: lighten(#000, 82%);
 
 // Primary
 // ---------------------------------------------------------------------------------------
-$aqua 							: #37bc9b;
+$aqua 							: #1abc9c;
+$aqua-dark 						: #16a085;
 $aqua-light						: #48cfad;
-$blue 							: #3498da;
+$blue 							: #3498db;
+$blue-dark 						: #2980b9;
 $blue-light 					: #4fc1e9;
-$green							: #27ae60;
+$green							: #2ecc71;
+$green-dark 					: #27ae60;
 $green-light 					: #8cc152;
-$orange							: #e18327;
+$orange							: #f39c12;
+$orange-dark					: #d35400;
 $orange-light					: #f4a353;
 $pink 							: #eb5367;
 $pink-light 					: #ec87c0;
-$purple							: #967adc;
+$purple							: #9b59b6;
+$purple-dark 					: #8e44ad;
 $purple-light 					: #ac92ec;
 $red							: #e74c3c;
+$red-dark						: #c0392b;
 $red-light						: #fc6e51;
-$yellow							: #f6bb42;
+$yellow							: #f1c40f;
+$yellow-dark 					: #f39c12;
 $yellow-light 					: #ffce54;
 
 
 // Secondary
 // ---------------------------------------------------------------------------------------
-$off-white 						: #f5f7fa;
-$off-white-dark 				: #e6e9ed;
+$asbestos 						: #7f8c8d;
+$asphalt 						: #34495e;
+$cloud 							: #ecf0f1;
+$concrete 						: #95a5a6;
 $grey-blue-light 				: #ccd1d9;
 $grey-blue 						: #aab2bd;
 $grey-blue-dark 				: #656d78;
 $grey-blue-extra-dark 			: #434a54;
+$midnight 						: #2c3e50;
+$off-white 						: #f5f7fa;
+$off-white-dark 				: #e6e9ed;
+$silver 						: #bdc3c7;
 
 
 // Lists
@@ -73,6 +86,17 @@ $ar-colours-primary				: (
 	"yellow"					: $yellow
 );
 
+$ar-colours-primary-dark		: (
+	"aqua-dark"					: $aqua-dark, 
+	"blue-dark"					: $blue-dark, 
+	"green-dark"				: $green-dark, 
+	"orange-dark"				: $orange-dark,
+	"pink-dark"					: $pink-dark, 
+	"purple-dark"				: $purple-dark, 
+	"red-dark"					: $red-dark, 
+	"yellow-dark"				: $yellow-dark
+);
+
 $ar-colours-primary-light		: (
 	"aqua-light"				: $aqua-light, 
 	"blue-light"				: $blue-light, 
@@ -85,12 +109,18 @@ $ar-colours-primary-light		: (
 );
 
 $ar-colours-secondary			: (
-	"off-white"					: $off-white, 
-	"off-white-dark"			: $off-white-dark, 
+	"asbestos"					: $asbestos, 
+	"asphalt"					: $asphalt, 
+	"cloud"						: $cloud, 
+	"concrete"					: $concrete, 
 	"grey-blue-light"			: $grey-blue-light, 
 	"grey-blue"					: $grey-blue, 
 	"grey-blue-dark"			: $grey-blue-dark, 
-	"grey-blue-extra-dark"		: $grey-blue-extra-dark, 
+	"grey-blue-extra-dark"		: $grey-blue-extra-dark,
+	"midnight"					: $midnight, 
+	"off-white"					: $off-white, 
+	"off-white-dark"			: $off-white-dark,
+	"silver"					: $silver
 );
 
 
