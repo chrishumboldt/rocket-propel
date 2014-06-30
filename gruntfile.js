@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 			// End of CSS
 			// Live reload
 			options: {
-				livereload: true,
+				livereload: true
 		    } 
 		    // End of live reload
 		} 
