@@ -8,9 +8,9 @@
   "description": "A lightweight, responsive CSS layout engine and SASS mixin library.",
   "main": "css/blueplate.css",
   "keywords": [
-    "CSS",
-    "Blueplate",
     "Webplate",
+    "Blueplate",
+    "CSS",
     "Responsive",
     "SASS",
     "Mixins"
@@ -23,6 +23,7 @@
     "test",
     "tests",
     "gruntfile.js",
-    "package.json"
+    "package.json",
+    "bower.json"
   ]
 }
