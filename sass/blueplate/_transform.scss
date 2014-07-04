@@ -2,22 +2,28 @@
  * SASS File: 		_transform.scss
  * Type: 			partial
  * Author:        	Chris Humboldt
- * Last Edited:   	8 May 2014
+ * Last Edited:   	4 July 2014
  */
 
 
 // Table of contents
 // ---------------------------------------------------------------------------------------
-// Global
+// Transforms
 
 
-// Global
+// Transforms
 // ---------------------------------------------------------------------------------------
 @mixin transform-translate-3d($x: 0px, $y: 0px, $z: 0px) {
 	-webkit-transform: translate3d($x, $y, $z);
 	-o-transform: translate3d($x, $y, $z);
 	-moz-transform: translate3d($x, $y, $z);
 	transform: translate3d($x, $y, $z);
+}
+@mixin transform-scale-3d($x: 1, $y: 1, $z: 1) {
+	-webkit-transform: scale3d($x, $y, $z);
+	-o-transform: scale3d($x, $y, $z);
+	-moz-transform: scale3d($x, $y, $z);
+	transform: scale3d($x, $y, $z);
 }
 @mixin transform-translate-y($y: 0px) {
 	-webkit-transform: translateY($y);
