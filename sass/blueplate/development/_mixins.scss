@@ -37,14 +37,13 @@
 // ---------------------------------------------------------------------------------------
 @mixin text-arguments($arguments: false) {
 	@if $arguments != false {
-		$offsets: text-align color;
+		$offsets: text-align color font-family;
 
 		@each $o in $offsets {
 			$i: index($arguments, $o);
 
 			@if $i 
-			and $i + 1 <= length($arguments) 
-			and type-of( nth($arguments, $i + 1) ) == number {
+			and $i + 1 <= length($arguments) {
 				#{$o}: nth($arguments, $i + 1);
 			}
 		}
