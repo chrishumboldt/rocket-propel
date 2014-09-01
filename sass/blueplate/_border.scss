@@ -117,7 +117,7 @@
 	-webkit-border-radius: 0px 0px 0px $radius;
 	background-clip: padding-box;
 }
-@mixin border-radius-none() {
+@mixin border-radius-no() {
 	border-radius: 0px;
 	-o-border-radius: 0px;
 	-ms-border-radius: 0px;
