@@ -3,6 +3,7 @@ module.exports = function(grunt) {
 	// Load NPM tasks
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.registerTask('build', ['sass']);
 	grunt.registerTask('default', ['watch']);
 	
 	// Initialize config
