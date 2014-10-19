@@ -1,6 +1,6 @@
 {
   "name": "Blueplate",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "A lightweight, responsive CSS layout engine.",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "homepage": "http://getwebplate.com/plugins/blueplate",
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-contrib-sass": "~0.6.0",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-sass": "~0.8.0",
+    "grunt-contrib-watch": "~0.6.1"
   }
 }
