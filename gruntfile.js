@@ -14,7 +14,8 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					style: 'compressed'
+					style: 'compressed',
+					sourcemap: 'none'
 				},
 				files: {
 					'css/blueplate.css': 'sass/blueplate.scss'
