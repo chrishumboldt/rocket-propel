@@ -1,6 +1,6 @@
 {
 	"name": "Blueplate",
-	"version": "1.6.0",
+	"version": "1.6.1",
 	"homepage": "http://getwebplate.com/plugins/blueplate",
 	"authors": [
 		"Chris Humboldt <chrismodem@gmail.com>"
@@ -19,11 +19,14 @@
 	"ignore": [
 		"**/.*",
 		"node_modules",
-		"bower_components",
 		"test",
 		"tests",
-		"gruntfile.js",
+		"gulpfile.js",
 		"package.json",
-		"bower.json"
+		"index.html",
+		"bower.json",
+		"css/demo.css",
+		"sass/demo.scss",
+		"js"
 	]
 }

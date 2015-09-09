@@ -1,57 +1,47 @@
-Blueplate
-=========
+# Blueplate
+A lightweight, responsive CSS layout engine and SASS mixin library.
 
-A lightweight, responsive CSS layout engine and mixin library.
+## Table of Contents
 
+* [Getting Started](#getting-started)
 
-Getting Started
-=========
+## Getting Started
+You can either download a copy of the source files or install Blueplate via Bower.
 
-Using Blueplate is simple and can be done in two ways. You can either include the "sass/blueplate.scss" SASS file in your project and compile accordingly or you can include the "css/blueplate.css" CSS file within your head tag. Doing the latter wont allow you to edit the options but the plugin is comprehensive and includes everything you need to get going.
+```
+bower install blueplate
+```
 
-For example:
+## CSS Implementation
+Start by including the necessary files.
+
 ```
 <head>
-    <link href="css/blueplate.css" rel="stylesheet" type="text/css">
+   <link href="css/blueplate.css" rel="stylesheet" type="text/css">
 </head>
 ```
 
-Once included you will have the ability to organize elements vertically and horizontally that will "respond" based on set media queries. It works on a basic row, span grid system and is completely editable. For the basis of the example below we use the default grid column limit of 12 and the classing method to achieve the layout.
+Now class your HTML to manage your layout. For example:
 
-For example:
 ```
 <div class="row">
-    <div class="span-2">Span 2</div>
-    <div class="span-2">Span 2</div>
-    <div class="span-2">Span 2</div>
-    <div class="span-2">Span 2</div>
-    <div class="span-2">Span 2</div>
-    <div class="span-2">Span 2</div>
+   <div class="span-2">Span 2</div>
+   <div class="span-2">Span 2</div>
+   <div class="span-2">Span 2</div>
+   <div class="span-2">Span 2</div>
+   <div class="span-2">Span 2</div>
+   <div class="span-2">Span 2</div>
 </div>
 ```
 
-The above example will show the span blocks occupy 2 columns widths of the full 12 column row resulting in 6 blocks all together.
-
-
-Documentation
-=========
-
-For a more detailed explanation and a complete overview of all the options available, read the online documentation at http://getwebplate.com/plugins/blueplate.
-
-
-Author
-=========
-
+## Author
 Created and maintained by Chris Humboldt<br>
 Website: <a href="http://chrishumboldt.com/">chrishumboldt.com</a><br>
 Twitter: <a href="https://twitter.com/chrishumboldt">twitter.com/chrishumboldt</a><br>
 GitHub <a href="https://github.com/chrishumboldt">github.com/chrishumboldt</a><br>
 
-
-Copyright and License
-=========
-
-Copyright 2014 Savedge Project
+## Copyright and License
+Copyright 2015 Webplate Project
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
