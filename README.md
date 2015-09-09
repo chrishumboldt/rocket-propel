@@ -62,9 +62,8 @@ Start by importing the necessary file into your own SASS file and include the re
 Find the other available mixins below:
 
 #### Animation
-Mixin | Description
----- | ----
-animate($attribute, $transition-speed: 0.2s) | Set the transition animation style of $attribute with all the neccessary prefixes for all the browser types.
+##### animate($attribute, $transition-speed: 0.2s)
+Set the transition animation style of $attribute with all the neccessary prefixes for all the browser types.
 
 #### Arrow
 ##### arrow($position: bottom, $colour: $red, $size: 20px)
