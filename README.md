@@ -122,7 +122,7 @@ Class | Description
 
 #### Sizing
 Class | Options | Description
----- | ----
+---- | ---- | ----
 .block-h-[h] | [h] = 10, 20, 50, 100, 200, 500, 1000 | Set the height of an element to [h] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px.
 .block-w-[w] | [w] = 10, 20, 50, 100, 200, 500, 1000 | Set the width of an element to [w] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px.
 
