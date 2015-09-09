@@ -61,11 +61,11 @@ Start by importing the necessary file into your own SASS file and include the re
 
 Find the other available mixins below:
 
-#### Animation
+### Animation
 ##### animate($attribute, $transition-speed: 0.2s)
 Set the transition animation style of $attribute with all the neccessary prefixes for all the browser types.
 
-#### Arrow
+### Arrow
 ##### arrow($position: bottom, $colour: $red, $size: 20px)
 Attach a CSS arrow to an element via the after pseudo element.
 
@@ -99,7 +99,7 @@ Now class your HTML to manage your layout. For example:
 
 Find the other available classes below:
 
-#### Background
+### Background
 Class | Options | Description
 ---- | ---- | ----
 .back-pos-[p] | [p] = t, r, b, l, c | Set the background position of an element to [p] for top, right, bottom, left or center.
@@ -112,7 +112,7 @@ Class | Options | Description
 .back-grey-light | | Set the background colour to light grey.
 .back-white | | Set the background colour to white.
 
-#### Display
+### Display
 Class | Options | Description
 ---- | ---- | ----
 .hide | | Hide an element.
@@ -123,7 +123,7 @@ Class | Options | Description
 .show-small | | Show an element in small view only.
 .transparency-[o] | [o] = 100, 75, 50, 25, 0 | Set the opacity of an element to [o] for 100%, 75%, 50%, 25% or 0%.
 
-#### Layout
+### Layout
 Class | Options | Description
 ---- | ---- | ----
 .center | | Center an element.
@@ -132,7 +132,7 @@ Class | Options | Description
 .float-clear | | Stop all floating elements from affecting any element following.
 .valign-[p] | [p] = t, m, b | Set the vertical alignment of an element to [p] for top, middle or bottom.
 
-#### Position
+### Position
 Class | Description
 ---- | ----
 .pos-absolute | Set the position of an element to absolute.
@@ -140,13 +140,13 @@ Class | Description
 .pos-static | Set the position of an element to static.
 .pos-fixed | Set the position of an element to fixed.
 
-#### Sizing
+### Sizing
 Class | Options | Description
 ---- | ---- | ----
 .block-h-[h] | [h] = 10, 20, 50, 100, 200, 500, 1000 | Set the height of an element to [h] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px.
 .block-w-[w] | [w] = 10, 20, 50, 100, 200, 500, 1000 | Set the width of an element to [w] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px.
 
-#### Spacing
+### Spacing
 Class | Options | Description
 ---- | ---- | ----
 .spacing-no | | Remove all padding and margins from an element.
@@ -157,7 +157,7 @@ Class | Options | Description
 .mgn-[x] | [x] = [integer] | Add [x] amount of margin to the top, right, bottom and left of an element.
 .mgn-[p]-[x] | [p] = t, r, b, l [x] = [integer] | Add [x] amount of margin to the [p] side of the element for top, right, bottom or left.
 
-#### Text
+### Text
 Class | Options | Description
 ---- | ---- | ----
 .hide-text | | Hide the text within an element.
