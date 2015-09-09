@@ -6,6 +6,8 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
 * [Getting Started](#getting-started)
 * [CSS Implementation](#css-implementation)
 * [SASS Implementation](#sass-implementation)
+* [Classes](#classes)
+* [Mixins](#mixins)
 
 ## Getting Started
 You can either download a copy of the source files or install Blueplate via Bower.
@@ -70,6 +72,13 @@ Start by importing the necessary file into your own SASS file and include the re
    <div class="right"></div>
 </div>
 ```
+
+## Classes
+Find the other available classes below,
+
+Class | Options | Description
+---- | ---- | ----
+.back-pos-[p] | [p] = t, r, b, l, c | Set the background position of an element to [p] for top, right, bottom, left or center.
 
 ## Author
 Created and maintained by Chris Humboldt<br>
