@@ -11,6 +11,8 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
    * [Layout](#layout)
    * [Position](#position)
    * [Sizing](#sizing)
+   * [Spacing](#spacing)
+   * [Text](#text)
 * [Mixins](#mixins)
 
 ## Getting Started
@@ -125,6 +127,32 @@ Class | Options | Description
 ---- | ---- | ----
 .block-h-[h] | [h] = 10, 20, 50, 100, 200, 500, 1000 | Set the height of an element to [h] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px.
 .block-w-[w] | [w] = 10, 20, 50, 100, 200, 500, 1000 | Set the width of an element to [w] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px.
+
+#### Spacing
+Class | Options | Description
+---- | ---- | ----
+.spacing-no | | Remove all padding and margins from an element.
+.pad-no | | Remove all padding from an element.
+.mgn-no | | Remove all margins from an element.
+.pad-[x] | [x] = [integer] | Add [x] amount of padding all around. For example pad-6 will add 6 pixels of padding to the top, right, bottom and left of an element.
+.pad-[p]-[x] | [p] = t, r, b, l [x] = [integer] | Add [x] amount of padding to the [p] side of the element for top, right, bottom or left.
+.mgn-[x] | [x] = [integer] | Add [x] amount of margin to the top, right, bottom and left of an element.
+.mgn-[p]-[x] | [p] = t, r, b, l [x] = [integer] | Add [x] amount of margin to the [p] side of the element for top, right, bottom or left.
+
+#### Text
+Class | Options | Description
+---- | ---- | ----
+.hide-text | | Hide the text within an element.
+.txt-[a] | [a] = l, c, r | Set the text alignment to [a] for left, center, right.
+.txt-size-[s] | [s] = x2s, xs, s, m, n, l, xl, x2l | Set the font size to [s] for extra small, small, medium, normal, large, extra large, extra extra large.
+.txt-weight-[w] | [w] = xl, l, n, b, xb | Set the font weight to [b] for extra light, light, normal, bold, extra bold.
+.txt-light | | Set the font weight to light.
+.txt-bold | | Set the font weight to bold.
+.txt-normal | | Set the font weight and style to normal.
+.txt-italics | | Set the font style to italics.
+.txt-oblique | | Set the font style to oblique.
+.txt-white | | Set the font colour to white.
+.txt-grey | | Set the font colour to medium grey.
 
 ## Author
 Created and maintained by Chris Humboldt<br>
