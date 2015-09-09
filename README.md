@@ -7,8 +7,9 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
 * [SASS Implementation](#sass-implementation)
    * [Animation](#animation)
    * [Arrow](#arrow)
-* [CSS Implementation](#css-implementation)
    * [Background](#background)
+* [CSS Implementation](#css-implementation)
+   * [Background](#background-1)
    * [Display](#display)
    * [Layout](#layout)
    * [Position](#position)
@@ -62,23 +63,23 @@ Start by importing the necessary file into your own SASS file and include the re
 Find the other available mixins below:
 
 ### Animation
-##### animate($attribute, $transition-speed: 0.2s)
+###### animate($attribute, $transition-speed: 0.2s)
 Set the transition animation style of $attribute with all the neccessary prefixes for all the browser types.
 
 ### Arrow
-##### arrow($position: bottom, $colour: $red, $size: 20px)
+###### arrow($position: bottom, $colour: $red, $size: 20px)
 Attach a CSS arrow to an element via the after pseudo element.
 
-##### arrow-colour($position: bottom, $colour: $white)
+###### arrow-colour($position: bottom, $colour: $white)
 Change the colour of an elements CSS arrow. Note that the arrow position is required.
 
-##### arrow-no($colour: $white)
+###### arrow-no($colour: $white)
 Remove an elements CSS arrow and reset the background colour. Note that the background colour is required.
 
 ### Background
 **Note** that all the image urls already include the relative image path as per $images-root settings variable.
 
-##### background-attachment($attachment: scroll)
+###### background-attachment($attachment: scroll)
 Set the background attachment property to $attachment.
 
 ## CSS Implementation
