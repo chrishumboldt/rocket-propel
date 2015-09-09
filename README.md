@@ -75,6 +75,12 @@ Change the colour of an elements CSS arrow. Note that the arrow position is requ
 ##### arrow-no($colour: $white)
 Remove an elements CSS arrow and reset the background colour. Note that the background colour is required.
 
+### Background
+**Note** that all the image urls already include the relative image path as per $images-root settings variable.
+
+##### background-attachment($attachment: scroll)
+Set the background attachment property to $attachment.
+
 ## CSS Implementation
 Start by including the necessary files.
 
