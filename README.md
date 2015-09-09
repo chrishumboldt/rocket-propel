@@ -7,6 +7,7 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
 * [CSS Implementation](#css-implementation)
 * [SASS Implementation](#sass-implementation)
 * [Classes](#classes)
+   * [Background](#Background)
 * [Mixins](#mixins)
 
 ## Getting Started
@@ -76,6 +77,7 @@ Start by importing the necessary file into your own SASS file and include the re
 ## Classes
 Find the other available classes below,
 
+#### Background
 Class | Options | Description
 ---- | ---- | ----
 .back-pos-[p] | [p] = t, r, b, l, c | Set the background position of an element to [p] for top, right, bottom, left or center.
