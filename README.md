@@ -4,6 +4,8 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
 ## Table of Contents
 
 * [Getting Started](#getting-started)
+* [CSS Implementation](#css-implementation)
+* [SASS Implementation](#sass-implementation)
 
 ## Getting Started
 You can either download a copy of the source files or install Blueplate via Bower.
@@ -31,6 +33,41 @@ Now class your HTML to manage your layout. For example:
    <div class="span-2">Span 2</div>
    <div class="span-2">Span 2</div>
    <div class="span-2">Span 2</div>
+</div>
+```
+
+## SASS Implementation
+Start by importing the necessary file into your own SASS file and include the required mixins.
+
+**SASS**
+```
+@import "sass/import";
+
+.example {
+   @include row();
+}
+.left, .middle, .right {
+   @include span(12); // 100% width
+}
+@include breakpoint(large) {
+   .left {
+      @include span-new(6); // 50% width
+   }
+   .middle {
+      @include span-new(4); // 33.33% width
+   }
+   .right {
+      @include span-new(2); // 16.66% width
+   }
+}
+```
+
+**HTML**
+```
+<div class="example">
+   <div class="left"></div>
+   <div class="middle"></div>
+   <div class="right"></div>
 </div>
 ```
 
