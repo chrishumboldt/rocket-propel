@@ -4,10 +4,13 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
 ## Table of Contents
 
 * [Getting Started](#getting-started)
+* [SASS Implementation](#sass-implementation)
 * [CSS Implementation](#css-implementation)
    * [Background](#background)
    * [Display](#display)
-* [SASS Implementation](#sass-implementation)
+   * [Layout](#layout)
+   * [Position](#position)
+   * [Sizing](#sizing)
 * [Mixins](#mixins)
 
 ## Getting Started
@@ -15,6 +18,41 @@ You can either download a copy of the source files or install Blueplate via Bowe
 
 ```
 bower install blueplate
+```
+
+## SASS Implementation
+Start by importing the necessary file into your own SASS file and include the required mixins.
+
+**SASS**
+```
+@import "sass/import";
+
+.example {
+   @include row();
+}
+.left, .middle, .right {
+   @include span(12); // 100% width
+}
+@include breakpoint(large) {
+   .left {
+      @include span-new(6); // 50% width
+   }
+   .middle {
+      @include span-new(4); // 33.33% width
+   }
+   .right {
+      @include span-new(2); // 16.66% width
+   }
+}
+```
+
+**HTML**
+```
+<div class="example">
+   <div class="left"></div>
+   <div class="middle"></div>
+   <div class="right"></div>
+</div>
 ```
 
 ## CSS Implementation
@@ -65,40 +103,28 @@ Class | Options | Description
 .show-small | | Show an element in small view only.
 .transparency-[o] | [o] = 100, 75, 50, 25, 0 | Set the opacity of an element to [o] for 100%, 75%, 50%, 25% or 0%.
 
-## SASS Implementation
-Start by importing the necessary file into your own SASS file and include the required mixins.
+#### Layout
+Class | Options | Description
+---- | ---- | ----
+.center | | Center an element.
+.float-[p] | [p] = l, r | Set the float property of an element to [p] for left or right.
+.float-no | | Remove the float property from an element.
+.float-clear | | Stop all floating elements from affecting any element following.
+.valign-[p] | [p] = t, m, b | Set the vertical alignment of an element to [p] for top, middle or bottom.
 
-**SASS**
-```
-@import "sass/import";
+#### Position
+Class | Description
+---- | ----
+.pos-absolute | Set the position of an element to absolute.
+.pos-relative | Set the position of an element to relative.
+.pos-static | Set the position of an element to static.
+.pos-fixed | Set the position of an element to fixed.
 
-.example {
-   @include row();
-}
-.left, .middle, .right {
-   @include span(12); // 100% width
-}
-@include breakpoint(large) {
-   .left {
-      @include span-new(6); // 50% width
-   }
-   .middle {
-      @include span-new(4); // 33.33% width
-   }
-   .right {
-      @include span-new(2); // 16.66% width
-   }
-}
-```
-
-**HTML**
-```
-<div class="example">
-   <div class="left"></div>
-   <div class="middle"></div>
-   <div class="right"></div>
-</div>
-```
+#### Sizing
+Class | Options | Description
+---- | ----
+.block-h-[h] | [h] = 10, 20, 50, 100, 200, 500, 1000 | Set the height of an element to [h] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px.
+.block-w-[w] | [w] = 10, 20, 50, 100, 200, 500, 1000 | Set the width of an element to [w] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px.
 
 ## Author
 Created and maintained by Chris Humboldt<br>
