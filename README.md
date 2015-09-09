@@ -5,10 +5,9 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
 
 * [Getting Started](#getting-started)
 * [CSS Implementation](#css-implementation)
-* [SASS Implementation](#sass-implementation)
-* [Classes](#classes)
    * [Background](#background)
    * [Display](#display)
+* [SASS Implementation](#sass-implementation)
 * [Mixins](#mixins)
 
 ## Getting Started
@@ -39,6 +38,32 @@ Now class your HTML to manage your layout. For example:
    <div class="span-2">Span 2</div>
 </div>
 ```
+
+Find the other available classes below:
+
+#### Background
+Class | Options | Description
+---- | ---- | ----
+.back-pos-[p] | [p] = t, r, b, l, c | Set the background position of an element to [p] for top, right, bottom, left or center.
+.back-repeat-[r] | [r] = no, y, x | Set the background repeat of an element to [r] for no repeating, repeat along y axis or repeat along x axis.
+.back-single | | Set the background of an element to not repeat and to be centered.
+.back-contain | | Set the background of an element to not repeat and to contain within the element.
+.back-cover | | Set the background of an element to not repeat and to cover the element completely.
+.back-black | | Set the background colour to black.
+.back-grey | | Set the background colour to medium grey.
+.back-grey-light | | Set the background colour to light grey.
+.back-white | | Set the background colour to white.
+
+#### Display
+Class | Options | Description
+---- | ---- | ----
+.hide | | Hide an element.
+.hide-large | | Hide an element in large view only.
+.hide-small | | Hide an element in small view only.
+.show | | Show an element.
+.show-large | | Show an element in large view only.
+.show-small | | Show an element in small view only.
+.transparency-[o] | [o] = 100, 75, 50, 25, 0 | Set the opacity of an element to [o] for 100%, 75%, 50%, 25% or 0%.
 
 ## SASS Implementation
 Start by importing the necessary file into your own SASS file and include the required mixins.
@@ -74,33 +99,6 @@ Start by importing the necessary file into your own SASS file and include the re
    <div class="right"></div>
 </div>
 ```
-
-## Classes
-Find the other available classes below,
-
-#### Background
-Class | Options | Description
----- | ---- | ----
-.back-pos-[p] | [p] = t, r, b, l, c | Set the background position of an element to [p] for top, right, bottom, left or center.
-.back-repeat-[r] | [r] = no, y, x | Set the background repeat of an element to [r] for no repeating, repeat along y axis or repeat along x axis.
-.back-single | | Set the background of an element to not repeat and to be centered.
-.back-contain | | Set the background of an element to not repeat and to contain within the element.
-.back-cover | | Set the background of an element to not repeat and to cover the element completely.
-.back-black | | Set the background colour to black.
-.back-grey | | Set the background colour to medium grey.
-.back-grey-light | | Set the background colour to light grey.
-.back-white | | Set the background colour to white.
-
-#### Display
-Class | Options | Description
----- | ---- | ----
-.hide | | Hide an element.
-.hide-large | | Hide an element in large view only.
-.hide-small | | Hide an element in small view only.
-.show | | Show an element.
-.show-large | | Show an element in large view only.
-.show-small | | Show an element in small view only.
-.transparency-[o] | [o] = 100, 75, 50, 25, 0 | Set the opacity of an element to [o] for 100%, 75%, 50%, 25% or 0%.
 
 ## Author
 Created and maintained by Chris Humboldt<br>
