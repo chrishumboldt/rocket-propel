@@ -8,6 +8,9 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
    * [Animation](#animation)
    * [Arrow](#arrow)
    * [Background](#background)
+   * [Background Images](#background-images)
+   * [Borders](#borders)
+   * [Border Radius](#border-radius)
 * [CSS Implementation](#css-implementation)
    * [Background](#background-1)
    * [Display](#display)
@@ -81,6 +84,97 @@ Remove an elements CSS arrow and reset the background colour. Note that the back
 
 ###### background-attachment($attachment: scroll)
 Set the background attachment property to $attachment.
+
+###### background-clip($clip: border-box)
+Set the background clip property to $clip.
+
+###### background-colour($colour: grey)
+Set the background colour to $colour.
+
+###### background-contain()
+Set the background size to contain, the position to center and stop it from repeating.
+
+###### background-cover()
+Set the background size to cover, the position to center and stop it from repeating.
+
+###### background-origin($origin: padding-box)
+Set the background origin property to $origin.
+
+###### background-position($position: center)
+Set the background position property to $position.
+
+###### background-repeat($repeat: repeat)
+Set the background repeat property to $repeat.
+
+###### background-size($size: auto)
+Set the background size property to $size.
+
+###### background-single()
+Set the background position to center and stop it from repeating.
+
+### Background Images
+
+###### background-image($image-url, $position: center)
+Set the background image URL of an element with an optional position property.
+
+###### background-image-contain($image-url, $position: center)
+Set the background image URL to be contained within the element with an optional position property.
+
+###### background-image-cover($image-url, $position: center)
+Set the background image URL to cover the element with an optional position property.
+
+###### background-image-parallax($image-url)
+Set the background image URL of an element with a fixed position property. Used mainly for a parallax style effect.
+
+###### background-image-single($image-url, $position: center)
+Set the background image URL of an element with no-repeat and an optional position property.
+
+### Borders
+
+###### border($colour: grey, $size: 1px, $type: solid)
+Set the border property of an element.
+
+###### border-top($colour: grey, $size: 1px, $type: solid)
+Set the border top property of an element.
+
+###### border-right($colour: grey, $size: 1px, $type: solid)
+Set the border right property of an element.
+
+###### border-bottom($colour: grey, $size: 1px, $type: solid)
+Set the border bottom property pf an element.
+
+###### border-left($colour: grey, $size: 1px, $type: solid)
+Set the border left property of an element.
+
+###### border-horizontal($colour: grey, $size: 1px, $type: solid)
+Set the border left and border right property of an element.
+
+###### border-vertical($colour: grey, $size: 1px, $type: solid)
+Set the border top and border bottom property of an element.
+
+###### border-no()
+Remove all borders from an element.
+
+### Border Radius
+
+######
+######
+######
+######
+######
+######
+######
+######
+######
+######
+######
+######
+######
+######
+######
+######
+######
+######
 
 ## CSS Implementation
 Start by including the necessary files.
