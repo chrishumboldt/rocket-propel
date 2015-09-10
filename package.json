@@ -1,7 +1,7 @@
 {
 	"name": "Blueplate",
 	"version": "1.6.1",
-	"description": "A lightweight, responsive CSS layout engine and SASS mixin library.",
+	"description": "A lightweight SASS mixin library and responsive CSS layout engine.",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/chrishumboldt/Blueplate.git"

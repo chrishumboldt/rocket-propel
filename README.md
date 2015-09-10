@@ -1,5 +1,5 @@
 # Blueplate
-A lightweight, responsive CSS layout engine and SASS mixin library.
+A lightweight SASS mixin library and responsive CSS layout engine.
 
 ## Table of Contents
 
