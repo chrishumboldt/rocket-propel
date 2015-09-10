@@ -20,11 +20,16 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
    * [Layout](#layout)
    * [Layout Floats](#layout-floats)
    * [Layout Responsive](#layout-responsive)
+   * [Layout Flex](#layout-flex)
+   * [Position](#position)
+   * [Size](#size)
+   * [Spacing Margins](#spacing-margins)
+   * [Spacing Padding](#spacing-padding)
 * [CSS Implementation](#css-implementation)
    * [Background](#background-1)
    * [Display](#display-1)
    * [Layout](#layout-1)
-   * [Position](#position)
+   * [Position](#position-1)
    * [Sizing](#sizing)
    * [Spacing](#spacing)
    * [Text](#text)
@@ -336,6 +341,108 @@ Change the span to occupy $x amount of columns within the $column-limit. Apply t
 
 ##### span-reset()
 Reset the spanned element to the the $column-limit and remove all offsets.
+
+### Layout Flex
+Please note that the flex model is not fully adopted and should be used under very strict conditions.
+
+##### flex($x, $percent: false)
+Apply the flex grow style of $x to an element. If $percent is set to true then the grow style is set to 1 and the flex basis style of $x is applied instead.
+
+##### flex-container()
+Apply the flex display type to an element with all the neccessary prefixes for all the browser types.
+
+##### flex-column()
+Apply the flex direction of column with all the neccessary prefixes for all the browser types. This mixin automatically includes the flex-container() mixin.
+
+##### flex-new($x, $percent: false)
+Apply a new flex grow style of $x to an element. If $percent is set to true then the grow style is set to 1 and the flex basis style of $x is applied instead.
+
+##### flex-order($x)
+Set the order style of an element to $x with all the neccessary prefixes for all the browser types.
+
+##### flex-reset()
+Reset all flex styles that have been applied to an element.
+
+##### flex-row()
+Apply the flex direction of row with all the neccessary prefixes for all the browser types. This mixin automatically includes the flex-container() mixin.
+
+##### flex-span($x)
+Turns an element into a flex span which can occupy $x amount of columns within the $column-limit.
+
+##### flex-span-new($x)
+Change the flex span to occupy $x amount of columns within the $column-limit. Apply to already flex spanned elements.
+
+### Position
+
+##### position($position: relative, $options)
+Set the position of an element to $position. $options refers to the positional options and can top, right, bottom, left, margin-top, margin-right, margin-bottom and margin-left.
+For example: @include position(relative, top 10 margin-top 10px).
+
+### Size
+
+##### height($height: 0px, $max: false, $min: false)
+Set the height of an element with optional max and min properties.
+
+##### height-max($height: 0px)
+Set the maximum height of an element.
+
+##### height-min($height: 0px)
+Set the minimum height of an element.
+
+##### size($width: 0px, $height: 0px)
+Set the width and height of an element.
+
+##### width($width: 0px, $max: false, $min: false)
+Set the width of an element with optional max and min properties.
+
+##### width-max($width: 0px)
+Set the maximum width of an element.
+
+##### width-min($width: 0px)
+Set the minimum width of an element.
+
+### Spacing Margins
+
+##### margin($margin: 24px)
+Set all the margins of an element.
+
+##### margin-[x]($margin: 24px)
+Set the [x] margin of an element where is x is top, right, bottom, left, horizontal, vertical.
+
+##### margin-no()
+Set the margin of an element to 0.
+
+### Spacing Padding
+
+##### padding($padding: 24px)
+Set the padding of an element in all directions.
+
+##### padding-[x]($padding: 24px)
+Set the [x] padding of an element where is x is top, right, bottom, left, horizontal, vertical.
+
+##### padding-no()
+Set the padding of an element to 0.
+
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
+#####
 
 ## CSS Implementation
 Start by including the necessary files.
