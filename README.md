@@ -25,6 +25,9 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
    * [Size](#size)
    * [Spacing Margins](#spacing-margins)
    * [Spacing Padding](#spacing-padding)
+   * [Spacing Remove](#spacing-remove)
+   * [Text](#text)
+   * [Transform](#transform)
 * [CSS Implementation](#css-implementation)
    * [Background](#background-1)
    * [Display](#display-1)
@@ -32,7 +35,7 @@ A lightweight, responsive CSS layout engine and SASS mixin library.
    * [Position](#position-1)
    * [Sizing](#sizing)
    * [Spacing](#spacing)
-   * [Text](#text)
+   * [Text](#text-1)
 * [Mixins](#mixins)
 
 ## Getting Started
@@ -148,23 +151,8 @@ Set the background image URL of an element with no-repeat and an optional positi
 ##### border($colour: grey, $size: 1px, $type: solid)
 Set the border property of an element.
 
-##### border-top($colour: grey, $size: 1px, $type: solid)
-Set the border top property of an element.
-
-##### border-right($colour: grey, $size: 1px, $type: solid)
-Set the border right property of an element.
-
-##### border-bottom($colour: grey, $size: 1px, $type: solid)
-Set the border bottom property pf an element.
-
-##### border-left($colour: grey, $size: 1px, $type: solid)
-Set the border left property of an element.
-
-##### border-horizontal($colour: grey, $size: 1px, $type: solid)
-Set the border left and border right property of an element.
-
-##### border-vertical($colour: grey, $size: 1px, $type: solid)
-Set the border top and border bottom property of an element.
+##### border-x($colour: grey, $size: 1px, $type: solid)
+Set the border **x** property of an element where x is top, right, bottom, left, horizontal or vertical.
 
 ##### border-no()
 Remove all borders from an element.
@@ -172,31 +160,10 @@ Remove all borders from an element.
 ### Border Radius
 
 ##### border-radius($radius: 2px)
-Set the border radius property around an element with all the neccessary prefixes for all the browser types.
+Set the border radius property around an element with all the necessary prefixes for all the browser types.
 
-##### border-radius-top($radius: 2px)
-Set the top border radius property of an element with all the neccessary prefixes for all the browser types.
-
-##### border-radius-right($radius: 2px)
-Set the right border radius property of an element with all the neccessary prefixes for all the browser types.
-
-##### border-radius-bottom($radius: 2px)
-Set the bottom border radius property of an element with all the neccessary prefixes for all the browser types.
-
-##### border-radius-left($radius: 2px)
-Set the left border radius property of an element with all the neccessary prefixes for all the browser types.
-
-##### border-radius-top-left($radius: 2px)
-Set the top left border radius property of an element with all the neccessary prefixes for all the browser types.
-
-##### border-radius-top-right($radius: 2px)
-Set the top right border radius property of an element with all the neccessary prefixes for all the browser types.
-
-##### border-radius-bottom-left($radius: 2px)
-Set the bottom left border radius property of an element with all the neccessary prefixes for all the browser types.
-
-##### border-radius-bottom-right($radius: 2px)
-Set the bottom right border radius property of an element with all the neccessary prefixes for all the browser types.
+##### border-radius-x($radius: 2px)
+Set the **x** border radius property of an element with all the necessary prefixes for all the browser types. The options for x are top, right, bottom, left, top-left, top-right, bottom-left, bottom-right.
 
 ##### border-radius-no()
 Set the border radius of an element to 0.
@@ -206,32 +173,14 @@ Set the border radius of an element to 0.
 ##### border-light($highlight: 0.8, $colour: #fff)
 Set a light border all around an element. The border is faded out.
 
-##### border-light-top($highlight: 0.8, $colour: #fff)
-Set a light top border on an element. The border is faded out.
-
-##### border-light-right($highlight: 0.8, $colour: #fff)
-Set a light right border on an element. The border is faded out.
-
-##### border-light-bottom($highlight: 0.8, $colour: #fff)
-Set a light bottom border on an element. The border is faded out.
-
-##### border-light-left($highlight: 0.8, $colour: #fff)
-Set a light left border on an element. The border is faded out.
+##### border-light-x($highlight: 0.8, $colour: #fff)
+Set a light **x** border on an element where x is top, right, bottom or left. The border is faded out.
 
 ##### border-dark($lowlight: 0.8, $colour: #000)
 Set a dark border all around an element. The border is faded out.
 
-##### border-dark-top($lowlight: 0.8, $colour: #000)
-Set a dark top border on an element. The border is faded out.
-
-##### border-dark-right($lowlight: 0.8, $colour: #000)
-Set a dark right border on an element. The border is faded out.
-
-##### border-dark-bottom($lowlight: 0.8, $colour: #000)
-Set a dark bottom border on an element. The border is faded out.
-
-##### border-dark-left($lowlight: 0.8, $colour: #000)
-Set a dark left border on an element. The border is faded out.
+##### border-dark-x($lowlight: 0.8, $colour: #000)
+Set a dark **x** border on an element where x is top, right, bottom or left. The border is faded out.
 
 ### Display
 
@@ -285,7 +234,7 @@ Set some special properties like Webkit's backface visibility and perspective pr
 ### Layout
 
 ##### box-sizing($option: content-box)
-Set the box sizing style of an element with all the neccessary prefixes for all the browser types.
+Set the box sizing style of an element with all the necessary prefixes for all the browser types.
 
 ##### center()
 Center an element within its container.
@@ -352,19 +301,19 @@ Apply the flex grow style of $x to an element. If $percent is set to true then t
 Apply the flex display type to an element with all the neccessary prefixes for all the browser types.
 
 ##### flex-column()
-Apply the flex direction of column with all the neccessary prefixes for all the browser types. This mixin automatically includes the flex-container() mixin.
+Apply the flex direction of column with all the necessary prefixes for all the browser types. This mixin automatically includes the flex-container() mixin.
 
 ##### flex-new($x, $percent: false)
 Apply a new flex grow style of $x to an element. If $percent is set to true then the grow style is set to 1 and the flex basis style of $x is applied instead.
 
 ##### flex-order($x)
-Set the order style of an element to $x with all the neccessary prefixes for all the browser types.
+Set the order style of an element to $x with all the necessary prefixes for all the browser types.
 
 ##### flex-reset()
 Reset all flex styles that have been applied to an element.
 
 ##### flex-row()
-Apply the flex direction of row with all the neccessary prefixes for all the browser types. This mixin automatically includes the flex-container() mixin.
+Apply the flex direction of row with all the necessary prefixes for all the browser types. This mixin automatically includes the flex-container() mixin.
 
 ##### flex-span($x)
 Turns an element into a flex span which can occupy $x amount of columns within the $column-limit.
@@ -376,6 +325,7 @@ Change the flex span to occupy $x amount of columns within the $column-limit. Ap
 
 ##### position($position: relative, $options)
 Set the position of an element to $position. $options refers to the positional options and can top, right, bottom, left, margin-top, margin-right, margin-bottom and margin-left.
+
 For example: @include position(relative, top 10 margin-top 10px).
 
 ### Size
@@ -417,32 +367,80 @@ Set the margin of an element to 0.
 ##### padding($padding: 24px)
 Set the padding of an element in all directions.
 
-**padding-[x]($padding: 24px)**
-Set the [x] padding of an element where is [x] is top, right, bottom, left, horizontal, vertical.
+##### padding-x($padding: 24px)
+Set the **x** padding of an element where is x is top, right, bottom, left, horizontal, vertical.
 
 ##### padding-no()
 Set the padding of an element to 0.
 
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
-#####
+### Spacing Remove
+
+##### spacing-no()
+Remove all padding and margins from an element.
+
+### Text
+
+##### text-align($align: left)
+Set the text alignment of an element.
+
+##### text-colour($colour: $white)
+Set the text colour of an element.
+
+##### text-decoration($decoration: none)
+Set the text decoration of an element.
+
+##### text-ellipsis()
+Set an elements text overflow to ellipsis and prevent word wrapping.
+
+##### text-font($font: $helvetica)
+Set the text font family of an element.
+
+##### text-hide()
+Hide the text within an element.
+
+##### text-letter-spacing($spacing: normal)
+Set the text letter spacing of an element.
+
+##### text-line-height($height: 16px)
+Set the line height of an element in pixels. Calculates an additional rem overwrite should the browser support it.
+
+##### text-size($size: 16px)
+Set the font size of an element in pixels. Calculates an additional rem overwrite should the browser support it.
+
+##### text-squared($size)
+Create a square element with height and width of $size. The inner text will be centered vertically and horizontally.
+
+##### text-style($style: normal)
+Set the text style of an element to $style.
+
+##### text-weight($weight: normal)
+Set the text weight of an element to $weight.
+
+### Transform
+
+##### transform-rotate($rotate: 0deg)
+Set the transform rotate style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-scale($x: 1, $y: 1)
+Set the transform scale style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-scale-3d($x: 1, $y: 1, $z: 1)
+Set the transform scale3D style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-translate-3d($x: 0px, $y: 0px, $z: 0px)
+Set the transform translate3d style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-translate-x($x: 1)
+Set the transform translateX style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-translate-y($y: 1)
+Set the transform translateY style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-translate-z($z: 1)
+Set the transform translateZ style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-easing($x: 0px, $y: 0px, $z: 0px, $transition-speed: 0.2s)
+Animate the translate3d transform style (ease-out) with all the necessary prefixes for all the browser types.
 
 ## CSS Implementation
 Start by including the necessary files.
