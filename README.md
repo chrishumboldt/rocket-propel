@@ -406,8 +406,8 @@ Set the minimum width of an element.
 ##### margin($margin: 24px)
 Set all the margins of an element.
 
-##### margin-[x]($margin: 24px)
-Set the [x] margin of an element where is x is top, right, bottom, left, horizontal, vertical.
+##### margin-x($margin: 24px)
+Set the **x** margin of an element where is x is top, right, bottom, left, horizontal, vertical.
 
 ##### margin-no()
 Set the margin of an element to 0.
@@ -417,8 +417,8 @@ Set the margin of an element to 0.
 ##### padding($padding: 24px)
 Set the padding of an element in all directions.
 
-##### padding-[x]($padding: 24px)
-Set the [x] padding of an element where is x is top, right, bottom, left, horizontal, vertical.
+##### padding-x($padding: 24px)
+Set the **x** padding of an element where is x is top, right, bottom, left, horizontal, vertical.
 
 ##### padding-no()
 Set the padding of an element to 0.
