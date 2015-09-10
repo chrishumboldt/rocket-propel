@@ -417,8 +417,8 @@ Set the margin of an element to 0.
 ##### padding($padding: 24px)
 Set the padding of an element in all directions.
 
-##### padding-x($padding: 24px)
-Set the **x** padding of an element where is x is top, right, bottom, left, horizontal, vertical.
+**padding-[x]($padding: 24px)**
+Set the [x] padding of an element where is [x] is top, right, bottom, left, horizontal, vertical.
 
 ##### padding-no()
 Set the padding of an element to 0.
