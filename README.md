@@ -50,7 +50,7 @@ Start by importing the necessary file into your own SASS file and include the re
 
 **SASS**
 ```
-@import "sass/import";
+@import "blueplate/sass/import";
 
 .example {
    @include row();
@@ -447,7 +447,7 @@ Start by including the necessary files.
 
 ```
 <head>
-   <link href="css/blueplate.css" rel="stylesheet" type="text/css">
+   <link href="blueplate/css/blueplate.css" rel="stylesheet" type="text/css">
 </head>
 ```
 
