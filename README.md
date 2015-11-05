@@ -36,7 +36,6 @@ A lightweight SASS mixin library and responsive CSS layout engine.
    * [Sizing](#sizing)
    * [Spacing](#spacing)
    * [Text](#text-1)
-* [Mixins](#mixins)
 
 ## Getting Started
 You can either download a copy of the source files or install Blueplate via Bower.
