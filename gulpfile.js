@@ -4,10 +4,6 @@
  * Author: Chris Humboldt
  */
 
-// Table of contents
-// ---------------------------------------------------------------------------------------
-// Requires
-
 // Requires
 var gulp = require('gulp');
 var livereload = require('gulp-livereload');
