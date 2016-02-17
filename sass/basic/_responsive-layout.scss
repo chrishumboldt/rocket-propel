@@ -52,9 +52,9 @@ $min-max: false !default;
    margin-right: percentage($off-by / $span-column-limit);
 }
 // Layout
-@mixin limit() {
+@mixin limit($limit: $limit-width) {
    width: 100%;
-	max-width: $limit-width;
+	max-width: $limit;
    margin: 0 auto;
 }
 // Breakpoint
