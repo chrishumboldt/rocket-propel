@@ -6,10 +6,8 @@
 
 // Global classes
 @mixin blueplate-global() {
-	html._blueplate-model {
-		@include global-model();
-	}
-	html._blueplate-html {
+	html._blueplate {
 		@include global-html();
+		@include global-model();
 	}
 }
