@@ -6,11 +6,19 @@
 
 // Animate
 @mixin animate($attribute, $transition-speed: 0.2s, $delay: 0s, $easing: ease-out) {
-	-webkit-transition: $attribute $transition-speed $easing $delay;
-	-moz-transition: $attribute $transition-speed $easing $delay;
-	-o-transition: $attribute $transition-speed $easing $delay;
-	-ms-transition: $attribute $transition-speed $easing $delay;
-	transition: $attribute $transition-speed $easing $delay;
+	@if $attribute == transform {
+		-webkit-transition: -webkit-$attribute $transition-speed $easing $delay;
+		-moz-transition: -moz-$attribute $transition-speed $easing $delay;
+		-o-transition: -o-$attribute $transition-speed $easing $delay;
+		-ms-transition: -ms-$attribute $transition-speed $easing $delay;
+		transition: $attribute $transition-speed $easing $delay;
+	} @else {
+		-webkit-transition: $attribute $transition-speed $easing $delay;
+		-moz-transition: $attribute $transition-speed $easing $delay;
+		-o-transition: $attribute $transition-speed $easing $delay;
+		-ms-transition: $attribute $transition-speed $easing $delay;
+		transition: $attribute $transition-speed $easing $delay;
+	}
 }
 @mixin animate-no() {
 	-webkit-transition: none !important;
