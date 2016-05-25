@@ -24,6 +24,12 @@
 @mixin transform-rotate($rotate: 0deg) {
 	@include transform(rotate($rotate));
 }
+@mixin transform-rotate-x($rotate: 0deg) {
+	@include transform(rotateX($rotate));
+}
+@mixin transform-rotate-y($rotate: 0deg) {
+	@include transform(rotateY($rotate));
+}
 @mixin transform-rotate-z($rotate: 0deg) {
 	@include transform(rotateZ($rotate));
 }
