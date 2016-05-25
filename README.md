@@ -371,6 +371,9 @@ Clear the float of an element.
 ##### breakpoint($breakpoint, $breakpoint-type: false, $orientation: false)
 A mixin to generate media queries based on the preset Webplate view types or a custom value. The options for $breakpoint are large, fluid, small or an em/px value example breakpoint(50em). $breakpoint-type can be min or max to set the min/max-width of the query and $orientation set the orientation of the breakpoint. False values are ignored.
 
+##### breakpoint-vertical($breakpoint, $breakpoint-type: false, $orientation: false)
+Exactly the same as the above breakpoint mixin except it checks the height property as opposed to the width property.
+
 ##### limit()
 Assigns a maximum width to an element based on the $limit-width variable and centers it. Once the screen size is below the limit the element will become fluid and adjust its width to a 100%. Used mainly to contain row elements.
 
