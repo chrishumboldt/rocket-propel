@@ -18,6 +18,7 @@ A lightweight SASS mixin library and responsive CSS layout engine.
    * [Gradient](#gradient)
    * [iOS](#ios)
    * [Layout](#layout)
+	* [Layout Flex](#layout-flex)
    * [Layout Floats](#layout-floats)
    * [Layout Responsive](#layout-responsive)
    * [Position](#position)
@@ -48,7 +49,7 @@ Start by importing the necessary file into your own SASS file and include the re
 
 **SASS**
 ```
-@import "blueplate/sass/import";
+@import "blueplate/build/sass/import";
 
 .example {
    @include row();
@@ -78,11 +79,44 @@ Start by importing the necessary file into your own SASS file and include the re
 </div>
 ```
 
+### Browser Prefixes
+Blueplate will apply all the necessary browser prefixes where needed but no longer supports the **-o-** prefix for older versions of Opera. Opera now uses the Blink engine from Chromium (<a href="http://www.opera.com/blogs/desktop/2015/10/opera-33-our-contribution-to-chromium/">Read More</a>).
+
 Find the other available mixins below:
 
 ### Animation
 ##### animate($attribute, $transition-speed: 0.2s)
-Set the transition animation style of $attribute with all the neccessary prefixes for all the browser types.
+Set the transition animation style of $attribute.
+
+##### animate-no()
+Remove all animation styles for an element.
+
+##### animation($name, $duration: 0.4s, $iteration: false, $direction: false, $fill-mode: false)
+Set all the animation properties. Any false value will be ignored.
+
+##### animation-delay($delay)
+Set the animation delay property.
+
+##### animation-direction($direction: normal)
+Set the animation direction property.
+
+##### animation-duration($duration)
+Set the animation duration property.
+
+##### animation-fill-mode($fill: forwards)
+Set the animation fill mode property.
+
+##### animation-iteration($iteration)
+Set the animation fill mode property.
+
+##### animation-name($name)
+Set the animation name property.
+
+##### animation-timing-function($timing: ease-out)
+Set the animation timing function property.
+
+##### keyframes($name)
+Generate the animation keyframes with name $name.
 
 ### Arrow
 ##### arrow($position: bottom, $colour: $red, $size: 20px)
@@ -158,10 +192,10 @@ Remove all borders from an element.
 ### Border Radius
 
 ##### border-radius($radius: 2px)
-Set the border radius property around an element with all the necessary prefixes for all the browser types.
+Set the border radius property around an element.
 
 ##### border-radius-x($radius: 2px)
-Set the **x** border radius property of an element with all the necessary prefixes for all the browser types. The options for x are top, right, bottom, left, top-left, top-right, bottom-left, bottom-right.
+Set the **x** border radius property of an element. The options for x are top, right, bottom, left, top-left, top-right, bottom-left, bottom-right.
 
 ##### border-radius-no()
 Set the border radius of an element to 0.
@@ -197,8 +231,14 @@ Set the opacity of an element.
 ##### overflow($overflow: visible)
 Set the overflow of an element.
 
+##### perspective($perspective: 0px)
+Set the perspective of an element.
+
 ##### transparency($transparency: 0.60)
 Set the transparency of an element. You can also use the opacity mixin as an alternative.
+
+##### visibility($visibility: visible)
+Set the visibility property of an element.
 
 ### Drop Shadow
 
@@ -218,11 +258,29 @@ Apply the border-box property to all elements to contain dimensions. Set the def
 
 ### Gradient
 
+##### gradient-animate($colour-1, $colour-2, $angle)
+Apply an animated gradient to a background with the relevant colours and angle of your choice.
+
+##### gradient-animate-angle($top-left-colour, $bottom-right-colour)
+Apply an animated angle gradient to a background with the appropriate top left to bottom right colours.
+
+##### gradient-animate-horizontal($left-colour, $right-colour)
+Apply an animated horizontal gradient to a background with the appropriate left to right colours.
+
+##### gradient-animate-vertical($top-colour, $bottom-colour)
+Apply an animated vertical gradient to a background with the appropriate top to bottom colours.
+
+##### gradient-animate-no()
+Remove any animated gradient from a background.
+
+##### gradient-angle($left-colour, $right-colour, $angle: -45deg)
+Apply a gradient to a background with the relevant colours and angle of your choice.
+
 ##### gradient-horizontal($left-colour, $right-colour)
-Apply a linear gradient to the background with the appropriate left to right colours.
+Apply a linear gradient to a background with the appropriate left to right colours.
 
 ##### gradient-vertical($top-colour, $bottom-colour)
-Apply a linear gradient to the background with the appropriate top to bottom colours.
+Apply a linear gradient to a background with the appropriate top to bottom colours.
 
 ##### gradient-no()
 Remove the gradient styling.
@@ -235,7 +293,7 @@ Set some special properties like Webkit's backface visibility and perspective pr
 ### Layout
 
 ##### box-sizing($option: content-box)
-Set the box sizing style of an element with all the necessary prefixes for all the browser types.
+Set the box sizing style of an element.
 
 ##### center()
 Center an element within its container.
@@ -255,6 +313,48 @@ Set the vertical alignment of an element to $align.
 ##### z-index($index: 1)
 Set the z-index of an element to $index.
 
+### Layout Flex
+For information on flex visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: A Guide to Flexbox</a>
+
+##### align-content($align: flex-start)
+Set the align content property of a flex element. $align can be flex-start, flex-end, center, space-between, space-around or stretch.
+
+##### align-items($align: flex-start)
+Set the align items property of a flex element. $align can be flex-start, flex-end, center, baseline or stretch.
+
+##### align-self($align: auto)
+Set the align self property of a flex element. $align can be auto, flex-start, flex-end, center, baseline or stretch.
+
+##### flex($grow: 0, $shrink: 1, $basis: auto)
+Set the all the flex properties for a flex item.
+
+##### flex-basis($basis: auto)
+Set the flex basis property for a flex item.
+
+##### flex-direction($direction: row)
+Set the flex direction property of a flex element. $direction can be row, row-reverse, column or column-reverse.
+
+##### flex-display($display: normal)
+Set the flex display property of a flex element.
+
+##### flex-flow($direction, $wrap)
+Set the flex direction and wrap properties of a flex element.
+
+##### flex-grow($grow: 0)
+Set the flex grow property of a flex element.
+
+##### flex-shrink($shrink: 1)
+Set the flex shrink property of a flex element.
+
+##### flex-wrap($wrap: nowrap)
+Set the flex wrap property of a flex element. $wrap can be nowrap, wrap or wrap-reverse.
+
+##### justify-content($content: flex-start)
+Set the justify content property of a flex element. $content can be flex-start, flex-end, center, space-between or space-around.
+
+##### order($order: 0)
+Set the flex order property for a flex item with the flex element.
+
 ### Layout Floats
 
 ##### float($float)
@@ -268,6 +368,12 @@ Clear the float of an element.
 
 ### Layout Responsive
 
+##### breakpoint($breakpoint, $breakpoint-type: false, $orientation: false)
+A mixin to generate media queries based on the preset Webplate view types or a custom value. The options for $breakpoint are large, fluid, small or an em/px value example breakpoint(50em). $breakpoint-type can be min or max to set the min/max-width of the query and $orientation set the orientation of the breakpoint. False values are ignored.
+
+##### breakpoint-vertical($breakpoint, $breakpoint-type: false, $orientation: false)
+Exactly the same as the above breakpoint mixin except it checks the height property as opposed to the width property.
+
 ##### limit()
 Assigns a maximum width to an element based on the $limit-width variable and centers it. Once the screen size is below the limit the element will become fluid and adjust its width to a 100%. Used mainly to contain row elements.
 
@@ -276,9 +382,6 @@ If you offset an element then you push it out $x amount of columns from the left
 
 ##### offset-r($x)
 This mixin will push anything to the right of the element by $x amount of columns (applied to span elements).
-
-##### respond-to($x, $y)
-A mixin to generate media queries based on the preset Webplate view types or a custom value. The options for $x are large, fluid, small or an em/px value example respond-to(50em). Option $y can be min or max to set the min/max-width of the query.
 
 ##### row()
 Turns an element into a row which is the basic building block of Blueplate and is needed to wrap any span elements. A row element will default to a 100% width of its container.
@@ -299,6 +402,11 @@ Set the position of an element to $position. $options refers to the positional o
 
 For example: @include position(relative, top 10 margin-top 10px).
 
+##### position-set($options)
+Change the elements position options. $options can be top, right, bottom, left, margin-top, margin-right, margin-bottom and margin-left.
+
+For example: @include position-set(left 10 bottom 10px).
+
 ### Size
 
 ##### height($height: 0px, $max: false, $min: false)
@@ -312,6 +420,9 @@ Set the minimum height of an element.
 
 ##### size($width: 0px, $height: 0px)
 Set the width and height of an element.
+
+##### square($size)
+Set the width, height and line-height of an element to $size and center the text.
 
 ##### width($width: 0px, $max: false, $min: false)
 Set the width of an element with optional max and min properties.
@@ -378,9 +489,6 @@ Set the line height of an element in pixels. Calculates an additional rem overwr
 ##### text-size($size: 16px)
 Set the font size of an element in pixels. Calculates an additional rem overwrite should the browser support it.
 
-##### text-squared($size)
-Create a square element with height and width of $size. The inner text will be centered vertically and horizontally.
-
 ##### text-style($style: normal)
 Set the text style of an element to $style.
 
@@ -389,36 +497,51 @@ Set the text weight of an element to $weight.
 
 ### Transform
 
+##### transform($anything)
+Set the transform of anything for an element.
+
+##### transform-origin($x: 50%, $y: 50%, $z: 0)
+Set the transform origin of an element.
+
 ##### transform-rotate($rotate: 0deg)
-Set the transform rotate style of an element with all the necessary prefixes for all the browser types.
+Set the transform rotate style of an element.
+
+##### transform-rotate-x($rotate: 0deg)
+Set the transform rotate X style of an element.
+
+##### transform-rotate-y($rotate: 0deg)
+Set the transform rotate Y style of an element.
+
+##### transform-rotate-z($rotate: 0deg)
+Set the transform rotate Z style of an element.
 
 ##### transform-scale($x: 1, $y: 1)
-Set the transform scale style of an element with all the necessary prefixes for all the browser types.
+Set the transform scale style of an element.
 
 ##### transform-scale-3d($x: 1, $y: 1, $z: 1)
-Set the transform scale3D style of an element with all the necessary prefixes for all the browser types.
+Set the transform scale3D style of an element.
 
 ##### transform-translate-3d($x: 0px, $y: 0px, $z: 0px)
-Set the transform translate3d style of an element with all the necessary prefixes for all the browser types.
+Set the transform translate3d style of an element.
 
 ##### transform-translate-x($x: 1)
-Set the transform translateX style of an element with all the necessary prefixes for all the browser types.
+Set the transform translateX style of an element.
 
 ##### transform-translate-y($y: 1)
-Set the transform translateY style of an element with all the necessary prefixes for all the browser types.
+Set the transform translateY style of an element.
 
 ##### transform-translate-z($z: 1)
-Set the transform translateZ style of an element with all the necessary prefixes for all the browser types.
+Set the transform translateZ style of an element.
 
 ##### transform-easing($x: 0px, $y: 0px, $z: 0px, $transition-speed: 0.2s)
-Animate the translate3d transform style (ease-out) with all the necessary prefixes for all the browser types.
+Animate the translate3d transform style (ease-out).
 
 ## CSS Implementation
 Start by including the necessary files.
 
 ```
 <head>
-   <link href="blueplate/css/blueplate.css" rel="stylesheet" type="text/css">
+   <link href="blueplate/css/blueplate.min.css" rel="stylesheet" type="text/css">
 </head>
 ```
 
@@ -517,7 +640,7 @@ Twitter: <a href="https://twitter.com/chrishumboldt">twitter.com/chrishumboldt</
 GitHub <a href="https://github.com/chrishumboldt">github.com/chrishumboldt</a><br>
 
 ## Copyright and License
-Copyright 2015 Webplate Project
+Copyright 2016 Webplate Project
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
