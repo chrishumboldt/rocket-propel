@@ -565,7 +565,7 @@ Now class your HTML to manage your layout. For example:
 ```
 
 ### Classes as Modifiers
-Because all classes are declared on the DOM elements themselves, Blueplate sees them as modifiers and such use the **_** prefix to reflect this.
+Because all classes are declared on the DOM elements themselves, Blueplate sees them as modifiers and such uses the **_** prefix to reflect this.
 
 Find the other available classes below:
 
@@ -592,6 +592,11 @@ Class | Options | Description
 | ._show-large | | Show an element in large view only. |
 | ._show-small | | Show an element in small view only. |
 | ._transparency-[o] | [o] = 100, 75, 50, 25, 0 | Set the opacity of an element to [o] for 100%, 75%, 50%, 25% or 0%. |
+
+### Global
+Class | Options | Description
+| ---- | ---- |
+| ._blueplate | Apply some global styles to the HTML element of your page. |
 
 ### Layout
 Class | Options | Description
