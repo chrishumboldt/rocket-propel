@@ -565,7 +565,7 @@ Now class your HTML to manage your layout. For example:
 ```
 
 ### Classes as Modifiers
-Because all classes are place on the DOM elements themselves, Blueplate sees them as modifiers and such use the **_** prefix to reflect this.
+Because all classes are declared on the DOM elements themselves, Blueplate sees them as modifiers and such use the **_** prefix to reflect this.
 
 Find the other available classes below:
 
