@@ -583,7 +583,7 @@ Find the other available classes below:
 | ._back-white | | Set the background colour to white. |
 
 ### Display
-Class | Options | Description
+| Class | Options | Description |
 | ---- | ---- | ---- |
 | ._hide | | Hide an element. |
 | ._hide-large | | Hide an element in large view only. |
@@ -594,12 +594,12 @@ Class | Options | Description
 | ._transparency-[o] | [o] = 100, 75, 50, 25, 0 | Set the opacity of an element to [o] for 100%, 75%, 50%, 25% or 0%. |
 
 ### Global
-Class | Options | Description
+| Class | Options |
 | ---- | ---- |
 | ._blueplate | Apply some global styles to the HTML element of your page. |
 
 ### Layout
-Class | Options | Description
+| Class | Options | Description |
 | ---- | ---- | ---- |
 | ._center | | Center an element. |
 | ._float-[p] | [p] = l, r | Set the float property of an element to [p] for left or right. |
@@ -608,7 +608,7 @@ Class | Options | Description
 | ._valign-[p] | [p] = t, m, b | Set the vertical alignment of an element to [p] for top, middle or bottom. |
 
 ### Position
-Class | Description
+| Class | Description |
 | ---- | ---- |
 | ._pos-absolute | Set the position of an element to absolute. |
 | ._pos-relative | Set the position of an element to relative. |
@@ -616,13 +616,13 @@ Class | Description
 | ._pos-fixed | Set the position of an element to fixed. |
 
 ### Sizing
-Class | Options | Description
+| Class | Options | Description |
 | ---- | ---- | ---- |
 | ._block-h-[h] | [h] = 10, 20, 50, 100, 200, 500, 1000 | Set the height of an element to [h] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px. |
 | ._block-w-[w] | [w] = 10, 20, 50, 100, 200, 500, 1000 | Set the width of an element to [w] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px. |
 
 ### Spacing
-Class | Options | Description
+| Class | Options | Description |
 | ---- | ---- | ---- |
 | ._spacing-no | | Remove all padding and margins from an element. |
 | ._pad-no | | Remove all padding from an element. |
@@ -633,7 +633,7 @@ Class | Options | Description
 | ._mgn-[p]-[x] | [p] = t, r, b, l [x] = [integer] | Add [x] amount of margin to the [p] side of the element for top, right, bottom or left. |
 
 ### Text
-Class | Options | Description
+| Class | Options | Description |
 | ---- | ---- | ---- |
 | ._hide-text | | Hide the text within an element. |
 | ._txt-[a] | [a] = l, c, r | Set the text alignment to [a] for left, center, right. |
