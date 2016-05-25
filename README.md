@@ -586,6 +586,7 @@ Find the other available classes below:
 | Class | Options | Description |
 | ---- | ---- | ---- |
 | ._hide | | Hide an element. |
+| ._hide-visually | | Hide an element visually, however it will still register as on the page. |
 | ._hide-large | | Hide an element in large view only. |
 | ._hide-small | | Hide an element in small view only. |
 | ._show | | Show an element. |
