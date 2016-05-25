@@ -48,7 +48,7 @@ Start by importing the necessary file into your own SASS file and include the re
 
 **SASS**
 ```
-@import "blueplate/sass/import";
+@import "blueplate/build/sass/import";
 
 .example {
    @include row();
@@ -418,7 +418,7 @@ Start by including the necessary files.
 
 ```
 <head>
-   <link href="blueplate/css/blueplate.css" rel="stylesheet" type="text/css">
+   <link href="blueplate/css/blueplate.min.css" rel="stylesheet" type="text/css">
 </head>
 ```
 
