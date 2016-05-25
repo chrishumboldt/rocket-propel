@@ -78,11 +78,44 @@ Start by importing the necessary file into your own SASS file and include the re
 </div>
 ```
 
+### Browser Prefixes
+Blueplate will apply all the necessary browser prefixes where needed but no longer supports the **-o-** prefix for older versions of Opera. Opera now uses the Blink engine from Chromium (<a href="http://www.opera.com/blogs/desktop/2015/10/opera-33-our-contribution-to-chromium/">Read More</a>).
+
 Find the other available mixins below:
 
 ### Animation
 ##### animate($attribute, $transition-speed: 0.2s)
-Set the transition animation style of $attribute with all the neccessary prefixes for all the browser types.
+Set the transition animation style of $attribute with all the necessary prefixes for all the browser types.
+
+##### animate-no()
+Remove all animation styles for an element.
+
+##### animation($name, $duration: 0.4s, $iteration: false, $direction: false, $fill-mode: false)
+Set all the animation properties with all the necessary prefixes for all the browser types. Any false value will be ignored.
+
+##### animation-delay($delay)
+Set the animation delay property with all the necessary prefixes for all the browser types.
+
+##### animation-direction($direction: normal)
+Set the animation direction property with all the necessary prefixes for all the browser types.
+
+##### animation-duration($duration)
+Set the animation duration property with all the necessary prefixes for all the browser types.
+
+##### animation-fill-mode($fill: forwards)
+Set the animation fill mode property with all the necessary prefixes for all the browser types.
+
+##### animation-iteration($iteration)
+Set the animation fill mode property with all the necessary prefixes for all the browser types.
+
+##### animation-name($name)
+Set the animation name property with all the necessary prefixes for all the browser types.
+
+##### animation-timing-function($timing: ease-out)
+Set the animation timing function property with all the necessary prefixes for all the browser types.
+
+##### keyframes($name)
+Generate the animation keyframes with name $name with all the necessary prefixes for all the browser types.
 
 ### Arrow
 ##### arrow($position: bottom, $colour: $red, $size: 20px)
@@ -197,8 +230,14 @@ Set the opacity of an element.
 ##### overflow($overflow: visible)
 Set the overflow of an element.
 
+##### perspective($perspective: 0px)
+Set the perspective of an element with all the necessary prefixes for all the browser types.
+
 ##### transparency($transparency: 0.60)
 Set the transparency of an element. You can also use the opacity mixin as an alternative.
+
+##### visibility($visibility: visible)
+Set the visibility property of an element.
 
 ### Drop Shadow
 
@@ -218,11 +257,29 @@ Apply the border-box property to all elements to contain dimensions. Set the def
 
 ### Gradient
 
+##### gradient-animate($colour-1, $colour-2, $angle)
+Apply an animated gradient to a background with the relevant colours and angle of your choice.
+
+##### gradient-animate-angle($top-left-colour, $bottom-right-colour)
+Apply an animated angle gradient to a background with the appropriate top left to bottom right colours.
+
+##### gradient-animate-horizontal($left-colour, $right-colour)
+Apply an animated horizontal gradient to a background with the appropriate left to right colours.
+
+##### gradient-animate-vertical($top-colour, $bottom-colour)
+Apply an animated vertical gradient to a background with the appropriate top to bottom colours.
+
+##### gradient-animate-no()
+Remove any animated gradient from a background.
+
+##### gradient-angle($left-colour, $right-colour, $angle: -45deg)
+Apply a gradient to a background with the relevant colours and angle of your choice.
+
 ##### gradient-horizontal($left-colour, $right-colour)
-Apply a linear gradient to the background with the appropriate left to right colours.
+Apply a linear gradient to a background with the appropriate left to right colours.
 
 ##### gradient-vertical($top-colour, $bottom-colour)
-Apply a linear gradient to the background with the appropriate top to bottom colours.
+Apply a linear gradient to a background with the appropriate top to bottom colours.
 
 ##### gradient-no()
 Remove the gradient styling.
@@ -389,8 +446,23 @@ Set the text weight of an element to $weight.
 
 ### Transform
 
+##### transform($anything)
+Set the transform of anything for an element with all the necessary prefixes for all the browser types.
+
+##### transform-origin($x: 50%, $y: 50%, $z: 0)
+Set the transform origin of an element with all the necessary prefixes for all the browser types.
+
 ##### transform-rotate($rotate: 0deg)
 Set the transform rotate style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-rotate-x($rotate: 0deg)
+Set the transform rotate X style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-rotate-y($rotate: 0deg)
+Set the transform rotate Y style of an element with all the necessary prefixes for all the browser types.
+
+##### transform-rotate-z($rotate: 0deg)
+Set the transform rotate Z style of an element with all the necessary prefixes for all the browser types.
 
 ##### transform-scale($x: 1, $y: 1)
 Set the transform scale style of an element with all the necessary prefixes for all the browser types.

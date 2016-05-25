@@ -53,7 +53,7 @@
 	-ms-animation-fill-mode: $fill;
 	animation-fill-mode: $fill;
 }
-@mixin animation-iteration($duration) {
+@mixin animation-iteration($iteration) {
 	-webkit-animation-iteration-count: $iteration;
 	-moz-animation-iteration-count: $iteration;
 	-ms-animation-iteration-count: $iteration;
