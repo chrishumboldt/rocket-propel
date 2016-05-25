@@ -40,6 +40,9 @@
 @mixin animate-no() {
 	@include transition-no();
 }
+@mixin animate-timing-function($timing) {
+	@include transition-timing-function($timing);
+}
 // Animation
 @mixin animation-delay($delay) {
 	-webkit-animation-delay: $delay;

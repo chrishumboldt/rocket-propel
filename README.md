@@ -86,10 +86,13 @@ Find the other available mixins below:
 
 ### Animation
 ##### animate($attribute, $transition-speed: 0.2s)
-Set the transition animation style of $attribute.
+Set the transition style of $attribute.
 
 ##### animate-no()
-Remove all animation styles for an element.
+Remove all transition styles for an element.
+
+##### animate-timing-function($timing)
+Set the transition timing function for an element.
 
 ##### animation($name, $duration: 0.4s, $iteration: false, $direction: false, $fill-mode: false)
 Set all the animation properties. Any false value will be ignored.
@@ -491,6 +494,9 @@ Set the font size of an element in pixels. Calculates an additional rem overwrit
 
 ##### text-style($style: normal)
 Set the text style of an element to $style.
+
+##### text-transform($transform: none)
+Set the text transform property of an element to $transform. $transform can be none, capitalize, uppercase, lowercase or initial.
 
 ##### text-weight($weight: normal)
 Set the text weight of an element to $weight.
