@@ -1,7 +1,5 @@
 {
 	"name": "blueplate",
-	"version": "2.2.2",
-	"homepage": "http://getwebplate.com/plugins/blueplate",
 	"authors": [
       "Chris Humboldt <chrismodem@gmail.com>"
    ],
@@ -15,19 +13,17 @@
       "Mixins",
       "CSS"
    ],
-	"license": "Apache License, Version 2.0",
+	"license": "Apache-2.0",
 	"ignore": [
       "**/.*",
-      "node_modules",
+      "bower_components",
+		"node_modules",
       "test",
       "tests",
-      "gulpfile.js",
-      "package.json",
       "index.html",
-      "bower.json",
-      "css/demo.min.css",
-      "build/sass/demo.scss",
-		"build/js",
-      "js"
-   ]
+      "bower.json"
+   ],
+	"devDependencies": {
+		"webplate-demo": "^1.0.0"
+	}
 }

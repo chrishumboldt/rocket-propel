@@ -6,24 +6,28 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Blueplate Component</title>
-	<link href="css/demo.min.css" rel="stylesheet" type="text/css">
+	<link href="bower_components/webplate-demo/css/demo.min.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
 
-	<div class="heading">
-      <div class="container"><h2>Blueplate Component</h2></div>
-   </div>
-	<div class="container">
-      <h4>Getting Started</h4>
-      <p>You can either download a copy of the source files or install Blueplate via Bower.</p>
+	<div id="web-demo-message">
+		You need to run "bower install" and include the neccessary demo files in order to view this file.
+	</div>
+	<div id="web-demo" style="display:none;">
+		<div class="heading">
+	      <div class="container"><h2>Blueplate Component</h2></div>
+	   </div>
+		<div class="container">
+	      <h4>Getting Started</h4>
+	      <p>You can either download a copy of the source files or install Blueplate via Bower.</p>
 <pre class="prettyprint linenums">
 bower install blueplate
 </pre>
-      <br>
-      <h4>SASS Implementation</h4>
-      <p>Start by importing the necessary file into your own SASS file and include the required mixins.</p>
-      <b>SASS</b>
+	      <br>
+	      <h4>SASS Implementation</h4>
+	      <p>Start by importing the necessary file into your own SASS file and include the required mixins.</p>
+	      <b>SASS</b>
 <pre class="prettyprint linenums">
 @import "blueplate/build/sass/import";
 
@@ -45,7 +49,7 @@ bower install blueplate
    }
 }
 </pre>
-      <b>HTML</b>
+	      <b>HTML</b>
 <pre class="prettyprint linenums">
 &lt;div class="example"&gt;
     &lt;div class="left"&gt;&lt;/div&gt;
@@ -53,16 +57,16 @@ bower install blueplate
     &lt;div class="right"&gt;&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-      <p>For more information on the available mixins read the detailed documentation.</p>
-      <br>
-      <h4>CSS Implementation</h4>
-      <p>Start by including the necessary files.</p>
+	      <p>For more information on the available mixins read the detailed documentation.</p>
+	      <br>
+	      <h4>CSS Implementation</h4>
+	      <p>Start by including the necessary files.</p>
 <pre class="prettyprint linenums">
 &lt;head&gt;
     &lt;link href=&quot;blueplate/css/blueplate.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
 &lt;/head&gt;
 </pre>
-      <p>Now class your HTML to manage your layout. For example:</p>
+	      <p>Now class your HTML to manage your layout. For example:</p>
 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
     &lt;div class="span-2"&gt;Span 2&lt;/div&gt;
@@ -73,23 +77,24 @@ bower install blueplate
     &lt;div class="span-2"&gt;Span 2&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-      <p>For more information on available classes read the detailed documentation.</p>
-		<br><br>
-      <h4>Detailed Documentation</h4>
-      <p>For a more detailed look into the available options, you can read the documentation at <a target="_blank" href="https://github.com/chrishumboldt/Blueplate" class="link">https://github.com/chrishumboldt/Blueplate</a></p>
-   </div>
+	      <p>For more information on available classes read the detailed documentation.</p>
+			<br><br>
+	      <h4>Detailed Documentation</h4>
+	      <p>For a more detailed look into the available options, you can read the documentation at <a target="_blank" href="https://github.com/chrishumboldt/Blueplate" class="link">https://github.com/chrishumboldt/Blueplate</a></p>
+	   </div>
 
-	<footer><div class="container"><div class="col-double">
-		<div class="left">
-			Made by <a href="http://chrishumboldt.com" target="_blank">Chris Humboldt</a>
-		</div>
-		<div class="right">
-			A <a href="http://getwebplate.com" target="_blank">Webplate Project</a>&nbsp;&nbsp;
-			Want updates? <a href="http://twitter.com/webplatetweets" target="_blank">@webplatetweets</a>
-		</div>
-	</div></div></footer>
+		<footer><div class="container"><div class="col-double">
+			<div class="left">
+				Made by <a href="http://chrishumboldt.com" target="_blank">Chris Humboldt</a>
+			</div>
+			<div class="right">
+				A <a href="http://getwebplate.com" target="_blank">Webplate Project</a>&nbsp;&nbsp;
+				Want updates? <a href="http://twitter.com/webplatetweets" target="_blank">@webplatetweets</a>
+			</div>
+		</div></div></footer>
+	</div>
 
-	<script src="js/demo.min.js"></script>
+	<script src="bower_components/webplate-demo/js/demo.min.js"></script>
 
 </body>
 </html>
