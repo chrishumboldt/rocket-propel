@@ -48,7 +48,7 @@ bower install blueplate
 Start by importing the necessary file into your own SASS file and include the required mixins.
 
 **SASS**
-```
+```sass
 @import "blueplate/build/sass/import";
 
 .example {
@@ -71,7 +71,7 @@ Start by importing the necessary file into your own SASS file and include the re
 ```
 
 **HTML**
-```
+```html
 <div class="example">
    <div class="left"></div>
    <div class="middle"></div>
@@ -545,7 +545,7 @@ Animate the translate3d transform style (ease-out).
 ## CSS Implementation
 Start by including the necessary files.
 
-```
+```html
 <head>
    <link href="blueplate/css/blueplate.min.css" rel="stylesheet" type="text/css">
 </head>
@@ -553,7 +553,7 @@ Start by including the necessary files.
 
 Now class your HTML to manage your layout. For example:
 
-```
+```html
 <div class="row">
    <div class="_span-2">Span 2</div>
    <div class="_span-2">Span 2</div>
