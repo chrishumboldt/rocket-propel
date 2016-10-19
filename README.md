@@ -554,7 +554,7 @@ Start by including the necessary files.
 Now class your HTML to manage your layout. For example:
 
 ```html
-<div class="row">
+<div class="_row">
    <div class="_span-2">Span 2</div>
    <div class="_span-2">Span 2</div>
    <div class="_span-2">Span 2</div>
