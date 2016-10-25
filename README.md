@@ -616,6 +616,21 @@ Find the other available classes below:
 | ._pos-static | Set the position of an element to static. |
 | ._pos-fixed | Set the position of an element to fixed. |
 
+### Responsive Layout
+| Class | Options | Description |
+| ---- | ---- | ---- |
+| ._row | | Set the element to a row. Used on responsive containers |
+| ._span-[i] | [i] = 1 to 12 | Set the responsive width of an element within a row. The spans are base 12. |
+| ._span-large-[i] | [i] = 1 to 12 | Set the responsive width of an element within a row at the large breakpoint. |
+| ._span-small-[i] | [i] = 1 to 12 | Set the responsive width of an element within a row at the small breakpoint. |
+| ._limit | | Limit an elements width to 68.750em (default) and center. |
+| ._offset-[i] | [i] = 1 to 12 | Offset an element from the left by a span of [i]. The spans are base 12. |
+| ._offset-r-[i] | [i] = 1 to 12 | Offset an element from the right by a span of [i]. |
+| ._offset-large-[i] | [i] = 1 to 12 | Offset an element from the left by a span of [i] at the large breakpoint. |
+| ._offset-large-r-[i] | [i] = 1 to 12 | Offset an element from the right by a span of [i] at the large breakpoint. |
+| ._offset-small-[i] | [i] = 1 to 12 | Offset an element from the left by a span of [i] at the small breakpoint. |
+| ._offset-small-r-[i] | [i] = 1 to 12 | Offset an element from the right by a span of [i] at the small breakpoint. |
+
 ### Sizing
 | Class | Options | Description |
 | ---- | ---- | ---- |
