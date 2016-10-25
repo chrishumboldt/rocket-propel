@@ -32,6 +32,7 @@ A lightweight SASS mixin library and responsive CSS layout engine.
    * [Background](#background-1)
    * [Display](#display-1)
    * [Layout](#layout-1)
+	* [Layout Responsive](#layout-responsive-1)
    * [Position](#position-1)
    * [Sizing](#sizing)
    * [Spacing](#spacing)
@@ -608,15 +609,7 @@ Find the other available classes below:
 | ._float-clear | | Stop all floating elements from affecting any element following. |
 | ._valign-[p] | [p] = t, m, b | Set the vertical alignment of an element to [p] for top, middle or bottom. |
 
-### Position
-| Class | Description |
-| ---- | ---- |
-| ._pos-absolute | Set the position of an element to absolute. |
-| ._pos-relative | Set the position of an element to relative. |
-| ._pos-static | Set the position of an element to static. |
-| ._pos-fixed | Set the position of an element to fixed. |
-
-### Responsive Layout
+### Layout Responsive
 | Class | Options | Description |
 | ---- | ---- | ---- |
 | ._row | | Set the element to a row. Used on responsive containers |
@@ -630,6 +623,14 @@ Find the other available classes below:
 | ._offset-large-r-[i] | [i] = 1 to 12 | Offset an element from the right by a span of [i] at the large breakpoint. |
 | ._offset-small-[i] | [i] = 1 to 12 | Offset an element from the left by a span of [i] at the small breakpoint. |
 | ._offset-small-r-[i] | [i] = 1 to 12 | Offset an element from the right by a span of [i] at the small breakpoint. |
+
+### Position
+| Class | Description |
+| ---- | ---- |
+| ._pos-absolute | Set the position of an element to absolute. |
+| ._pos-relative | Set the position of an element to relative. |
+| ._pos-static | Set the position of an element to static. |
+| ._pos-fixed | Set the position of an element to fixed. |
 
 ### Sizing
 | Class | Options | Description |
