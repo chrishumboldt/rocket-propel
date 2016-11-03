@@ -4,7 +4,9 @@
       "Chris Humboldt <chrismodem@gmail.com>"
    ],
 	"description": "A lightweight SASS mixin library and responsive CSS layout engine.",
-	"main": "css/blueplate.css",
+	"main": [
+		"build/sass/_import.css"
+	],
 	"keywords": [
       "Webplate",
       "Blueplate",
@@ -17,11 +19,7 @@
 	"ignore": [
       "**/.*",
       "bower_components",
-		"node_modules",
-      "test",
-      "tests",
-      "index.html",
-      "bower.json"
+      "index.html"
    ],
 	"devDependencies": {
 		"webplate-demo": "^1.0.0"
