@@ -1,0 +1,7 @@
+{
+	"name": "blueplate",
+	"files": [
+		"css/blueplate.min.css"
+	],
+	"_comment": "This file needs to be included because bower.json does not have a production files property. This file is not referenced for Webplate buiding. For that the bower.json main property will be used."
+}
