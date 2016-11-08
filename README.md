@@ -86,10 +86,10 @@ Propel will apply all the necessary browser prefixes where needed but no longer 
 Find the other available mixins below:
 
 ### Animation
-Mixin | Description
----- | ----
-`animate($attribute, $transition-speed: 0.2s)` | Set the transition style of $attribute.
-`animate-no()` | Remove all transition styles for an element.
+Mixin | Defaults | Description
+---- | ---- | ----
+`animate(attr, speed)` | `speed`: `0.2s` | Set the transition style of `attr`.
+`animate-no()` | | Remove all transition styles for an element.
 
 ##### animate($attribute, $transition-speed: 0.2s)
 Set the transition style of $attribute.
