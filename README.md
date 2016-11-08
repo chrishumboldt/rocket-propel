@@ -101,6 +101,21 @@ Mixin | Defaults | Description
 `animation-timing-function(t)` | `t`: `ease-out` | Set the animation timing function property.
 `keyframes(name)` | | Generate the animation keyframes with name `name`.
 
+```sass
+// Animate block on hover
+.block {
+	@include position(absolute, top 10px left 10px);
+	@include height(50px);
+	@include width(50px);
+	@include background-colour($red);
+	@include animate('all', 1s); // Here we attach the animation
+
+	&:hover {
+		@include position-set(top 20px left 20px)
+	}
+}
+```
+
 ### Arrow
 ##### arrow($position: bottom, $colour: $red, $size: 20px)
 Attach a CSS arrow to an element via the after pseudo element.
