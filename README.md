@@ -1,4 +1,4 @@
-# Blueplate
+# Propel
 A lightweight SASS mixin library and responsive CSS layout engine.
 
 ## Table of Contents
@@ -39,10 +39,10 @@ A lightweight SASS mixin library and responsive CSS layout engine.
    * [Text](#text-1)
 
 ## Getting Started
-You can either download a copy of the source files or install Blueplate via Bower.
+You can either download a copy of the [source files](https://github.com/chrishumboldt/Rocket-Propel/archive/master.zip) or install via NPM.
 
 ```
-bower install blueplate
+npm install rocket-propel
 ```
 
 ## SASS Implementation
@@ -50,7 +50,7 @@ Start by importing the necessary file into your own SASS file and include the re
 
 **SASS**
 ```sass
-@import "blueplate/build/sass/import";
+@import "rocket-propel/build/sass/import";
 
 .example {
    @include row();
@@ -81,7 +81,7 @@ Start by importing the necessary file into your own SASS file and include the re
 ```
 
 ### Browser Prefixes
-Blueplate will apply all the necessary browser prefixes where needed but no longer supports the **-o-** prefix for older versions of Opera. Opera now uses the Blink engine from Chromium (<a href="http://www.opera.com/blogs/desktop/2015/10/opera-33-our-contribution-to-chromium/">Read More</a>).
+Propel will apply all the necessary browser prefixes where needed but no longer supports the **-o-** prefix for older versions of Opera. Opera now uses the Blink engine from Chromium (<a href="http://www.opera.com/blogs/desktop/2015/10/opera-33-our-contribution-to-chromium/">Read More</a>).
 
 Find the other available mixins below:
 
@@ -388,7 +388,7 @@ If you offset an element then you push it out $x amount of columns from the left
 This mixin will push anything to the right of the element by $x amount of columns (applied to span elements).
 
 ##### row()
-Turns an element into a row which is the basic building block of Blueplate and is needed to wrap any span elements. A row element will default to a 100% width of its container.
+Turns an element into a row which is the basic building block of Propel and is needed to wrap any span elements. A row element will default to a 100% width of its container.
 
 ##### span($x)
 Turns an element into a span which can occupy $x amount of columns within the $column-limit. For example @include span(6) will occupy 6 columns within the default 12 which equates to 50% of a containing row.
@@ -548,7 +548,7 @@ Start by including the necessary files.
 
 ```html
 <head>
-   <link href="blueplate/css/blueplate.min.css" rel="stylesheet" type="text/css">
+   <link href="rocket-propel/css/propel.min.css" rel="stylesheet" type="text/css">
 </head>
 ```
 
@@ -566,7 +566,7 @@ Now class your HTML to manage your layout. For example:
 ```
 
 ### Classes as Modifiers
-Because all classes are declared on the DOM elements themselves, Blueplate sees them as modifiers and such uses the **_** prefix to reflect this.
+Because all classes are declared on the DOM elements themselves, Propel sees them as modifiers and such uses the **_** prefix to reflect this.
 
 Find the other available classes below:
 
@@ -598,7 +598,7 @@ Find the other available classes below:
 ### Global
 | Class | Options |
 | ---- | ---- |
-| ._blueplate | Apply some global styles to the HTML element of your page. |
+| ._propel | Apply some global styles to the HTML element of your page. |
 
 ### Layout
 | Class | Options | Description |
