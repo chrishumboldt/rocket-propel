@@ -1,14 +1,14 @@
 /**
- * File: sass/css/_spacing.scss
+ * File: build/sass/css/_spacing.scss
  * Type: SASS CSS file
  * Author: Chris Humboldt
- */
+**/
 
 // Variables
 $spacing-limit: 10 !default;
 
 // Spacing mixin
-@mixin blueplate-spacing() {
+@mixin propel-spacing() {
 	._spacing-no {
 		@include spacing-no();
 	}
