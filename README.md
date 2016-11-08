@@ -90,15 +90,8 @@ Mixin | Defaults | Description
 ---- | ---- | ----
 `animate(attr, speed)` | `speed`: `0.2s` | Set the transition style of `attr`.
 `animate-no()` | | Remove all transition styles for an element.
-
-##### animate($attribute, $transition-speed: 0.2s)
-Set the transition style of $attribute.
-
-##### animate-no()
-Remove all transition styles for an element.
-
-##### animate-timing-function($timing)
-Set the transition timing function for an element.
+`animate-timing-function(timing)` | | Set the transition `timing` function for an element.
+`animation(name, duration, iteration, direction, fill)` | `duration`: `0.4s`<br>`iteration`: `false`<br>`direction`: `false`<br>`fill`: `false` | Set all the animation properties. Any false value will be ignored.
 
 ##### animation($name, $duration: 0.4s, $iteration: false, $direction: false, $fill-mode: false)
 Set all the animation properties. Any false value will be ignored.
