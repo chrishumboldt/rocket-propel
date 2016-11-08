@@ -88,7 +88,7 @@ Find the other available mixins below:
 ### Animation
 Mixin | Defaults | Description
 ---- | ---- | ----
-`animate(attr, speed)` | `speed`: `0.2s` | Set the transition style of `attr`.
+`animate(attr, speed)` | `speed`: `0.2s` | Set the transition style of attribute `attr`.
 `animate-no()` | | Remove all transition styles for an element.
 `animate-timing-function(timing)` | | Set the transition `timing` function for an element.
 `animation(n, dur, i, dir, f)` | `dur`: `0.4s`<br>`i`: `false`<br>`dir`: `false`<br>`f`: `false` | Set all the animation properties.<br>`false` values will be ignored.<br>`n` = name<br>`dur` = duration<br>`i` = iteration<br>`dir` = direction<br>`f` = fill mode
