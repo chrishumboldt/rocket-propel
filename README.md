@@ -91,34 +91,15 @@ Mixin | Defaults | Description
 `animate(attr, speed)` | `speed`: `0.2s` | Set the transition style of attribute `attr`.
 `animate-no()` | | Remove all transition styles for an element.
 `animate-timing-function(timing)` | | Set the transition `timing` function for an element.
-`animation(n, dur, i, dir, f)` | `dur`: `0.4s`<br>`i`: `false`<br>`dir`: `false`<br>`f`: `false` | Set all the animation properties.<br>`false` values will be ignored.<br>`n` = name<br>`dur` = duration<br>`i` = iteration<br>`dir` = direction<br>`f` = fill mode
-
-##### animation($name, $duration: 0.4s, $iteration: false, $direction: false, $fill-mode: false)
-Set all the animation properties. Any false value will be ignored.
-
-##### animation-delay($delay)
-Set the animation delay property.
-
-##### animation-direction($direction: normal)
-Set the animation direction property.
-
-##### animation-duration($duration)
-Set the animation duration property.
-
-##### animation-fill-mode($fill: forwards)
-Set the animation fill mode property.
-
-##### animation-iteration($iteration)
-Set the animation fill mode property.
-
-##### animation-name($name)
-Set the animation name property.
-
-##### animation-timing-function($timing: ease-out)
-Set the animation timing function property.
-
-##### keyframes($name)
-Generate the animation keyframes with name $name.
+`animation(n, dur, i, dir, f)` | `dur`: `0.4s`<br>`i`: `false`<br>`dir`: `false`<br>`f`: `false` | Set all the animation properties.<br>`n` = name<br>`dur` = duration<br>`i` = iteration<br>`dir` = direction<br>`f` = fill mode
+`animation-delay($delay)` | | Set the animation delay property.
+`animation-direction(dir)` | `dir`: `normal` | Set the animation direction property.
+`animation-duration(dur)` | | Set the animation duration property.
+`animation-fill-mode(fill)` | `fill`: '`forwards`' | Set the animation fill mode property.
+`animation-iteration(i)` | | Set the animation iteration `i` property.
+`animation-name(name)` | | Set the animation name property.
+`animation-timing-function(t)` | `t`: `ease-out` | Set the animation timing function property.
+`keyframes(name)` | | Generate the animation keyframes with name `name`.
 
 ### Arrow
 ##### arrow($position: bottom, $colour: $red, $size: 20px)
