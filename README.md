@@ -117,6 +117,36 @@ Mono | `$black` `$black-base` `$grey-x2-light` `$grey-x-light` `$grey-light` `$g
 Primary | `$aqua` `$blue` `$green` `$orange` `$pink` `$purple` `$red` `$yellow`
 Secondary | `$asbestos` `$asphalt` `$bondi-blue` `$cloud` `$concrete` `$grey-blue-x-light` `$grey-blue-light` `$grey-blue` `$grey-blue-dark` `$grey-blue-x-dark` `$midnight` `$off-white` `$off-white-dark` `$river-bed` `$silver`
 
+##### Spacing
+Variable | Value
+---- | ----
+`$space-base` | 24px
+`$space-x2-small` | 4px
+`$space-x-small` | 6px
+`$space-small` | 12px
+`$space-minor` | 16px
+`$space-slight` | 36px
+`$space-medium` | 48px
+`$space-large` | 72px
+`$space-x-large` | 120px
+`$space-x2-large` | 144px
+
+##### Text
+Variable | Value
+---- | ----
+`$georgia` | Georgia, Cambria, "Times New Roman", Times, serif
+`$helvetica` | "Helvetica Neue", Helvetica, Arial, sans-serif
+`$impact` | Impact, Charcoal, sans-serif
+`$lato` | 'Lato', sans-serif
+`$lucinda-grande` | "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
+`$monospace` | Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace
+`$open-sans` | 'Open Sans', Helvetica, Arial, sans-serif
+`$roboto` | 'Roboto', 'Helvetic Neue', Helvetica, Arial
+`$tahoma` | Tahoma, Geneva, sans-serif
+`$times-new-roman` | "Times New Roman", Times, serif
+`$trebuchet` | "Trebuchet MS", Helvetica, sans-serif
+`$verdana` | Verdana, Geneva, sans-serif
+
 ### Animation
 Mixin | Defaults | Description
 ---- | ---- | ----
