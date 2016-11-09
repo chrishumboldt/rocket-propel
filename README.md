@@ -374,12 +374,12 @@ Mixin | Defaults | Description
 `text-align(x)` | `x`: `left` | Set the text alignment of an element.
 `text-colour(x)` | `x`: `$white` | Set the text colour of an element.
 `text-decoration(x)` | `x`: `none` | Set the text decoration of an element.
-`text-ellipsis()` | | Set an elements text overflow to ellipsis and prevent word wrapping.
+`text-ellipsis()` | | Set text overflow to ellipsis and prevent word wrapping.
 `text-font(x)` | `x`: `$helvetica` | Set the text font family of an element.
 `text-hide()` | | Hide the text within an element.
 `text-letter-spacing(x)` | `x`: `normal` | Set the text letter spacing of an element.
-`text-line-height(x)` | `x`: `16px` |  Set the line height of an element in pixels.<br>Calculates an additional rem overwrite should the browser support it.
-`text-size(x)` | `x`: `16px` | Set the font size of an element in pixels.<br>Calculates an additional rem overwrite should the browser support it.
+`text-line-height(x)` | `x`: `16px` |  Set the line height of an element in pixels.<br>Calculates an additional rem overwrite.
+`text-size(x)` | `x`: `16px` | Set the font size of an element in pixels.<br>Calculates an additional rem overwrite.
 `text-style()` | `x`: `normal` | Set the text style of an element to $style.
 `text-transform(x)` | `x`: `none` | Set the text transform property of an element to `x`.<br>`x` can be `none`, `capitalize`, `uppercase`, `lowercase` or `initial`.
 `text-weight(x)` | `x`: `normal` | Set the text weight of an element to `x`.
