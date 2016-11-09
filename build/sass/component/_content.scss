@@ -1,8 +1,8 @@
 /**
- * File: sass/component/_content.scss
+ * File: build/sass/component/_content.scss
  * Type: SASS component file
  * Author: Chris Humboldt
- */
+**/
 
  @mixin content($size: base) {
  	@if $size == base {

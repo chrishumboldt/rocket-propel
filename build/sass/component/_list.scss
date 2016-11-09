@@ -1,8 +1,8 @@
 /**
- * File: module/_list.scss
+ * File: build/sass/component/_list.scss
  * Type: SASS module file
  * Author: Chris Humboldt
- */
+**/
 
 @mixin list($type: basic) {
    @if $type == basic {

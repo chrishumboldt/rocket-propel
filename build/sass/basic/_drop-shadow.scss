@@ -1,8 +1,8 @@
 /**
- * File: basic/_drop-shadow.scss
+ * File: build/sass/basic/_drop-shadow.scss
  * Type: SASS partial
  * Author: Chris Humboldt
- */
+**/
 
 // Drop shadow
 @mixin drop-shadow($color: fade-out(#000, 0.6), $size: 3px, $vertical-offset: 0px, $horizontal-offset: 0px) {

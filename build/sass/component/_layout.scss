@@ -1,8 +1,8 @@
 /**
- * File: sass/component/_layout.scss
+ * File: build/sass/component/_layout.scss
  * Type: SASS component
  * Author: Chris Humboldt
- */
+**/
 
 @mixin layout-column($type: double, $break: normal) {
    @include row();

@@ -1,9 +1,9 @@
 /**
- * File: basic/_arrow.scss
+ * File: build/sass/basic/_arrow.scss
  * Type: SASS partial
  * Author: Chris Humboldt
  * Based on: http://cssarrowplease.com/
- */
+**/
 
 // Table of contents
 // Basic arrow
@@ -11,7 +11,7 @@
 // No arrow
 
 // Basic arrow
-@mixin arrow($position: bottom, $colour: $red, $size: 20px) {
+@mixin arrow($position: bottom, $colour: $white, $size: 20px) {
 	position: relative;
 	&:after {
 		border: solid transparent;
