@@ -515,15 +515,15 @@ Class | Options | Description
 ```
 
 ### Spacing
-| Class | Options | Description |
-| ---- | ---- | ---- |
-| ._spacing-no | | Remove all padding and margins from an element. |
-| ._pad-no | | Remove all padding from an element. |
-| ._mgn-no | | Remove all margins from an element. |
-| ._pad-[x] | [x] = [integer] | Add [x] amount of padding all around. For example pad-6 will add 6 pixels of padding to the top, right, bottom and left of an element. |
-| ._pad-[p]-[x] | [p] = t, r, b, l [x] = [integer] | Add [x] amount of padding to the [p] side of the element for top, right, bottom or left. |
-| ._mgn-[x] | [x] = [integer] | Add [x] amount of margin to the top, right, bottom and left of an element. |
-| ._mgn-[p]-[x] | [p] = t, r, b, l [x] = [integer] | Add [x] amount of margin to the [p] side of the element for top, right, bottom or left. |
+Class | Options | Description
+---- | ---- | ----
+`._mgn-no` | | Remove all margins from an element.
+`._mgn-[x]` | `[x]`: `1` to `10` | Add `[x]` amount of margin all around.
+`._mgn-[s]-[x]` | `[s]`: `t` `r` `b` `l`<br>`[x]`: `1` to `10` | Add `[x]` amount of margin to the `[s]` side of an element.
+`._pad-[x]` | `[x]`: `1` to `10` | Add `[x]` amount of padding all around.
+`._pad-[s]-[x]` | `[s]`: `t` `r` `b` `l`<br>`[x]`: `1` to `10` | Add `[x]` amount of padding to the `[s]` side of an element.
+`._pad-no` | | Remove all padding from an element.
+`._spacing-no` | | Remove all padding and margins from an element.
 
 ### Text
 | Class | Options | Description |
