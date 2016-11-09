@@ -276,7 +276,7 @@ Mixin | Description
 ### Layout Responsive
 Mixin | Defaults | Description
 ---- | ---- | ----
-`breakpoint(x, y, z)` | `y`: `false`<br>`z`: `false` | A mixin to generate media queries based on Rocket presets or a value.<br>`x`: `large`, `fluid`, `small` or an `em/px` value.<br>`y`: Breakpoint type of `min` or `max`<br>`z`: breakpoint orientation.
+`breakpoint(x, y, z)` | `y`: `false`<br>`z`: `false` | Generate a media query based on a Rocket preset or a value.<br>`x`: `large`, `fluid`, `small` or an `em/px` value.<br>`y`: Breakpoint type of `min` or `max`<br>`z`: breakpoint orientation.
 `breakpoint-v(x, y, z)` | `y`: `false`<br>`z`: `false` | The same as breakpoint except it activates vertically.
 `limit(x)` | `x`: `$limit-width` | Assigns a maximum width to an element and centers it.<br>Anything below the limit will become fluid.<br>Used mainly to contain row elements.
 `offset(x, y)` | `y`: `$column-limit` | Push an element out `x` amount of columns from the left.<br>`z` is the column limit.
