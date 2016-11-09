@@ -88,6 +88,8 @@ Propel will apply all the necessary browser prefixes where needed but no longer 
 Find the other available mixins below:
 
 ### Variables
+Propel comes pre-packaged with a host of SASS variables. They are all listed below.
+
 Variable | Default
 ---- | ----
 `$column-limit` | 12
@@ -162,6 +164,15 @@ Variable | Evaluates To
 `$size-large` | 24px
 `$size-x-large` | 36px
 `$size-x2-large` | 48px
+
+##### Text Weight
+Variable | Value
+---- | ----
+`$weight-thin` | 100
+`$weight-light` | 300
+`$weight-base` | 400
+`$weight-bold` | 700
+`$weight-heavy` | 900
 
 ### Animation
 Mixin | Defaults | Description
