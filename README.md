@@ -201,15 +201,11 @@ Mixin | Defaults | Description
 `visibility(x)` | `x`: `visible` | Set the visibility property of an element.
 
 ### Drop Shadow
-
-##### drop-shadow($color: fade-out(#000, 0.6), $size: 3px, $vertical-offset: 0px, $horizontal-offset: 0px)
-Set the drop shadow of an element with options for colour, size, vertical and horizontal offsets.
-
-##### drop-shadow-inset($color: fade-out(#000, 0.6), $size: 3px, $vertical-offset: 0px, $horizontal-offset: 0px)
-Set an inset drop shadow of an element with options for colour, size, vertical and horizontal offsets.
-
-##### drop-shadow-no()
-Remove any drop shadow from an element.
+Mixin | Defaults | Description
+---- | ---- | ----
+`drop-shadow(clr, size, v, h)` | `clr`: `fade-out(#000, 0.6)`<br>`size`: `3px`<br>`v`: `0px`<br>`h`: `0px` | Set the drop shadow of an element.<br>`v` is the vertical offset.<br>`h` is the horizontal offset.
+`drop-shadow-inset(clr, size, v, h)` | `clr`: `fade-out(#000, 0.6)`<br>`size`: `3px`<br>`v`: `0px`<br>`h`: `0px` | Set and inset drop shadow of an element.<br>`v` is the vertical offset.<br>`h` is the horizontal offset.
+`drop-shadow-no()` | | Remove any drop shadow from an element.
 
 ### Global Setup
 
