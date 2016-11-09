@@ -326,9 +326,9 @@ Mixin | Defaults | Description
 ```
 
 ### Size
-
-##### height($height: 0px, $max: false, $min: false)
-Set the height of an element with optional max and min properties.
+Mixin | Defaults | Description
+---- | ---- | ----
+`height(x, y, z)` | `x`: `0px`<br>`y`: `false`<br>`z`: `false` | Set the height on an element.<br>`y` is the height max.<br>`z` is the height min.
 
 ##### height-max($height: 0px)
 Set the maximum height of an element.
