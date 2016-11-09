@@ -95,7 +95,7 @@ Mixin | Defaults | Description
 `animation-delay(x)` | | Set the animation delay property to `x`.
 `animation-direction(x)` | `x`: `normal` | Set the animation direction property.
 `animation-duration(x)` | | Set the animation duration property to `x`.
-`animation-fill-mode(x)` | `x`: '`forwards`' | Set the animation fill mode property.
+`animation-fill-mode(x)` | `x`: `forwards` | Set the animation fill mode property.
 `animation-iteration(x)` | | Set the animation iteration `x` property.
 `animation-name(x)` | | Set the animation name property.
 `animation-timing-function(x)` | `x`: `ease-out` | Set the animation timing function property.
@@ -181,6 +181,12 @@ Mixin | Defaults |
 `border-radius(x)` | `r`: `2px` |
 `border-radius-[s](x)` | `[s]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`x`: `2px` |
 `border-radius-no()` | |
+
+```sass
+.my-element {
+	@include border-radius-right-top(4px);
+}
+```
 
 ### Display
 Mixin | Defaults | Description
