@@ -214,9 +214,9 @@ Mixin | Defaults | Description
 ```
 
 ### Global Setup
-
-##### global-setup()
-Apply the border-box property to all elements to contain dimensions. Set the default colour to a lighter, more readable black, the background colour to white and the default font to Open Sans with an Arial and Helvetica fallback. Note that this setup is automatically called by Webplate already.
+Mixin | Description
+---- | ----
+`global-setup()` | Apply the border-box property to all elements to contain dimensions. Set the default colour to a lighter, more readable black, the background colour to white and the default font to Open Sans with an Arial and Helvetica fallback. Note that this setup is automatically called by Rocket already.
 
 ### Gradient
 
