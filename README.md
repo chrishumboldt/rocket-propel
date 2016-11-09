@@ -465,7 +465,14 @@ Class | Options | Description
 `._float-[x]` | `[x]`: `l` `r` | Set the float property of an element to `left` or `right`.
 `._float-no` | | Remove the float property from an element.
 `._float-clear` | | Stop all floating elements from affecting any element following.
-`._valign-[x]` | `[p]`: `t` `m` `b` | Set the vertical alignment of an element to `top`, `middle` or `bottom`.
+`._valign-[x]` | `[x]`: `t` `m` `b` | Set the vertical alignment of an element to `top`, `middle` or `bottom`.
+
+```html
+<div class="_center">
+	<div class="_float-r">One</div>
+	<div class="_float-r">Two</div>
+</div>
+```
 
 ### Layout Responsive
 Class | Options | Description
@@ -502,6 +509,10 @@ Class | Options | Description
 ---- | ---- | ----
 `._block-h-[x]` | `[x]`: `10` `20` `50` `100` `200` `500` `1000` | Set the height of an element.<br>`[x]` results in px value.
 `._block-w-[x]` | `[x]`: `10` `20` `50` `100` `200` `500` `1000` | Set the width of an element.<br>`[x]` results in px value.
+
+```html
+<div class="_block-w-10 _block-h-20">Block</div>
+```
 
 ### Spacing
 | Class | Options | Description |
