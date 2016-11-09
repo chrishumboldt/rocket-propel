@@ -119,16 +119,16 @@ Mixin | Defaults | Description
 ### Arrow
 Mixin | Defaults | Description
 ---- | ---- | ----
-`arrow(pos, colour, size)` | `pos`: `bottom`<br>`colour`: `$white`<br>`size`: `20px` | Attach a CSS arrow to an element.
-`arrow-colour(pos, colour)` | `pos`: `bottom`<br>`colour`: `$white` | Change the colour of an elements CSS arrow.
-`arrow-no(colour)` | `colour`: `$white` | Remove an elements CSS arrow<br>Reset the background colour.
+`arrow(pos, clr, size)` | `pos`: `bottom`<br>`clr`: `$white`<br>`size`: `20px` | Attach a CSS arrow to an element.
+`arrow-colour(pos, clr)` | `pos`: `bottom`<br>`clr`: `$white` | Change the colour of an elements CSS arrow.
+`arrow-no(clr)` | `clr`: `$white` | Remove an elements CSS arrow<br>Reset the background colour.
 
 ### Background
 Mixin | Defaults | Description
 ---- | ---- | ----
 `background-attachment(att)` | `att`: `scroll` | Set the background attachment property to `att`.
 `background-clip(clip)` | `clip`: `border-box` | Set the background clip property to `clip`.
-`background-colour(colour)` | | Set the background `colour`.
+`background-colour(clr)` | | Set the background colour to `clr`.
 `background-contain()` | | Set the background size to contain and center position.
 `background-cover()` | | Set the background size to cover and center position.
 `background-origin(or)` | `or`: `padding-box` | Set the background origin property to `or`.
@@ -159,15 +159,11 @@ $images-root: "assets/img/";
 ```
 
 ### Borders
-
-##### border($colour: grey, $size: 1px, $type: solid)
-Set the border property of an element.
-
-##### border-x($colour: grey, $size: 1px, $type: solid)
-Set the border **x** property of an element where x is top, right, bottom, left, horizontal or vertical.
-
-##### border-no()
-Remove all borders from an element.
+Mixin | Defaults | Description
+---- | ---- | ----
+`border(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid` | Set the border property of an element.
+`border-[x](clr, size, type)` | `[x]`: `top` `right` `bottom` `left`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid` | Set the border property of an element.
+`border-no()` | | Remove all borders from an element.
 
 ### Border Radius
 
