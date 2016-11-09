@@ -204,7 +204,7 @@ Mixin | Defaults | Description
 Mixin | Defaults | Description
 ---- | ---- | ----
 `drop-shadow(clr, size, v, h)` | `clr`: `fade-out(#000, 0.6)`<br>`size`: `3px`<br>`v`: `0px`<br>`h`: `0px` | Set the drop shadow of an element.<br>`v` is the vertical offset.<br>`h` is the horizontal offset.
-`drop-shadow-inset(clr, size, v, h)` | `clr`: `fade-out(#000, 0.6)`<br>`size`: `3px`<br>`v`: `0px`<br>`h`: `0px` | Set and inset drop shadow of an element.<br>`v` is the vertical offset.<br>`h` is the horizontal offset.
+`drop-shadow-inset(clr, size, v, h)` | `clr`: `fade-out(#000, 0.6)`<br>`size`: `3px`<br>`v`: `0px`<br>`h`: `0px` | Set an inset drop shadow of an element.<br>`v` is the vertical offset.<br>`h` is the horizontal offset.
 `drop-shadow-no()` | | Remove any drop shadow.
 
 ### Global Setup
