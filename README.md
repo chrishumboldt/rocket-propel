@@ -147,6 +147,22 @@ Variable | Value
 `$trebuchet` | "Trebuchet MS", Helvetica, sans-serif
 `$verdana` | Verdana, Geneva, sans-serif
 
+##### Text Size
+The size evaluates to an em value and then down to a pixel value.
+
+Variable | Evaluates To
+---- | ----
+`$size-x2-small` | 8px
+`$size-x-small` | 10px
+`$size-small` | 12px
+`$size-minor` | 14px
+`$size-base` | 16px
+`$size-slight` | 18px
+`$size-medium` | 20px
+`$size-large` | 24px
+`$size-x-large` | 36px
+`$size-x2-large` | 48px
+
 ### Animation
 Mixin | Defaults | Description
 ---- | ---- | ----
