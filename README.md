@@ -268,15 +268,10 @@ Mixin | Defaults | Description
 `order(int)` | `int`: `0` | Set the flex order property for a flex item with the flex element.
 
 ### Layout Floats
-
-##### float($float)
-Set the float of an element to $float.
-
-##### float-clear()
-Clear the float of an element.
-
-##### float-no()
-Clear the float of an element.
+Mixin | Description
+---- | ----
+`float(x)` | Set the float of an element to `x`.
+`float-no()` | Clear the float of an element.
 
 ### Layout Responsive
 
