@@ -165,6 +165,12 @@ Mixin | Defaults | Description
 `border-[x](clr, size, type)` | `[x]`: `top` `right` `bottom` `left`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid` | Set the border property of an element.
 `border-no()` | | Remove all borders from an element.
 
+```sass
+.my-element {
+	@include border-left($red, 2px);
+}
+```
+
 ### Border Radius
 
 ##### border-radius($radius: 2px)
