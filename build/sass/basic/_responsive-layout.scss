@@ -109,7 +109,7 @@ $min-max: false !default;
       }
    }
 }
-@mixin breakpoint-vertical($breakpoint, $breakpoint-type: false, $orientation: false) {
+@mixin breakpoint-v($breakpoint, $breakpoint-type: false, $orientation: false) {
    @if $breakpoint == retina {
       @media screen and (-webkit-min-device-pixel-ratio: 1.75),
       (min-resolution: 168dpi) {
@@ -161,6 +161,11 @@ $min-max: false !default;
       }
    }
 }
+// This will be deprecated soon
+@mixin breakpoint-vertical($breakpoint, $breakpoint-type: false, $orientation: false) {
+	@include breakpoint-v($breakpoint, $breakpoint-type, $orientation);
+}
+// End
 // Flexbox
 // Based on: https://github.com/zessx/sass-flexbox/blob/master/sass-flexbox.scss
 // By: Samuel Marchal

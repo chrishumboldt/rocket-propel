@@ -277,33 +277,13 @@ Mixin | Description
 Mixin | Defaults | Description
 ---- | ---- | ----
 `breakpoint(x, y, z)` | `y`: `false`<br>`z`: `false` | A mixin to generate media queries based on Rocket presets or a value.<br>`x`: `large`, `fluid`, `small` or an `em/px` value.<br>`y`: Breakpoint type of `min` or `max`<br>`z`: breakpoint orientation.
-
-##### breakpoint($breakpoint, $breakpoint-type: false, $orientation: false)
-A mixin to generate media queries based on the preset Webplate view types or a custom value. The options for $breakpoint are large, fluid, small or an em/px value example breakpoint(50em). $breakpoint-type can be min or max to set the min/max-width of the query and $orientation set the orientation of the breakpoint. False values are ignored.
-
-##### breakpoint-vertical($breakpoint, $breakpoint-type: false, $orientation: false)
-Exactly the same as the above breakpoint mixin except it checks the height property as opposed to the width property.
-
-##### limit()
-Assigns a maximum width to an element based on the $limit-width variable and centers it. Once the screen size is below the limit the element will become fluid and adjust its width to a 100%. Used mainly to contain row elements.
-
-##### offset($x)
-If you offset an element then you push it out $x amount of columns from the left (applied to span elements).
-
-##### offset-r($x)
-This mixin will push anything to the right of the element by $x amount of columns (applied to span elements).
-
-##### row()
-Turns an element into a row which is the basic building block of Propel and is needed to wrap any span elements. A row element will default to a 100% width of its container.
-
-##### span($x)
-Turns an element into a span which can occupy $x amount of columns within the $column-limit. For example @include span(6) will occupy 6 columns within the default 12 which equates to 50% of a containing row.
-
-##### span-new($x)
-Change the span to occupy $x amount of columns within the $column-limit. Apply to already spanned elements.
-
-##### span-reset()
-Reset the spanned element to the the $column-limit and remove all offsets.
+`breakpoint-v(x, y, z)` | `y`: `false`<br>`z`: `false` | The same as breakpoint except it activates vertically.
+`limit(x)` | `x`: `$limit-width` | Assigns a maximum width to an element and centers it.<br>Once the screen size is below the limit the element will become fluid.<br>Used mainly to contain row elements.
+`offset(x, y)` | `y`: `$column-limit` | Push an element out `x` amount of columns from the left.<br>`z` is the column limit.
+`offset-r(x, y)` | `y`: `$column-limit` | Push an element `x` amount of columns from the right.<br>`z` is the column limit.
+`row()` | | Turns an element into a row which is the basic building block of Propel.<br>Row is needed to wrap any **span** elements.<br>A row element will default to a 100% width of its container.
+`span(x, y)` | `y`: `$column-limit` | Span an element `x` amount of columns within the `z` total.<br>See and example below.
+`span-new(x, y)` | `y`: `$column-limit` | Apply a new span amount of `x` to an element.
 
 ### Position
 
