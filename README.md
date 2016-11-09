@@ -121,7 +121,7 @@ Mixin | Defaults | Description
 ---- | ---- | ----
 `arrow(pos, colour, size)` | `pos`: `bottom`<br>`colour`: `$white`<br>`size`: `20px` | Attach a CSS arrow to an element.
 `arrow-colour(pos, colour)` | `pos`: `bottom`<br>`colour`: `$white` | Change the colour of an elements CSS arrow.
-`arrow-no(colour)` | `colour`: `$white` | Remove an elements CSS arrow and reset the background colour.
+`arrow-no(colour)` | `colour`: `$white` | Remove an elements CSS arrow<br>Reset the background colour.
 
 ### Background
 
