@@ -490,18 +490,18 @@ Class | Options | Description
 ```
 
 ### Position
-| Class | Description |
-| ---- | ---- |
-| ._pos-absolute | Set the position of an element to absolute. |
-| ._pos-relative | Set the position of an element to relative. |
-| ._pos-static | Set the position of an element to static. |
-| ._pos-fixed | Set the position of an element to fixed. |
+Class | Description
+---- | ----
+`._pos-absolute` | Set the position of an element to absolute.
+`._pos-relative` | Set the position of an element to relative.
+`._pos-static` | Set the position of an element to static.
+`._pos-fixed` | Set the position of an element to fixed.
 
 ### Sizing
-| Class | Options | Description |
-| ---- | ---- | ---- |
-| ._block-h-[h] | [h] = 10, 20, 50, 100, 200, 500, 1000 | Set the height of an element to [h] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px. |
-| ._block-w-[w] | [w] = 10, 20, 50, 100, 200, 500, 1000 | Set the width of an element to [w] for 10px, 20px, 50px, 100px, 200px, 500px, 1000px. |
+Class | Options | Description
+---- | ---- | ----
+`._block-h-[x]` | `[x]`: `10` `20` `50` `100` `200` `500` `1000` | Set the height of an element.<br>`[x]` results in px value.
+`._block-w-[x]` | `[x]`: `10` `20` `50` `100` `200` `500` `1000` | Set the width of an element.<br>`[x]` results in px value.
 
 ### Spacing
 | Class | Options | Description |
