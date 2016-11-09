@@ -482,6 +482,13 @@ Class | Options | Description
 `._offset-small-[i]` | `[i]`: `1` to `12` | Offset from the left by span of `[i]` at the small breakpoint.
 `._offset-small-r-[i]` | `[i]`: `1` to `12` | Offset from the right by span of `[i]` at the small breakpoint.
 
+```html
+<div class="_row">
+	<div class="_span-12 _span-large-3">Left Column</div>
+	<div class="_span-12 _span-large-9">Right Column</div>
+</div>
+```
+
 ### Position
 | Class | Description |
 | ---- | ---- |
