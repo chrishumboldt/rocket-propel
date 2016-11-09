@@ -25,14 +25,22 @@
 @mixin border-right($colour: $grey, $size: 1px, $type: solid) {
 	border-right: $size $type $colour;
 }
-@mixin border-vertical($colour: $grey, $size: 1px, $type: solid) {
+@mixin border-v($colour: $grey, $size: 1px, $type: solid) {
 	@include border-top($colour, $size, $type);
 	@include border-bottom($colour, $size, $type);
 }
-@mixin border-horizontal($colour: $grey, $size: 1px, $type: solid) {
+@mixin border-h($colour: $grey, $size: 1px, $type: solid) {
 	@include border-left($colour, $size, $type);
 	@include border-right($colour, $size, $type);
 }
+// Soon to be deprecated
+@mixin border-vertical($colour: $grey, $size: 1px, $type: solid) {
+	@include border-v($colour, $size, $type);
+}
+@mixin border-horizontal($colour: $grey, $size: 1px, $type: solid) {
+	@include border-h($colour, $size, $type);
+}
+// End
 @mixin border-no() {
 	border: medium none $black;
 }

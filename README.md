@@ -5,6 +5,7 @@ A lightweight SASS mixin library and responsive CSS layout engine.
 
 * [Getting Started](#getting-started)
 * [SASS Implementation](#sass-implementation)
+   * [Variables](#variables)
    * [Animation](#animation)
    * [Arrow](#arrow)
    * [Background](#background)
@@ -86,6 +87,23 @@ Propel will apply all the necessary browser prefixes where needed but no longer 
 
 Find the other available mixins below:
 
+### Variables
+
+##### Breakpoints
+Mixin | Value | Evaluates To
+---- | ---- | ----
+`$bp-x3-small` | 12.500em | 200px
+`$bp-x2-small` | 18.750em | 300px
+`$bp-x-small` | 21.875em | 350px
+`$bp-small` | 28.125em | 450px
+`$bp-medium` | 34.375em | 550px
+`$bp-large` | 43.750em | 700px
+`$bp-x-large` | 56.250em | 900px
+`$bp-x2-large` | 68.750em | 1100px
+`$bp-x3-large` | 78.125em | 1250px
+`$bp-huge` | 87.500em | 1400px
+`$bp-gargantuan` | 125.000em | 2000px
+
 ### Animation
 Mixin | Defaults | Description
 ---- | ---- | ----
@@ -166,6 +184,8 @@ Mixin | Defaults
 ---- | ----
 `border(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-[s](clr, size, type)` | `[s]`: `top` `right` `bottom` `left`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
+`border-h(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
+`border-v(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-no()` |
 
 ```sass
@@ -331,7 +351,7 @@ Mixin | Defaults | Description
 
 ```sass
 .my-element {
-	@include position(relative, left 10 margin-top 10px)
+	@include position(relative, left 10px margin-top 10px)
 }
 ```
 
