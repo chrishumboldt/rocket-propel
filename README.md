@@ -657,7 +657,7 @@ Class | Options | Description
 <div class="_txt-r">Text aligned right.</div>
 ```
 
-#### Blueplate Deprecated
+## Blueplate Deprecated
 The original library, Blueplate, has been deprecated. The entire Webplate project is being refactored and rebranded with a new development philosophy. Blueplate will be maintained only with bug fixes under the **blueplate** branch.
 
 ## Author
