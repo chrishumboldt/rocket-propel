@@ -286,7 +286,6 @@ Mixin | Defaults | Description
 `span-new(x, y)` | `y`: `$column-limit` | Apply a new span amount of `x` to an element.
 
 ```html
-// Example HTML
 <div class="container">
 	<div class="left">Left Column</div>
 	<div class="right">Right Column</div>
