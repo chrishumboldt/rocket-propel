@@ -265,7 +265,7 @@ Mixin | Defaults | Description
 `flex-shrink(x)` | `x`: `1` | Set the flex shrink property of a flex element.
 `flex-wrap(x)` | `x`: `nowrap` | Set the flex wrap property of a flex element.<br>`x` can be `nowrap`, `wrap` or `wrap-reverse`.
 `justify-content(x)` | `x`: `flex-start` | Set the justify content property of a flex element.<br>`x` can be `flex-start`, `flex-end`, `center`,<br>`space-between` or `space-around`.
-`order(int)` | `int`: `0` | Set the flex order property for a flex item with the flex element.
+`order(int)` | `int`: `0` | Set the flex order property for a flex item.
 
 ### Layout Floats
 Mixin | Description
@@ -328,28 +328,14 @@ Mixin | Defaults | Description
 ### Size
 Mixin | Defaults | Description
 ---- | ---- | ----
-`height(x, y, z)` | `x`: `0px`<br>`y`: `false`<br>`z`: `false` | Set the height on an element.<br>`y` is the height max.<br>`z` is the height min.
-
-##### height-max($height: 0px)
-Set the maximum height of an element.
-
-##### height-min($height: 0px)
-Set the minimum height of an element.
-
-##### size($width: 0px, $height: 0px)
-Set the width and height of an element.
-
-##### square($size)
-Set the width, height and line-height of an element to $size and center the text.
-
-##### width($width: 0px, $max: false, $min: false)
-Set the width of an element with optional max and min properties.
-
-##### width-max($width: 0px)
-Set the maximum width of an element.
-
-##### width-min($width: 0px)
-Set the minimum width of an element.
+`height(x, y, z)` | `x`: `0px`<br>`y`: `false`<br>`z`: `false` | Set the height of an element.<br>`y` is the height max.<br>`z` is the height min.
+`height-max(x)` | `x`: `0px` | Set the maximum height of an element.
+`height-min(x)` | `x`: `0px` | Set the minimum height of an element.
+`size(x, y)` | `x`: `0px`<br>`y`: `0px` | Set the width `x` and height `y` of an element.
+`square(x)` | | Set the width, height and line-height of an element to `x` and center the text.
+`width(x, y, z)` | `x`: `0px`<br>`y`: `false`<br>`z`: `false` | Set the width of an element.<br>`y` is the width max.<br>`z` is the width min.
+`width-max(x)` | `x`: `0px` | Set the maximum width of an element.
+`width-min(x)` | `x`: `0px` | Set the minimum width of an element.
 
 ### Spacing Margins
 
