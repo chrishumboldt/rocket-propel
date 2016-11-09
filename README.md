@@ -110,6 +110,13 @@ Variable | Value | Evaluates To
 `$bp-huge` | 87.500em | 1400px
 `$bp-gargantuan` | 125.000em | 2000px
 
+##### Colours
+Type | Variables
+---- | ----
+Mono | `$black` `$black-base` `$grey-x2-light` `$grey-x-light` `$grey-light` `$grey` `$grey-dark` `$grey-x-dark` `$grey-x2-dark`
+Primary | `$aqua` `$blue` `$green` `$orange` `$pink` `$purple` `$red` `$yellow`
+Secondary | `$asbestos` `$asphalt` `$bondi-blue` `$cloud` `$concrete` `$grey-blue-x-light` `$grey-blue-light` `$grey-blue` `$grey-blue-dark` `$grey-blue-x-dark` `$midnight` `$off-white` `$off-white-dark` `$river-bed` `$silver`
+
 ### Animation
 Mixin | Defaults | Description
 ---- | ---- | ----
