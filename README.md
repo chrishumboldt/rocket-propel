@@ -193,9 +193,9 @@ Mixin | Defaults | Description
 ---- | ---- | ----
 `hide()` | | Hide an element.
 `hide-visually()` | | Hide an element but still make it accessible to the DOM.<br>Used for instances where accessibility is needed.
-`show(type)` | `type`: `block` | Show an element.
+`show(x)` | `x`: `block` | Show an element with display type of `x`.
 `opacity(int)` | `int`: `0.60` | Set the opacity of an element.
-`overflow(type, direction)` | `type`: `visible`<br>`direction`: `false` | Set the overflow of an element.
+`overflow(x, direction)` | `x`: `visible`<br>`direction`: `false` | Set the overflow of an element.
 `perspective(x)` | `x`: `0px` | Set the perspective of an element.
 `transparency(int)` | `int`: `0.60` | Set the transparency of an element.<br>You can also use the **opacity** mixin as an alternative.
 `visibility(x)` | `x`: `visible` | Set the visibility property of an element.
