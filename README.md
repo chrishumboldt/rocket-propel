@@ -124,36 +124,18 @@ Mixin | Defaults | Description
 `arrow-no(colour)` | `colour`: `$white` | Remove an elements CSS arrow<br>Reset the background colour.
 
 ### Background
-
-##### background-attachment($attachment: scroll)
-Set the background attachment property to $attachment.
-
-##### background-clip($clip: border-box)
-Set the background clip property to $clip.
-
-##### background-colour($colour: grey)
-Set the background colour to $colour.
-
-##### background-contain()
-Set the background size to contain, the position to center and stop it from repeating.
-
-##### background-cover()
-Set the background size to cover, the position to center and stop it from repeating.
-
-##### background-origin($origin: padding-box)
-Set the background origin property to $origin.
-
-##### background-position($position: center)
-Set the background position property to $position.
-
-##### background-repeat($repeat: repeat)
-Set the background repeat property to $repeat.
-
-##### background-size($size: auto)
-Set the background size property to $size.
-
-##### background-single()
-Set the background position to center and stop it from repeating.
+Mixin | Defaults | Description
+---- | ---- | ----
+`background-attachment(att)` | `att`: `scroll` | Set the background attachment property to $attachment.
+`background-clip(clip)` | `clip`: `border-box` | Set the background clip property to $clip.
+`background-colour(colour)` | | Set the background `colour`.
+`background-contain()` | | Set the background size to contain, the position to center and stop it from repeating.
+`background-cover()` | | Set the background size to cover, the position to center and stop it from repeating.
+`background-origin(or)` | `or`: `padding-box` | Set the background origin property to `or`.
+`background-position(pos)` | `pos`: `center` | Set the background position property to `pos`.
+`background-repeat(rep)` | `rep`: `repeat` | Set the background repeat property to `rep`.
+`background-size(size)` | `size`: `auto` | Set the background size property to `size`.
+`background-single()` | | Set the background position to center and stop it from repeating.
 
 ### Background Images
 **Note** that all the image urls already include the relative image path as per $images-root settings variable.
