@@ -223,14 +223,14 @@ Mixin | Description
 
 Mixin | Defaults | Description
 ---- | ---- | ----
-`gradient-animate(x, y, angle)` | `angle`: `135deg` | Apply an animated background gradient.
-`gradient-animate-horizontal(x, y)` | | Apply an animated background gradient from left to right.
-`gradient-animate-vertical(x, y)` | | Apply an animated background gradient from top to bottom.
-`gradient-animate-no()` | | Apply any animated background gradient.
-`gradient-angle(x, y, angle)` | `angle`: `-45deg` | Apply a background gradient.
-`gradient-horizontal(x, y)` | | Apply a background gradient from left to right.
-`gradient-vertical(x, y)` | | Apply a background gradient from top to bottom.
-`gradient-no()` | | Apply any background gradient.
+`gradient-animate(x, y, angle)` | `angle`: `135deg` | Apply animated background gradient.
+`gradient-animate-horizontal(x, y)` | | Apply animated background gradient from left to right.
+`gradient-animate-vertical(x, y)` | | Apply animated background gradient from top to bottom.
+`gradient-animate-no()` | | Remove any animated background gradient.
+`gradient-angle(x, y, angle)` | `angle`: `-45deg` | Apply background gradient.
+`gradient-horizontal(x, y)` | | Apply background gradient from left to right.
+`gradient-vertical(x, y)` | | Apply background gradient from top to bottom.
+`gradient-no()` | | Remove any background gradient.
 
 ### iOS
 Mixin | Description
