@@ -307,23 +307,23 @@ Mixin | Defaults | Description
 			@include span-new(3); // Span of 3 is a width of 25% (3/12).
 		}
 		.right {
-			@include span-new(9); // Span to 9 is a width of 75% (9/12).
+			@include span-new(9); // Span of 9 is a width of 75% (9/12).
 		}
 	}
 }
 ```
 
 ### Position
+Mixin | Defaults | Description
+---- | ---- | ----
+`position(x, opt)` | `x`: `relative` | Set the position of an element to `x`.<br>`opt` is optional.<br>`opt` can include `top`, `right`, `bottom`, `left`, `margin-top`, `margin-right`, `margin-bottom` and `margin-left`.
+`position-set(opt)` | | `opt` can include `top`, `right`, `bottom`, `left`, `margin-top`, `margin-right`, `margin-bottom` and `margin-left`.
 
-##### position($position: relative, $options)
-Set the position of an element to $position. $options refers to the positional options and can top, right, bottom, left, margin-top, margin-right, margin-bottom and margin-left.
-
-For example: @include position(relative, top 10 margin-top 10px).
-
-##### position-set($options)
-Change the elements position options. $options can be top, right, bottom, left, margin-top, margin-right, margin-bottom and margin-left.
-
-For example: @include position-set(left 10 bottom 10px).
+```sass
+.my-element {
+	@include position(relative, left 10 margin-top 10px)
+}
+```
 
 ### Size
 
