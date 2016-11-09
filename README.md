@@ -462,25 +462,25 @@ Class | Options
 Class | Options | Description
 ---- | ---- | ----
 `._center` | | Center an element.
-`._float-[x]` | `[x]`: `l` `r` | Set the float property of an element to left or right.
+`._float-[x]` | `[x]`: `l` `r` | Set the float property of an element to `left` or `right`.
 `._float-no` | | Remove the float property from an element.
 `._float-clear` | | Stop all floating elements from affecting any element following.
-`._valign-[x]` | `[p]`: `t` `m` `b` | Set the vertical alignment of an element to top, middle or bottom.
+`._valign-[x]` | `[p]`: `t` `m` `b` | Set the vertical alignment of an element to `top`, `middle` or `bottom`.
 
 ### Layout Responsive
-| Class | Options | Description |
-| ---- | ---- | ---- |
-| ._row | | Set the element to a row. Used on responsive containers |
-| ._span-[i] | [i] = 1 to 12 | Set the responsive width of an element within a row. The spans are base 12. |
-| ._span-large-[i] | [i] = 1 to 12 | Set the responsive width of an element within a row at the large breakpoint. |
-| ._span-small-[i] | [i] = 1 to 12 | Set the responsive width of an element within a row at the small breakpoint. |
-| ._limit | | Limit an elements width to 68.750em (default) and center. |
-| ._offset-[i] | [i] = 1 to 12 | Offset an element from the left by a span of [i]. The spans are base 12. |
-| ._offset-r-[i] | [i] = 1 to 12 | Offset an element from the right by a span of [i]. |
-| ._offset-large-[i] | [i] = 1 to 12 | Offset an element from the left by a span of [i] at the large breakpoint. |
-| ._offset-large-r-[i] | [i] = 1 to 12 | Offset an element from the right by a span of [i] at the large breakpoint. |
-| ._offset-small-[i] | [i] = 1 to 12 | Offset an element from the left by a span of [i] at the small breakpoint. |
-| ._offset-small-r-[i] | [i] = 1 to 12 | Offset an element from the right by a span of [i] at the small breakpoint. |
+Class | Options | Description
+---- | ---- | ----
+`._row` | | Set the element to a row. Used on responsive containers
+`._span-[i]` | `[i]`: `1` to `12` | Set width of an element within a row. The spans are base 12.
+`._span-large-[i]` | `[i]`: `1` to `12` | Set width of an element within a row at the large breakpoint.
+`._span-small-[i]` | `[i]`: `1` to `12` | Set width of an element within a row at the small breakpoint.
+`._limit` | | Limit an elements width to 68.750em (default) and center.
+`._offset-[i]` | `[i]`: `1` to `12` | Offset element from the left by span `[i]`. The spans are base 12.
+`._offset-r-[i]` | `[i]`: `1` to `12` | Offset element from the right by span `[i]`.
+`._offset-large-[i]` | `[i]`: `1` to `12` | Offset element from the left by span `[i]` at the large breakpoint.
+`._offset-large-r-[i]` | `[i]`: `1` to `12` | Offset element from the right by span `[i]` at the large breakpoint.
+`._offset-small-[i]` | `[i]`: `1` to `12` | Offset element from the left by span of `[i]` at the small breakpoint.
+`._offset-small-r-[i]` | `[i]`: `1` to `12` | Offset element from the right by span of `[i]` at the small breakpoint.
 
 ### Position
 | Class | Description |
