@@ -299,8 +299,15 @@ Mixin | Defaults | Description
 	.left,
 	.right {
 		@include span(12); // A span of 12 within a column limit of 12 is width of 100%.
-		@include breakpoint (large) {
-			@include span-new(6); // Change the span to 6 which is a width of 50%.
+	}
+
+	// Change the layout at the large breakpoint
+	@include breakpoint (large) {
+		.left {
+			@include span-new(3); // Change the span to 3 which is a width of 25%.
+		}
+		.right {
+			@include span-new(9); // Change the span to 3 which is a width of 75%.
 		}
 	}
 }
