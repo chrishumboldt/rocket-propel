@@ -176,9 +176,9 @@ Mixin | Defaults
 ### Border Radius
 Set the border radius property on an element.
 
-Mixin | Defaults |
+Mixin | Options & Defaults |
 ---- | ---- |
-`border-radius(x)` | `r`: `2px` |
+`border-radius(x)` | `x`: `2px` |
 `border-radius-[s](x)` | `[s]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`x`: `2px` |
 `border-radius-no()` | |
 
@@ -253,9 +253,9 @@ For information on flex visit <a href="https://css-tricks.com/snippets/css/a-gui
 
 Mixin | Defaults | Description
 ---- | ---- | ----
-`align-content(x)` | `x`: `flex-start` | Set the align content property of a flex element.<br> `x` can be `flex-start`, `flex-end`, `center`, `space-between`, `space-around` or `stretch`.
-`align-items(x)` | `x`: `flex-start` | Set the align items property of a flex element.<br> `x` can be `flex-start`, `flex-end`, `center`, `space-between`, `space-around` or `stretch`.
-`align-self(x)` | `x`: `auto` | Set the align self property of a flex element.<br> `x` can be `flex-start`, `flex-end`, `center`, `space-between`, `space-around` or `stretch`.
+`align-content(x)` | `x`: `flex-start` | Set the align content property of a flex element.<br> `x` can be `flex-start`, `flex-end`, `center`,<br>`space-between`, `space-around` or `stretch`.
+`align-items(x)` | `x`: `flex-start` | Set the align items property of a flex element.<br> `x` can be `flex-start`, `flex-end`, `center`,<br>`space-between`, `space-around` or `stretch`.
+`align-self(x)` | `x`: `auto` | Set the align self property of a flex element.<br> `x` can be `flex-start`, `flex-end`, `center`,<br>`space-between`, `space-around` or `stretch`.
 `flex(grow, shrink, basis)` | `grow`: `0`<br>`shrink`: `1`<br>`basis`: `auto` | Set the all the flex properties for a flex item.
 `flex-basis(x)` | `basis`: `auto` | Set the flex basis property for a flex item.
 `flex-direction(x)` | `x`: `row` | Set the flex direction property of a flex element.<br>`x` can be `row`, `row-reverse`, `column` or `column-reverse`.
@@ -264,7 +264,7 @@ Mixin | Defaults | Description
 `flex-grow(x)` | `x`: `0` | Set the flex grow property of a flex element.
 `flex-shrink(x)` | `x`: `1` | Set the flex shrink property of a flex element.
 `flex-wrap(x)` | `x`: `nowrap` | Set the flex wrap property of a flex element.<br>`x` can be `nowrap`, `wrap` or `wrap-reverse`.
-`justify-content(x)` | `x`: `flex-start` | Set the justify content property of a flex element.<br>`x` can be `flex-start`, `flex-end`, `center`, `space-between` or `space-around`.
+`justify-content(x)` | `x`: `flex-start` | Set the justify content property of a flex element.<br>`x` can be `flex-start`, `flex-end`, `center`,<br>`space-between` or `space-around`.
 `order(int)` | `int`: `0` | Set the flex order property for a flex item with the flex element.
 
 ### Layout Floats
