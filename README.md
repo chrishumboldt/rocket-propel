@@ -219,38 +219,23 @@ Mixin | Description
 `global-setup()` | Apply the border-box property to all elements to contain dimensions. Set the default colour to a lighter, more readable black, the background colour to white and the default font to Open Sans with an Arial and Helvetica fallback. Note that this setup is automatically called by Rocket already.
 
 ### Gradient
+**Note** that the values `x` and `y` are the starting and ending gradient colours.
 
-##### gradient-animate($colour-1, $colour-2, $angle)
-Apply an animated gradient to a background with the relevant colours and angle of your choice.
-
-##### gradient-animate-angle($top-left-colour, $bottom-right-colour)
-Apply an animated angle gradient to a background with the appropriate top left to bottom right colours.
-
-##### gradient-animate-horizontal($left-colour, $right-colour)
-Apply an animated horizontal gradient to a background with the appropriate left to right colours.
-
-##### gradient-animate-vertical($top-colour, $bottom-colour)
-Apply an animated vertical gradient to a background with the appropriate top to bottom colours.
-
-##### gradient-animate-no()
-Remove any animated gradient from a background.
-
-##### gradient-angle($left-colour, $right-colour, $angle: -45deg)
-Apply a gradient to a background with the relevant colours and angle of your choice.
-
-##### gradient-horizontal($left-colour, $right-colour)
-Apply a linear gradient to a background with the appropriate left to right colours.
-
-##### gradient-vertical($top-colour, $bottom-colour)
-Apply a linear gradient to a background with the appropriate top to bottom colours.
-
-##### gradient-no()
-Remove the gradient styling.
+Mixin | Defaults | Description
+---- | ---- | ----
+`gradient-animate(x, y, angle)` | `angle`: `135deg` | Apply an animated background gradient.
+`gradient-animate-horizontal(x, y)` | | Apply an animated background gradient from left to right.
+`gradient-animate-vertical(x, y)` | | Apply an animated background gradient from top to bottom.
+`gradient-animate-no()` | | Apply any animated background gradient.
+`gradient-angle(x, y, angle)` | `angle`: `-45deg` | Apply a background gradient.
+`gradient-horizontal(x, y)` | | Apply a background gradient from left to right.
+`gradient-vertical(x, y)` | | Apply a background gradient from top to bottom.
+`gradient-no()` | | Apply any background gradient.
 
 ### iOS
-
-##### ios-render()
-Set some special properties like Webkit's backface visibility and perspective property to help with rendering elements like images.
+Mixin | Description
+---- | ----
+ios-render() | Set some special properties like Webkit's backface visibility and perspective property to help with rendering elements like images.
 
 ### Layout
 
