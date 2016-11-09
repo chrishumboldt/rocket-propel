@@ -126,8 +126,8 @@ Mixin | Defaults | Description
 ### Background
 Mixin | Defaults | Description
 ---- | ---- | ----
-`background-attachment(att)` | `att`: `scroll` | Set the background attachment property to $attachment.
-`background-clip(clip)` | `clip`: `border-box` | Set the background clip property to $clip.
+`background-attachment(att)` | `att`: `scroll` | Set the background attachment property to `att`.
+`background-clip(clip)` | `clip`: `border-box` | Set the background clip property to `clip`.
 `background-colour(colour)` | | Set the background `colour`.
 `background-contain()` | | Set the background size to contain and center position.
 `background-cover()` | | Set the background size to cover and center position.
@@ -138,22 +138,25 @@ Mixin | Defaults | Description
 `background-single()` | | Set the background position to center<br>Stop the background from repeating.
 
 ### Background Images
-**Note** that all the image urls already include the relative image path as per $images-root settings variable.
+**Note** that all the image urls already include the relative image path as per `$images-root` settings variable.
 
-##### background-image($image-url, $position: center)
-Set the background image URL of an element with an optional position property.
+Mixin | Defaults | Description
+---- | ---- | ----
+`background-image(url, pos)` | `pos`: `top left` | Set the background image on an element.
+`background-image-contain(url, pos)` | `pos`: `center` | Set a contained background image on an element.
+`background-image-cover(url, pos)` | `pos`: `center` | Set a covered background image on an element.
+`background-image-parallax(url)` | | Set a parallax style background image on an element.
+`background-image-single(url, pos)` | `pos`: `center` | Set a single background image on an element.
 
-##### background-image-contain($image-url, $position: center)
-Set the background image URL to be contained within the element with an optional position property.
+```sass
+// Change the images root if you want to.
+$images-root: "assets/img/";
 
-##### background-image-cover($image-url, $position: center)
-Set the background image URL to cover the element with an optional position property.
-
-##### background-image-parallax($image-url)
-Set the background image URL of an element with a fixed position property. Used mainly for a parallax style effect.
-
-##### background-image-single($image-url, $position: center)
-Set the background image URL of an element with no-repeat and an optional position property.
+// Set the background
+.my-element {
+	@include background-image-cover(global/background.png);
+}
+```
 
 ### Borders
 
