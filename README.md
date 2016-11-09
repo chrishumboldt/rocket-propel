@@ -432,10 +432,10 @@ Find the other available classes below:
 Class | Options | Description
 ---- | ---- | ----
 `._back-pos-[x]` | `[x]`: `t` `r` `b` `l` `c` | Set the background position of an element.<br>`[x]` is for top, right, bottom, left or center.
-`._back-repeat-[x]` | `[x]`: `no` `y` `x` | Set the background repeat of an element.<br>`[x]` is for repeat no, along y axis or along x axis.
+`._back-repeat-[x]` | `[x]`: `no` `y` `x` | Set the background repeat of an element.<br>`[x]` is for repeat no, along the Y axis or along the X axis.
 `._back-single` | | Set the background of an element to not repeat and to be centered.
-`._back-contain` | | Set the background of an element to not repeat and to contain within the element.
-`._back-cover` | | Set the background of an element to not repeat and to cover the element completely.
+`._back-contain` | | Set the background of an element to not repeat and to contain.
+`._back-cover` | | Set the background of an element to not repeat and to cover.
 `._back-black` | | Set the background colour to black.
 `._back-grey` | | Set the background colour to medium grey.
 `._back-grey-light` | | Set the background colour to light grey.
