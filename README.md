@@ -243,7 +243,7 @@ Mixin | Defaults | Description
 `box-sizing(x)` | `x`: `content-box` | Set the box sizing style of an element.
 `center()` | | Center an element within its container.
 `center-vertical()` | | Center an element vertically within its container.
-`clearfix()` | | Clear the zoom and set the clear style to both for the element.<br>No elements will be allowed to float to the left and right of this element.
+`clearfix()` | | Clear the zoom and set the clear style to both for the element.
 `level(int)` | `int`: `1` | Set the z-index of an element to `int`.<br>You can also use the z-index mixin as an alternative.
 `vertical-align(x)` | | Set the vertical alignment of an element to `x`.
 `z-index(int)` | `x`: `1` | Set the z-index of an element to `x`.
@@ -429,29 +429,29 @@ Because all classes are declared on the DOM elements themselves, Propel sees the
 Find the other available classes below:
 
 ### Background
-| Class | Options | Description |
-| ---- | ---- | ---- |
-| ._back-pos-[p] | [p] = t, r, b, l, c | Set the background position of an element to [p] for top, right, bottom, left or center. |
-| ._back-repeat-[r] | [r] = no, y, x | Set the background repeat of an element to [r] for no repeating, repeat along y axis or repeat along x axis. |
-| ._back-single | | Set the background of an element to not repeat and to be centered. |
-| ._back-contain | | Set the background of an element to not repeat and to contain within the element. |
-| ._back-cover | | Set the background of an element to not repeat and to cover the element completely. |
-| ._back-black | | Set the background colour to black. |
-| ._back-grey | | Set the background colour to medium grey. |
-| ._back-grey-light | | Set the background colour to light grey. |
-| ._back-white | | Set the background colour to white. |
+Class | Options | Description
+---- | ---- | ----
+`._back-pos-[x]` | `[x]`: `t` `r` `b` `l` `c` | Set the background position of an element.<br>`[x]` is `top`, `right`, `bottom`, `left` or `center`.
+`._back-repeat-[x]` | `[x]`: `no` `y` `x` | Set the background repeat of an element.<br>`[x]` for no repeating, repeat along y axis or repeat along x axis.
+`._back-single` | | Set the background of an element to not repeat and to be centered.
+`._back-contain` | | Set the background of an element to not repeat and to contain within the element.
+`._back-cover` | | Set the background of an element to not repeat and to cover the element completely.
+`._back-black` | | Set the background colour to black.
+`._back-grey` | | Set the background colour to medium grey.
+`._back-grey-light` | | Set the background colour to light grey.
+`._back-white` | | Set the background colour to white.
 
 ### Display
-| Class | Options | Description |
-| ---- | ---- | ---- |
-| ._hide | | Hide an element. |
-| ._hide-visually | | Hide an element visually, however it will still register as on the page. |
-| ._hide-large | | Hide an element in large view only. |
-| ._hide-small | | Hide an element in small view only. |
-| ._show | | Show an element. |
-| ._show-large | | Show an element in large view only. |
-| ._show-small | | Show an element in small view only. |
-| ._transparency-[o] | [o] = 100, 75, 50, 25, 0 | Set the opacity of an element to [o] for 100%, 75%, 50%, 25% or 0%. |
+Class | Options | Description
+---- | ---- | ----
+`._hide` | | Hide an element.
+`._hide-visually` | | Hide an element visually, however it will still register as on the page.
+`._hide-large` | | Hide an element in large view only.
+`._hide-small` | | Hide an element in small view only.
+`._show` | | Show an element.
+`._show-large` | | Show an element in large view only.
+`._show-small` | | Show an element in small view only.
+`._transparency-[x]` | `[x]`: `100` `75` `50` `25` `0` | Set the opacity of an element.<br>`[x]` is for `100%`, `75%`, `50%`, `25%` or `0%`.
 
 ### Global
 | Class | Options |
