@@ -525,6 +525,11 @@ Class | Options | Description
 `._pad-no` | | Remove all padding from an element.
 `._spacing-no` | | Remove all padding and margins from an element.
 
+```html
+<div class="_pad-t-10">Padding top of 10 pixels</div>
+<div class="_mgn-r-10">Margin right of 8 pixels</div>
+```
+
 ### Text
 Class | Options | Description
 ---- | ---- | ----
