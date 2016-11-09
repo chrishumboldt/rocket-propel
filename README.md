@@ -540,6 +540,11 @@ Class | Options | Description
 `._txt-white` | | Set the font colour to white.
 `._txt-grey` | | Set the font colour to medium grey.
 
+```html
+<div class="_txt-weight-xl">Very light text.</div>
+<div class="_txt-r">Text aligned right.</div>
+```
+
 ## Author
 Created and maintained by Chris Humboldt<br>
 Website: <a href="http://chrishumboldt.com/">chrishumboldt.com</a><br>
