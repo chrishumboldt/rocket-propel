@@ -344,21 +344,29 @@ Mixin | Defaults | Description
 `margin-[s](x)` | <br>`x`: `24px` | Set the margin side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
 `margin-no()` | | Set the margin of an element to 0.
 
+```sass
+.my-element {
+   @include margin-bottom(12px);
+}
+```
+
 ### Spacing Padding
+Mixin | Defaults | Description
+---- | ---- | ----
+`padding(x)` | `x`: `24px` | Set all the padding of an element.
+`padding-[s](x)` | <br>`x`: `24px` | Set the padding side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
+`padding-no()` | | Set the padding of an element to 0.
 
-##### padding($padding: 24px)
-Set the padding of an element in all directions.
-
-##### padding-x($padding: 24px)
-Set the **x** padding of an element where is x is top, right, bottom, left, horizontal, vertical.
-
-##### padding-no()
-Set the padding of an element to 0.
+```sass
+.my-element {
+   @include padding-right(20px);
+}
+```
 
 ### Spacing Remove
-
-##### spacing-no()
-Remove all padding and margins from an element.
+Mixin | Description
+---- | ----
+`spacing-no()` | Remove all padding and margins from an element.
 
 ### Text
 
