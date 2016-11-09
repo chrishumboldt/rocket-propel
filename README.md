@@ -92,14 +92,14 @@ Mixin | Defaults | Description
 `animate-no()` | | Remove all transition styles for an element.
 `animate-timing-function(timing)` | | Set the transition `timing` function for an element.
 `animation(n, dur, i, dir, f)` | `dur`: `0.4s`<br>`i`: `false`<br>`dir`: `false`<br>`f`: `false` | Set all the animation properties.<br>`n` = name<br>`dur` = duration<br>`i` = iteration<br>`dir` = direction<br>`f` = fill mode
-`animation-delay($delay)` | | Set the animation delay property.
-`animation-direction(dir)` | `dir`: `normal` | Set the animation direction property.
-`animation-duration(dur)` | | Set the animation duration property.
-`animation-fill-mode(fill)` | `fill`: '`forwards`' | Set the animation fill mode property.
-`animation-iteration(i)` | | Set the animation iteration `i` property.
-`animation-name(name)` | | Set the animation name property.
-`animation-timing-function(t)` | `t`: `ease-out` | Set the animation timing function property.
-`keyframes(name)` | | Generate the animation keyframes with name `name`.
+`animation-delay(x)` | | Set the animation delay property to `x`.
+`animation-direction(x)` | `x`: `normal` | Set the animation direction property.
+`animation-duration(x)` | | Set the animation duration property to `x`.
+`animation-fill-mode(x)` | `x`: '`forwards`' | Set the animation fill mode property.
+`animation-iteration(x)` | | Set the animation iteration `x` property.
+`animation-name(x)` | | Set the animation name property.
+`animation-timing-function(x)` | `x`: `ease-out` | Set the animation timing function property.
+`keyframes(x)` | | Generate the animation keyframes with name `x`.
 
 ```sass
 // Animate block on hover
@@ -126,15 +126,15 @@ Mixin | Defaults | Description
 ### Background
 Mixin | Defaults | Description
 ---- | ---- | ----
-`background-attachment(att)` | `att`: `scroll` | Set the background attachment property to `att`.
-`background-clip(clip)` | `clip`: `border-box` | Set the background clip property to `clip`.
-`background-colour(clr)` | | Set the background colour to `clr`.
+`background-attachment(x)` | `x`: `scroll` | Set the background attachment property to `x`.
+`background-clip(x)` | `x`: `border-box` | Set the background clip property to `x`.
+`background-colour(x)` | | Set the background colour to `x`.
 `background-contain()` | | Set the background size to contain and center position.
 `background-cover()` | | Set the background size to cover and center position.
-`background-origin(or)` | `or`: `padding-box` | Set the background origin property to `or`.
-`background-position(pos)` | `pos`: `center` | Set the background position property to `pos`.
-`background-repeat(rep)` | `rep`: `repeat` | Set the background repeat property to `rep`.
-`background-size(size)` | `size`: `auto` | Set the background size property to `size`.
+`background-origin(x)` | `x`: `padding-box` | Set the background origin property to `x`.
+`background-position(x)` | `x`: `center` | Set the background position property to `x`.
+`background-repeat(x)` | `x`: `repeat` | Set the background repeat property to `x`.
+`background-size(x)` | `x`: `auto` | Set the background size property to `x`.
 `background-single()` | | Set the background position to center<br>Stop the background from repeating.
 
 ### Background Images
@@ -164,7 +164,7 @@ Set the border property of an element.
 Mixin | Defaults
 ---- | ----
 `border(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
-`border-[x](clr, size, type)` | `[x]`: `top` `right` `bottom` `left`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
+`border-[s](clr, size, type)` | `[s]`: `top` `right` `bottom` `left`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-no()` |
 
 ```sass
@@ -178,8 +178,8 @@ Set the border radius property on an element.
 
 Mixin | Defaults |
 ---- | ---- |
-`border-radius(r)` | `r`: `2px` |
-`border-radius-[x](r)` | `[x]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`r`: `2px` |
+`border-radius(x)` | `r`: `2px` |
+`border-radius-[s](x)` | `[s]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`x`: `2px` |
 `border-radius-no()` | |
 
 ### Display
