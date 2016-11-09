@@ -431,8 +431,8 @@ Find the other available classes below:
 ### Background
 Class | Options | Description
 ---- | ---- | ----
-`._back-pos-[x]` | `[x]`: `t` `r` `b` `l` `c` | Set the background position of an element.<br>`[x]` is `top`, `right`, `bottom`, `left` or `center`.
-`._back-repeat-[x]` | `[x]`: `no` `y` `x` | Set the background repeat of an element.<br>`[x]` for no repeating, repeat along y axis or repeat along x axis.
+`._back-pos-[x]` | `[x]`: `t` `r` `b` `l` `c` | Set the background position of an element.<br>`[x]` is for top, right, bottom, left or center.
+`._back-repeat-[x]` | `[x]`: `no` `y` `x` | Set the background repeat of an element.<br>`[x]` is for repeat no, along y axis or along x axis.
 `._back-single` | | Set the background of an element to not repeat and to be centered.
 `._back-contain` | | Set the background of an element to not repeat and to contain within the element.
 `._back-cover` | | Set the background of an element to not repeat and to cover the element completely.
