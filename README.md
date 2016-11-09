@@ -366,45 +366,23 @@ Mixin | Defaults | Description
 ### Spacing Remove
 Mixin | Description
 ---- | ----
-`spacing-no()` | Remove all padding and margins from an element.
+`spacing-no()` | Remove all margins and padding from an element.
 
 ### Text
-
-##### text-align($align: left)
-Set the text alignment of an element.
-
-##### text-colour($colour: $white)
-Set the text colour of an element.
-
-##### text-decoration($decoration: none)
-Set the text decoration of an element.
-
-##### text-ellipsis()
-Set an elements text overflow to ellipsis and prevent word wrapping.
-
-##### text-font($font: $helvetica)
-Set the text font family of an element.
-
-##### text-hide()
-Hide the text within an element.
-
-##### text-letter-spacing($spacing: normal)
-Set the text letter spacing of an element.
-
-##### text-line-height($height: 16px)
-Set the line height of an element in pixels. Calculates an additional rem overwrite should the browser support it.
-
-##### text-size($size: 16px)
-Set the font size of an element in pixels. Calculates an additional rem overwrite should the browser support it.
-
-##### text-style($style: normal)
-Set the text style of an element to $style.
-
-##### text-transform($transform: none)
-Set the text transform property of an element to $transform. $transform can be none, capitalize, uppercase, lowercase or initial.
-
-##### text-weight($weight: normal)
-Set the text weight of an element to $weight.
+Mixin | Defaults | Description
+---- | ---- | ----
+`text-align(x)` | `x`: `left` | Set the text alignment of an element.
+`text-colour(x)` | `x`: `$white` | Set the text colour of an element.
+`text-decoration(x)` | `x`: `none` | Set the text decoration of an element.
+`text-ellipsis()` | | Set an elements text overflow to ellipsis and prevent word wrapping.
+`text-font(x)` | `x`: `$helvetica` | Set the text font family of an element.
+`text-hide()` | | Hide the text within an element.
+`text-letter-spacing(x)` | `x`: `normal` | Set the text letter spacing of an element.
+`text-line-height(x)` | `x`: `16px` |  Set the line height of an element in pixels.<br>Calculates an additional rem overwrite should the browser support it.
+`text-size(x)` | `x`: `16px` | Set the font size of an element in pixels.<br>Calculates an additional rem overwrite should the browser support it.
+`text-style()` | `x`: `normal` | Set the text style of an element to $style.
+`text-transform(x)` | `x`: `none` | Set the text transform property of an element to `x`.<br>`x` can be `none`, `capitalize`, `uppercase`, `lowercase` or `initial`.
+`text-weight(x)` | `x`: `normal` | Set the text weight of an element to `x`.
 
 ### Transform
 
