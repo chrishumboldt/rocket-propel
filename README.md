@@ -242,7 +242,7 @@ Mixin | Defaults | Description
 ---- | ---- | ----
 `box-sizing(x)` | `x`: `content-box` | Set the box sizing style of an element.
 `center()` | | Center an element within its container.
-`center-vertical()` | | Center an element vertically within its container.
+`center-v()` | | Center an element vertically within its container.
 `clearfix()` | | Clear the zoom and set the clear style to both for the element.
 `level(int)` | `int`: `1` | Set the z-index of an element to `int`.<br>You can also use the z-index mixin as an alternative.
 `vertical-align(x)` | | Set the vertical alignment of an element to `x`.

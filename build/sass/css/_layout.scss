@@ -20,6 +20,9 @@
 	._center {
 		@include center();
 	}
+	._center-v {
+		@include center-v();
+	}
 	._valign-t {
 		@include vertical-align(top);
 	}

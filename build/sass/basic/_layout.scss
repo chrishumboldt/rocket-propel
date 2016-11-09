@@ -24,13 +24,18 @@
 @mixin center() {
    margin: 0 auto;
 }
-@mixin center-vertical() {
+@mixin center-v() {
    // As per: Sebastian Ekström
    // URL: http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
    position: relative;
    top: 50%;
    @include transform-translate-y(-50%);
 }
+// Soon to be deprecated
+@mixin center-vertical() {
+   @include center-v();
+}
+// End
 // Fixes
 @mixin clearfix() {
    *zoom: 1;
