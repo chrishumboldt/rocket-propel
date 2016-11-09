@@ -17,6 +17,7 @@ A lightweight SASS mixin library and responsive CSS layout engine.
    * [Drop Shadow](#drop-shadow)
    * [Global Setup](#global-setup)
    * [Gradient](#gradient)
+   * [Interaction](#interaction)
    * [iOS](#ios)
    * [Layout](#layout)
 	* [Layout Flex](#layout-flex)
@@ -322,6 +323,11 @@ Mixin | Defaults | Description
 `gradient-h(x, y)` | | Apply background gradient from left to right.
 `gradient-v(x, y)` | | Apply background gradient from top to bottom.
 `gradient-no()` | | Remove any background gradient.
+
+### Interaction
+Mixin | Defaults | Description
+---- | ---- | ----
+`cursor(x)` | `x`: `auto` | Set the cursor to `x`.
 
 ### iOS
 Mixin | Description
