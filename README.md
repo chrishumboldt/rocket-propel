@@ -332,21 +332,17 @@ Mixin | Defaults | Description
 `height-max(x)` | `x`: `0px` | Set the maximum height of an element.
 `height-min(x)` | `x`: `0px` | Set the minimum height of an element.
 `size(x, y)` | `x`: `0px`<br>`y`: `0px` | Set the width `x` and height `y` of an element.
-`square(x)` | | Set the width, height and line-height of an element to `x` and center the text.
+`square(x)` | | Set the width, height and line-height of an element to `x`.<br>Center the text.
 `width(x, y, z)` | `x`: `0px`<br>`y`: `false`<br>`z`: `false` | Set the width of an element.<br>`y` is the width max.<br>`z` is the width min.
 `width-max(x)` | `x`: `0px` | Set the maximum width of an element.
 `width-min(x)` | `x`: `0px` | Set the minimum width of an element.
 
 ### Spacing Margins
-
-##### margin($margin: 24px)
-Set all the margins of an element.
-
-##### margin-x($margin: 24px)
-Set the **x** margin of an element where is x is top, right, bottom, left, horizontal, vertical.
-
-##### margin-no()
-Set the margin of an element to 0.
+Mixin | Defaults | Description
+---- | ---- | ----
+`margin(x)` | `x`: `24px` | Set all the margins of an element.
+`margin-[s](x)` | <br>`x`: `24px` | Set the margin side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
+`margin-no()` | | Set the margin of an element to 0.
 
 ### Spacing Padding
 

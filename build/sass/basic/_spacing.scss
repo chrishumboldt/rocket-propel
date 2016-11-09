@@ -33,7 +33,7 @@ $space-x-large-em: $space-base-em * 5;
 $space-x2-large-em: $space-base-em * 6;
 
 // Margins
-@mixin margin($spacing) {
+@mixin margin($spacing: $space-base) {
    margin: $spacing;
 }
 @mixin margin-top($spacing: $space-base) {
@@ -61,7 +61,7 @@ $space-x2-large-em: $space-base-em * 6;
 }
 
 // Padding
-@mixin padding($spacing) {
+@mixin padding($spacing: $space-base) {
    padding: $spacing;
 }
 @mixin padding-top($spacing: $space-base) {
