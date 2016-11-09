@@ -431,7 +431,7 @@ Find the other available classes below:
 ### Background
 Class | Options | Description
 ---- | ---- | ----
-`._back-pos-[x]` | `[x]`: `t` `r` `b` `l` `c` | Set the background position of an element.<br>`[x]` is for top, right, bottom, left or center.
+`._back-pos-[x]` | `[x]`: `t` `r` `b` `l` `c` | Set the background position of an element.<br>`[x]` is for `top`, `right`, `bottom`, `left` or `center`.
 `._back-repeat-[x]` | `[x]`: `no` `y` `x` | Set the background repeat of an element.<br>`[x]` is for repeat no, along the Y axis or along the X axis.
 `._back-single` | | Set the background of an element to not repeat and to be centered.
 `._back-contain` | | Set the background of an element to not repeat and to contain.
@@ -454,18 +454,18 @@ Class | Options | Description
 `._transparency-[x]` | `[x]`: `100` `75` `50` `25` `0` | Set the opacity of an element.<br>`[x]` is for `100%`, `75%`, `50%`, `25%` or `0%`.
 
 ### Global
-| Class | Options |
-| ---- | ---- |
-| ._propel | Apply some global styles to the HTML element of your page. |
+Class | Options
+---- | ----
+`._propel` | Apply some global styles to the HTML element of your page.
 
 ### Layout
-| Class | Options | Description |
-| ---- | ---- | ---- |
-| ._center | | Center an element. |
-| ._float-[p] | [p] = l, r | Set the float property of an element to [p] for left or right. |
-| ._float-no | | Remove the float property from an element. |
-| ._float-clear | | Stop all floating elements from affecting any element following. |
-| ._valign-[p] | [p] = t, m, b | Set the vertical alignment of an element to [p] for top, middle or bottom. |
+Class | Options | Description
+---- | ---- | ----
+`._center` | | Center an element.
+`._float-[x]` | `[x]`: `l` `r` | Set the float property of an element to left or right.
+`._float-no` | | Remove the float property from an element.
+`._float-clear` | | Stop all floating elements from affecting any element following.
+`._valign-[x]` | `[p]`: `t` `m` `b` | Set the vertical alignment of an element to top, middle or bottom.
 
 ### Layout Responsive
 | Class | Options | Description |
