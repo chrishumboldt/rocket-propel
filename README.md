@@ -517,28 +517,28 @@ Class | Options | Description
 ### Spacing
 Class | Options | Description
 ---- | ---- | ----
-`._mgn-no` | | Remove all margins from an element.
 `._mgn-[x]` | `[x]`: `1` to `10` | Add `[x]` amount of margin all around.
 `._mgn-[s]-[x]` | `[s]`: `t` `r` `b` `l`<br>`[x]`: `1` to `10` | Add `[x]` amount of margin to the `[s]` side of an element.
+`._mgn-no` | | Remove all margins from an element.
 `._pad-[x]` | `[x]`: `1` to `10` | Add `[x]` amount of padding all around.
 `._pad-[s]-[x]` | `[s]`: `t` `r` `b` `l`<br>`[x]`: `1` to `10` | Add `[x]` amount of padding to the `[s]` side of an element.
 `._pad-no` | | Remove all padding from an element.
 `._spacing-no` | | Remove all padding and margins from an element.
 
 ### Text
-| Class | Options | Description |
-| ---- | ---- | ---- |
-| ._hide-text | | Hide the text within an element. |
-| ._txt-[a] | [a] = l, c, r | Set the text alignment to [a] for left, center, right. |
-| ._txt-size-[s] | [s] = x2s, xs, s, m, n, l, xl, x2l | Set the font size to [s] for extra small, small, medium, normal, large, extra large, extra extra large. |
-| ._txt-weight-[w] | [w] = xl, l, n, b, xb | Set the font weight to [b] for extra light, light, normal, bold, extra bold. |
-| ._txt-light | | Set the font weight to light. |
-| ._txt-bold | | Set the font weight to bold. |
-| ._txt-normal | | Set the font weight and style to normal. |
-| ._txt-italics | | Set the font style to italics. |
-| ._txt-oblique | | Set the font style to oblique. |
-| ._txt-white | | Set the font colour to white. |
-| ._txt-grey | | Set the font colour to medium grey. |
+Class | Options | Description
+---- | ---- | ----
+`._hide-text` | | Hide the text within an element.
+`._txt-[x]` | `[x]`: `l` `c` `r` | Set the text alignment to `[x]`.<br>`[x]` is for `left`, `center`, `right`.
+`._txt-size-[x]` | `[x]`: `x2s` `xs` `s` `m` `n` `l` `xl` `x2l` | Set the font size to `[x]`.
+`._txt-weight-[x]` | `[x]`: `xl` `l` `n` `b` `xb` | Set the font weight to `[x]`.
+`._txt-light` | | Set the font weight to light.
+`._txt-bold` | | Set the font weight to bold.
+`._txt-normal` | | Set the font weight and style to normal.
+`._txt-italics` | | Set the font style to italics.
+`._txt-oblique` | | Set the font style to oblique.
+`._txt-white` | | Set the font colour to white.
+`._txt-grey` | | Set the font colour to medium grey.
 
 ## Author
 Created and maintained by Chris Humboldt<br>
