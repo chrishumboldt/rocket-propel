@@ -117,14 +117,11 @@ Mixin | Defaults | Description
 ```
 
 ### Arrow
-##### arrow($position: bottom, $colour: $red, $size: 20px)
-Attach a CSS arrow to an element via the after pseudo element.
-
-##### arrow-colour($position: bottom, $colour: $white)
-Change the colour of an elements CSS arrow. Note that the arrow position is required.
-
-##### arrow-no($colour: $white)
-Remove an elements CSS arrow and reset the background colour. Note that the background colour is required.
+Mixin | Defaults | Description
+---- | ---- | ----
+`arrow(pos, colour, size)` | `pos`: `bottom`<br>`colour`: `$white`<br>`size`: `20px` | Attach a CSS arrow to an element.
+`arrow-colour(pos, colour)` | `pos`: `bottom`<br>`colour`: `$white` | Change the colour of an elements CSS arrow.
+`arrow-no(colour)` | `colour`: `$white` | Remove an elements CSS arrow and reset the background colour.
 
 ### Background
 

@@ -11,7 +11,7 @@
 // No arrow
 
 // Basic arrow
-@mixin arrow($position: bottom, $colour: $red, $size: 20px) {
+@mixin arrow($position: bottom, $colour: $white, $size: 20px) {
 	position: relative;
 	&:after {
 		border: solid transparent;
