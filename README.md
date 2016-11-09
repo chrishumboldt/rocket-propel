@@ -385,45 +385,21 @@ Mixin | Defaults | Description
 `text-weight(x)` | `x`: `normal` | Set the text weight of an element to `x`.
 
 ### Transform
-
-##### transform($anything)
-Set the transform of anything for an element.
-
-##### transform-origin($x: 50%, $y: 50%, $z: 0)
-Set the transform origin of an element.
-
-##### transform-rotate($rotate: 0deg)
-Set the transform rotate style of an element.
-
-##### transform-rotate-x($rotate: 0deg)
-Set the transform rotate X style of an element.
-
-##### transform-rotate-y($rotate: 0deg)
-Set the transform rotate Y style of an element.
-
-##### transform-rotate-z($rotate: 0deg)
-Set the transform rotate Z style of an element.
-
-##### transform-scale($x: 1, $y: 1)
-Set the transform scale style of an element.
-
-##### transform-scale-3d($x: 1, $y: 1, $z: 1)
-Set the transform scale3D style of an element.
-
-##### transform-translate-3d($x: 0px, $y: 0px, $z: 0px)
-Set the transform translate3d style of an element.
-
-##### transform-translate-x($x: 1)
-Set the transform translateX style of an element.
-
-##### transform-translate-y($y: 1)
-Set the transform translateY style of an element.
-
-##### transform-translate-z($z: 1)
-Set the transform translateZ style of an element.
-
-##### transform-easing($x: 0px, $y: 0px, $z: 0px, $transition-speed: 0.2s)
-Animate the translate3d transform style (ease-out).
+Mixin | Defaults | Description
+---- | ---- | ----
+`transform(x)` | | Set the transform of property `x` for an element.
+`transform-origin(x, y, z)` | `x`: `50%`<br>`y`: `50%`<br>`z`: `0` | Set the transform origin of an element.
+`transform-rotate(x)` | `x`: `0deg` | Set the transform rotate style of an element.
+`transform-rotate-x(x)` | `x`: `0deg` | Set the transform rotate `X` style of an element.
+`transform-rotate-y(x)` | `x`: `0deg` | Set the transform rotate `Y` style of an element.
+`transform-rotate-z(x)` | `x`: `0deg` | Set the transform rotate `Z` style of an element.
+`transform-scale(x, y)` | `x`: `1`<br>`y`: `1` | Set the transform scale style of an element.
+`transform-scale-3d(x, y, z)` | `x`: `1`<br>`y`: `1`<br>`z`: `1` | Set the transform scale3D style of an element.
+`transform-translate-3d(x, y, z)` | `x`: `0px`<br>`y`: `0px`<br>`z`: `0px` | Set the transform translate3d style of an element.
+`transform-translate-x(x)` | `x`: `1` | Set the transform translateX style of an element.
+`transform-translate-y(x)` | `x`: `1` | Set the transform translateY style of an element.
+`transform-translate-z(x)` | `x`: `1` | Set the transform translateZ style of an element.
+`transform-easing(x, y, z, s)` | `x`: `0px`<br>`y`: `0px`<br>`z`: `0px`<br>`s`: `0.2s` | Animate the translate3d transform style (ease-out).
 
 ## CSS Implementation
 Start by including the necessary files.
