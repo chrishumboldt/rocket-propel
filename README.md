@@ -184,7 +184,7 @@ Mixin | Defaults |
 
 ```sass
 .my-element {
-	@include border-radius-right-top(4px);
+	@include border-radius-top-right(4px);
 }
 ```
 
