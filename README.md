@@ -251,44 +251,21 @@ Mixin | Defaults | Description
 ### Layout Flex
 For information on flex visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: A Guide to Flexbox</a>
 
-##### align-content($align: flex-start)
-Set the align content property of a flex element. $align can be flex-start, flex-end, center, space-between, space-around or stretch.
-
-##### align-items($align: flex-start)
-Set the align items property of a flex element. $align can be flex-start, flex-end, center, baseline or stretch.
-
-##### align-self($align: auto)
-Set the align self property of a flex element. $align can be auto, flex-start, flex-end, center, baseline or stretch.
-
-##### flex($grow: 0, $shrink: 1, $basis: auto)
-Set the all the flex properties for a flex item.
-
-##### flex-basis($basis: auto)
-Set the flex basis property for a flex item.
-
-##### flex-direction($direction: row)
-Set the flex direction property of a flex element. $direction can be row, row-reverse, column or column-reverse.
-
-##### flex-display($display: normal)
-Set the flex display property of a flex element.
-
-##### flex-flow($direction, $wrap)
-Set the flex direction and wrap properties of a flex element.
-
-##### flex-grow($grow: 0)
-Set the flex grow property of a flex element.
-
-##### flex-shrink($shrink: 1)
-Set the flex shrink property of a flex element.
-
-##### flex-wrap($wrap: nowrap)
-Set the flex wrap property of a flex element. $wrap can be nowrap, wrap or wrap-reverse.
-
-##### justify-content($content: flex-start)
-Set the justify content property of a flex element. $content can be flex-start, flex-end, center, space-between or space-around.
-
-##### order($order: 0)
-Set the flex order property for a flex item with the flex element.
+Mixin | Defaults | Description
+---- | ---- | ----
+`align-content(x)` | `x`: `flex-start` | Set the align content property of a flex element.<br> `x` can be `flex-start`, `flex-end`, `center`, `space-between`, `space-around` or `stretch`.
+`align-items(x)` | `x`: `flex-start` | Set the align items property of a flex element.<br> `x` can be `flex-start`, `flex-end`, `center`, `space-between`, `space-around` or `stretch`.
+`align-self(x)` | `x`: `auto` | Set the align self property of a flex element.<br> `x` can be `flex-start`, `flex-end`, `center`, `space-between`, `space-around` or `stretch`.
+`flex(grow, shrink, basis)` | `grow`: `0`<br>`shrink`: `1`<br>`basis`: `auto` | Set the all the flex properties for a flex item.
+`flex-basis(x)` | `basis`: `auto` | Set the flex basis property for a flex item.
+`flex-direction(x)` | `x`: `row` | Set the flex direction property of a flex element.<br>`x` can be `row`, `row-reverse`, `column` or `column-reverse`.
+`flex-display(x)` | `x`: `normal` | Set the flex display property of a flex element.
+`flex-flow(x, y)` | | Set the flex direction and wrap properties of a flex element.<br>`x` is direction.<br>`y` is wrap.
+`flex-grow(x)` | `x`: `0` | Set the flex grow property of a flex element.
+`flex-shrink(x)` | `x`: `1` | Set the flex shrink property of a flex element.
+`flex-wrap(x)` | `x`: `nowrap` | Set the flex wrap property of a flex element.<br>`x` can be `nowrap`, `wrap` or `wrap-reverse`.
+`justify-content(x)` | `x`: `flex-start` | Set the justify content property of a flex element.<br>`x` can be `flex-start`, `flex-end`, `center`, `space-between` or `space-around`.
+`order(int)` | `int`: `0` | Set the flex order property for a flex item with the flex element.
 
 ### Layout Floats
 
