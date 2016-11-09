@@ -219,7 +219,7 @@ Mixin | Description
 `global-setup()` | Apply the border-box property to all elements to contain dimensions. Set the default colour to a lighter, more readable black, the background colour to white and the default font to Open Sans with an Arial and Helvetica fallback. Note that this setup is automatically called by Rocket already.
 
 ### Gradient
-**Note** that the values `x` and `y` are the starting and ending gradient colours.
+**Note** that the arguments `x` and `y` are the starting and ending gradient colours.
 
 Mixin | Defaults | Description
 ---- | ---- | ----
@@ -235,30 +235,18 @@ Mixin | Defaults | Description
 ### iOS
 Mixin | Description
 ---- | ----
-ios-render() | Set some special properties like Webkit's backface visibility and perspective property to help with rendering elements like images.
+`ios-render()` | Set some special properties like Webkit's backface visibility and perspective property to help with rendering elements like images.
 
 ### Layout
-
-##### box-sizing($option: content-box)
-Set the box sizing style of an element.
-
-##### center()
-Center an element within its container.
-
-##### center-vertical()
-Center an element vertically within its container.
-
-##### clearfix()
-Clear the zoom and set the clear style to both for the element. No elements will be allowed to float to the left and right of this element.
-
-##### level($index: 1)
-Set the z-index of an element to $index. You can also use the z-index mixin as an alternative.
-
-##### vertical-align($align)
-Set the vertical alignment of an element to $align.
-
-##### z-index($index: 1)
-Set the z-index of an element to $index.
+Mixin | Defaults | Description
+---- | ---- | ----
+`box-sizing(x)` | `x`: `content-box` | Set the box sizing style of an element.
+`center()` | | Center an element within its container.
+`center-vertical()` | | Center an element vertically within its container.
+`clearfix()` | | Clear the zoom and set the clear style to both for the element.<br>No elements will be allowed to float to the left and right of this element.
+`level(int)` | `int`: `1` | Set the z-index of an element to `int`.<br>You can also use the z-index mixin as an alternative.
+`vertical-align(x)` | | Set the vertical alignment of an element to `x`.
+`z-index(int)` | `x`: `1` | Set the z-index of an element to `x`.
 
 ### Layout Flex
 For information on flex visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: A Guide to Flexbox</a>
