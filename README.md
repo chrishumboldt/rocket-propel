@@ -159,11 +159,13 @@ $images-root: "assets/img/";
 ```
 
 ### Borders
-Mixin | Defaults | Description
----- | ---- | ----
-`border(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid` | Set the border property of an element.
-`border-[x](clr, size, type)` | `[x]`: `top` `right` `bottom` `left`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid` | Set the border property of an element.
-`border-no()` | | Remove all borders from an element.
+Set the border property of an element.
+
+Mixin | Defaults
+---- | ----
+`border(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
+`border-[x](clr, size, type)` | `[x]`: `top` `right` `bottom` `left`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
+`border-no()` |
 
 ```sass
 .my-element {
