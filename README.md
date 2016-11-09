@@ -298,7 +298,7 @@ Mixin | Defaults | Description
 
 	.left,
 	.right {
-		@include span(12); // A span of 12 is a width of 100% (12/12).
+		@include span(12); // Span of 12 is a width of 100% (12/12).
 	}
 
 	// Change the layout at the large breakpoint
