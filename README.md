@@ -296,10 +296,10 @@ Mixin | Defaults | Description
 ```sass
 .container {
 	@include row();
+	
 	.left,
 	.right {
 		@include span(12); // A span of 12 within a column limit of 12 is width of 100%.
-		// Large breakpoint
 		@include breakpoint (large) {
 			@include span-new(6); // Change the span to 6 which is a width of 50%.
 		}
