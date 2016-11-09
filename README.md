@@ -172,29 +172,11 @@ Mixin | Defaults | Description
 ```
 
 ### Border Radius
-
-##### border-radius($radius: 2px)
-Set the border radius property around an element.
-
-##### border-radius-x($radius: 2px)
-Set the **x** border radius property of an element. The options for x are top, right, bottom, left, top-left, top-right, bottom-left, bottom-right.
-
-##### border-radius-no()
-Set the border radius of an element to 0.
-
-### Border Shades
-
-##### border-light($highlight: 0.8, $colour: #fff)
-Set a light border all around an element. The border is faded out.
-
-##### border-light-x($highlight: 0.8, $colour: #fff)
-Set a light **x** border on an element where x is top, right, bottom or left. The border is faded out.
-
-##### border-dark($lowlight: 0.8, $colour: #000)
-Set a dark border all around an element. The border is faded out.
-
-##### border-dark-x($lowlight: 0.8, $colour: #000)
-Set a dark **x** border on an element where x is top, right, bottom or left. The border is faded out.
+Mixin | Defaults | Description
+---- | ---- | ----
+`border-radius(r)` | `r`: `2px` | Set the border radius property around an element.
+`border-radius-[x](r)` | `[x]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`r`: `2px` | Set the border radius property on an element.
+`border-radius-no()` | | Set the border radius on an element to 0.
 
 ### Display
 
