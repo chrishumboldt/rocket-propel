@@ -274,8 +274,8 @@ Mixin | Description
 `float-no()` | Clear the float of an element.
 
 ### Layout Responsive
-Mixin | Description
----- | ----
+Mixin | Defaults | Description
+---- | ---- | ----
 `breakpoint(x, y, z)` | `y`: `false`<br>`z`: `false` | `x`: breakpoint value<br>`y`: breakpoint type<br>`z`: orientation<br>A mixin to generate media queries based on the preset Rocket view types or a custom value.<br>The options for `x` are `large`, `fluid`, `small` or an em/px value.<br>`y` can be `min` or `max` to set the min/max-width of the query.<br>`z` set the orientation of the breakpoint.
 
 ##### breakpoint($breakpoint, $breakpoint-type: false, $orientation: false)
