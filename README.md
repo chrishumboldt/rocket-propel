@@ -172,11 +172,12 @@ Mixin | Defaults | Description
 ```
 
 ### Border Radius
-Mixin | Defaults | Description
----- | ---- | ----
-`border-radius(r)` | `r`: `2px` | Set the border radius property around an element.
-`border-radius-[x](r)` | `[x]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`r`: `2px` | Set the border radius property on an element.
-`border-radius-no()` | | Set the border radius on an element to 0.
+Set the border radius property on an element.
+Mixin | Defaults
+---- | ----
+`border-radius(r)` | `r`: `2px`
+`border-radius-[x](r)` | `[x]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`r`: `2px`
+`border-radius-no()` |
 
 ### Display
 
