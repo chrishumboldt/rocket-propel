@@ -154,7 +154,7 @@ $images-root: "assets/img/";
 
 // Set the background
 .my-element {
-	@include background-image-cover(global/background.png);
+	@include background-image-cover("global/background.png");
 }
 ```
 
