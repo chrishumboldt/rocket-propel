@@ -40,6 +40,7 @@ A lightweight SASS mixin library and responsive CSS layout engine.
    * [Sizing](#sizing)
    * [Spacing](#spacing)
    * [Text](#text-1)
+* [Blueplate Deprecated](#blueplate-deprecated)
 
 ## Getting Started
 You can either download a copy of the [source files](https://github.com/chrishumboldt/Rocket-Propel/archive/master.zip) or install via NPM.
@@ -83,12 +84,12 @@ Start by importing the necessary file into your own SASS file and include the re
 </div>
 ```
 
-### Browser Prefixes
+#### Browser Prefixes
 Propel will apply all the necessary browser prefixes where needed but no longer supports the **-o-** prefix for older versions of Opera. Opera now uses the Blink engine from Chromium (<a href="http://www.opera.com/blogs/desktop/2015/10/opera-33-our-contribution-to-chromium/">Read More</a>).
 
 Find the other available mixins below:
 
-### Variables
+#### Variables
 Propel comes pre-packaged with a host of SASS variables. They are all listed below.
 
 Variable | Default
@@ -175,7 +176,7 @@ Variable | Value
 `$weight-bold` | 700
 `$weight-heavy` | 900
 
-### Animation
+#### Animation
 Mixin | Defaults | Description
 ---- | ---- | ----
 `animate(attr, speed)` | `speed`: `0.2s` | Set the transition style of attribute `attr`.
@@ -206,14 +207,14 @@ Mixin | Defaults | Description
 }
 ```
 
-### Arrow
+#### Arrow
 Mixin | Defaults | Description
 ---- | ---- | ----
 `arrow(pos, clr, size)` | `pos`: `bottom`<br>`clr`: `$white`<br>`size`: `20px` | Attach a CSS arrow to an element.
 `arrow-colour(pos, clr)` | `pos`: `bottom`<br>`clr`: `$white` | Change the colour of an elements CSS arrow.
 `arrow-no(clr)` | `clr`: `$white` | Remove an elements CSS arrow<br>Reset the background colour.
 
-### Background
+#### Background
 Mixin | Defaults | Description
 ---- | ---- | ----
 `background-attachment(x)` | `x`: `scroll` | Set the background attachment property to `x`.
@@ -227,7 +228,7 @@ Mixin | Defaults | Description
 `background-size(x)` | `x`: `auto` | Set the background size property to `x`.
 `background-single()` | | Set the background position to center<br>Stop the background from repeating.
 
-### Background Images
+#### Background Images
 **Note** that all the image urls already include the relative image path as per `$images-root` settings variable.
 
 Mixin | Defaults | Description
@@ -248,7 +249,7 @@ $images-root: "assets/img/";
 }
 ```
 
-### Borders
+#### Borders
 Set the border property of an element.
 
 Mixin | Defaults
@@ -265,7 +266,7 @@ Mixin | Defaults
 }
 ```
 
-### Border Radius
+#### Border Radius
 Set the border radius property on an element.
 
 Mixin | Options & Defaults |
@@ -280,7 +281,7 @@ Mixin | Options & Defaults |
 }
 ```
 
-### Display
+#### Display
 Mixin | Defaults | Description
 ---- | ---- | ----
 `hide()` | | Hide an element.
@@ -292,7 +293,7 @@ Mixin | Defaults | Description
 `transparency(int)` | `int`: `0.60` | Set the transparency of an element.<br>You can also use the **opacity** mixin as an alternative.
 `visibility(x)` | `x`: `visible` | Set the visibility property of an element.
 
-### Drop Shadow
+#### Drop Shadow
 Mixin | Defaults | Description
 ---- | ---- | ----
 `drop-shadow(clr, size, v, h)` | `clr`: `fade-out(#000, 0.6)`<br>`size`: `3px`<br>`v`: `0px`<br>`h`: `0px` | Set the drop shadow of an element.<br>`v` is the vertical offset.<br>`h` is the horizontal offset.
@@ -305,12 +306,12 @@ Mixin | Defaults | Description
 }
 ```
 
-### Global Setup
+#### Global Setup
 Mixin | Description
 ---- | ----
 `global-setup()` | Apply the border-box property to all elements to contain dimensions. Set the default colour to a lighter, more readable black, the background colour to white and the default font to Open Sans with an Arial and Helvetica fallback. Note that this setup is automatically called by Rocket already.
 
-### Gradient
+#### Gradient
 **Note** that the arguments `x` and `y` are the starting and ending gradient colours.
 
 Mixin | Defaults | Description
@@ -324,17 +325,17 @@ Mixin | Defaults | Description
 `gradient-v(x, y)` | | Apply background gradient from top to bottom.
 `gradient-no()` | | Remove any background gradient.
 
-### Interaction
+#### Interaction
 Mixin | Defaults | Description
 ---- | ---- | ----
 `cursor(x)` | `x`: `auto` | Set the cursor to `x`.
 
-### iOS
+#### iOS
 Mixin | Description
 ---- | ----
 `ios-render()` | Set some special properties like Webkit's backface visibility and perspective property to help with rendering elements like images.
 
-### Layout
+#### Layout
 Mixin | Defaults | Description
 ---- | ---- | ----
 `box-sizing(x)` | `x`: `content-box` | Set the box sizing style of an element.
@@ -345,7 +346,7 @@ Mixin | Defaults | Description
 `vertical-align(x)` | | Set the vertical alignment of an element to `x`.
 `z-index(int)` | `x`: `1` | Set the z-index of an element to `x`.
 
-### Layout Flex
+#### Layout Flex
 For information on flex visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: A Guide to Flexbox</a>
 
 Mixin | Defaults | Description
@@ -364,14 +365,14 @@ Mixin | Defaults | Description
 `justify-content(x)` | `x`: `flex-start` | Set the justify content property of a flex element.<br>`x` can be `flex-start`, `flex-end`, `center`,<br>`space-between` or `space-around`.
 `order(int)` | `int`: `0` | Set the flex order property for a flex item.
 
-### Layout Floats
+#### Layout Floats
 Mixin | Description
 ---- | ----
 `float(x)` | Set the float of an element to `x`.
 `float-clear()` | Clear the float of an element.
 `float-no()` | Set the float of an element to none.
 
-### Layout Responsive
+#### Layout Responsive
 Mixin | Defaults | Description
 ---- | ---- | ----
 `breakpoint(x, y, z)` | `y`: `false`<br>`z`: `false` | Generate a media query based on a Rocket preset or a value.<br>`x`: `large`, `small` or an `em/px` value.<br>`y`: Breakpoint type of `min` or `max`<br>`z`: breakpoint orientation.
@@ -411,7 +412,7 @@ Mixin | Defaults | Description
 }
 ```
 
-### List
+#### List
 Mixin | Defaults | Description
 ---- | ---- | ----
 `list-style(x)` | `x`: `disc outside none` | Set the list style.
@@ -419,7 +420,7 @@ Mixin | Defaults | Description
 `list-style-position(x)` | `x`: `outside` | Set the list style position.
 `list-style-type(x)` | `x`: `disc` | Set the list style type.
 
-### Position
+#### Position
 Mixin | Defaults | Description
 ---- | ---- | ----
 `position(x, opt)` | `x`: `relative` | Set the position of an element to `x`.<br>`opt` is optional.<br>`opt` can include `top`, `right`, `bottom`, `left`,<br>`margin-top`, `margin-right`, `margin-bottom` and `margin-left`.
@@ -431,7 +432,7 @@ Mixin | Defaults | Description
 }
 ```
 
-### Size
+#### Size
 Mixin | Defaults | Description
 ---- | ---- | ----
 `height(x, y, z)` | `x`: `0px`<br>`y`: `false`<br>`z`: `false` | Set the height of an element.<br>`y` is the height max.<br>`z` is the height min.
@@ -443,7 +444,7 @@ Mixin | Defaults | Description
 `width-max(x)` | `x`: `0px` | Set the maximum width of an element.
 `width-min(x)` | `x`: `0px` | Set the minimum width of an element.
 
-### Spacing Margins
+#### Spacing Margins
 Mixin | Defaults | Description
 ---- | ---- | ----
 `margin(x)` | `x`: `24px` | Set all the margins of an element.
@@ -456,7 +457,7 @@ Mixin | Defaults | Description
 }
 ```
 
-### Spacing Padding
+#### Spacing Padding
 Mixin | Defaults | Description
 ---- | ---- | ----
 `padding(x)` | `x`: `24px` | Set all the padding of an element.
@@ -469,12 +470,12 @@ Mixin | Defaults | Description
 }
 ```
 
-### Spacing Remove
+#### Spacing Remove
 Mixin | Description
 ---- | ----
 `spacing-no()` | Remove all margins and padding from an element.
 
-### Text
+#### Text
 Mixin | Defaults | Description
 ---- | ---- | ----
 `text-align(x)` | `x`: `left` | Set the text alignment of an element.
@@ -490,7 +491,7 @@ Mixin | Defaults | Description
 `text-transform(x)` | `x`: `none` | Set the text transform property of an element to `x`.<br>`x` can be `none`, `capitalize`, `uppercase`,<br>`lowercase` or `initial`.
 `text-weight(x)` | `x`: `normal` | Set the text weight of an element to `x`.
 
-### Transform
+#### Transform
 Mixin | Defaults | Description
 ---- | ---- | ----
 `transform(x)` | | Set the transform of property `x` for an element.
@@ -529,12 +530,12 @@ Now class your HTML to manage your layout. For example:
 </div>
 ```
 
-### Classes as Modifiers
+#### Classes as Modifiers
 Because all classes are declared on the DOM elements themselves, Propel sees them as modifiers and such uses the **_** prefix to reflect this.
 
 Find the other available classes below:
 
-### Background
+#### Background
 Class | Options | Description
 ---- | ---- | ----
 `._back-pos-[x]` | `[x]`: `t` `r` `b` `l` `c` | Set the background position of an element.<br>`[x]` is for `top`, `right`, `bottom`, `left` or `center`.
@@ -547,7 +548,7 @@ Class | Options | Description
 `._back-grey-light` | | Set the background colour to light grey.
 `._back-white` | | Set the background colour to white.
 
-### Display
+#### Display
 Class | Options | Description
 ---- | ---- | ----
 `._hide` | | Hide an element.
@@ -559,12 +560,12 @@ Class | Options | Description
 `._show-small` | | Show an element in small view only.
 `._transparency-[x]` | `[x]`: `100` `75` `50` `25` `0` | Set the opacity of an element.<br>`[x]` is for `100%`, `75%`, `50%`, `25%` or `0%`.
 
-### Global
+#### Global
 Class | Options
 ---- | ----
 `._propel` | Apply some global styles to the HTML element of your page.
 
-### Layout
+#### Layout
 Class | Options | Description
 ---- | ---- | ----
 `._center` | | Center an element.
@@ -580,7 +581,7 @@ Class | Options | Description
 </div>
 ```
 
-### Layout Responsive
+#### Layout Responsive
 Class | Options | Description
 ---- | ---- | ----
 `._row` | | Set the element to a row. Used on responsive containers
@@ -602,7 +603,7 @@ Class | Options | Description
 </div>
 ```
 
-### Position
+#### Position
 Class | Description
 ---- | ----
 `._pos-absolute` | Set the position of an element to absolute.
@@ -610,7 +611,7 @@ Class | Description
 `._pos-static` | Set the position of an element to static.
 `._pos-fixed` | Set the position of an element to fixed.
 
-### Sizing
+#### Sizing
 Class | Options | Description
 ---- | ---- | ----
 `._block-h-[x]` | `[x]`: `10` `20` `50` `100` `200` `500` `1000` | Set the height of an element.<br>`[x]` results in px value.
@@ -620,7 +621,7 @@ Class | Options | Description
 <div class="_block-w-10 _block-h-20">Block</div>
 ```
 
-### Spacing
+#### Spacing
 Class | Options | Description
 ---- | ---- | ----
 `._mgn-[x]` | `[x]`: `1` to `10` | Add `[x]` amount of margin all around.
@@ -636,7 +637,7 @@ Class | Options | Description
 <div class="_mgn-r-10">Margin right of 8 pixels</div>
 ```
 
-### Text
+#### Text
 Class | Options | Description
 ---- | ---- | ----
 `._hide-text` | | Hide the text within an element.
@@ -655,6 +656,9 @@ Class | Options | Description
 <div class="_txt-weight-xl">Very light text.</div>
 <div class="_txt-r">Text aligned right.</div>
 ```
+
+#### Blueplate Deprecated
+The original library, Blueplate, has been deprecated. The entire Webplate project is being refactored and rebranded with a new development philosophy. Blueplate will be maintained only with bug fixes under the **blueplate** branch.
 
 ## Author
 Created and maintained by Chris Humboldt<br>
