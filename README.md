@@ -173,11 +173,9 @@ Mixin | Defaults | Description
 
 ### Border Radius
 Set the border radius property on an element.
-| Mixin | Defaults |
-| ---- | ---- |
-| `border-radius(r)` | `r`: `2px` |
-| `border-radius-[x](r)` | `[x]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`r`: `2px` |
-| `border-radius-no()` | |
+Mixin | Defaults
+---- | ----
+`border-radius(r)` | `r`: `2px`
 
 ### Display
 
