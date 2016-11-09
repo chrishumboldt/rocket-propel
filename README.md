@@ -21,6 +21,7 @@ A lightweight SASS mixin library and responsive CSS layout engine.
 	* [Layout Flex](#layout-flex)
    * [Layout Floats](#layout-floats)
    * [Layout Responsive](#layout-responsive)
+   * [List](#list)
    * [Position](#position)
    * [Size](#size)
    * [Spacing Margins](#spacing-margins)
@@ -271,7 +272,8 @@ Mixin | Defaults | Description
 Mixin | Description
 ---- | ----
 `float(x)` | Set the float of an element to `x`.
-`float-no()` | Clear the float of an element.
+`float-clear()` | Clear the float of an element.
+`float-no()` | Set the float of an element to none.
 
 ### Layout Responsive
 Mixin | Defaults | Description
@@ -312,6 +314,14 @@ Mixin | Defaults | Description
 	}
 }
 ```
+
+### List
+Mixin | Defaults | Description
+---- | ---- | ----
+`list-style(x)` | `x`: `disc outside none` | Set the list style.
+`list-style-image(url)` | | Set the list style image.
+`list-style-position(x)` | `x`: `outside` | Set the list style position.
+`list-style-type(x)` | `x`: `disc` | Set the list style type.
 
 ### Position
 Mixin | Defaults | Description
