@@ -316,8 +316,8 @@ Mixin | Defaults | Description
 ### Position
 Mixin | Defaults | Description
 ---- | ---- | ----
-`position(x, opt)` | `x`: `relative` | Set the position of an element to `x`.<br>`opt` is optional.<br>`opt` can include `top`, `right`, `bottom`, `left`, `margin-top`, `margin-right`, `margin-bottom` and `margin-left`.
-`position-set(opt)` | | `opt` can include `top`, `right`, `bottom`, `left`, `margin-top`, `margin-right`, `margin-bottom` and `margin-left`.
+`position(x, opt)` | `x`: `relative` | Set the position of an element to `x`.<br>`opt` is optional.<br>`opt` can include `top`, `right`, `bottom`, `left`,<br>`margin-top`, `margin-right`, `margin-bottom` and `margin-left`.
+`position-set(opt)` | | `opt` can include `top`, `right`, `bottom`, `left`,<br>`margin-top`, `margin-right`, `margin-bottom` and `margin-left`.
 
 ```sass
 .my-element {
