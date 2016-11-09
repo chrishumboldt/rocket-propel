@@ -381,7 +381,7 @@ Mixin | Defaults | Description
 `text-line-height(x)` | `x`: `16px` |  Set the line height of an element in pixels.<br>Calculates an additional rem overwrite.
 `text-size(x)` | `x`: `16px` | Set the font size of an element in pixels.<br>Calculates an additional rem overwrite.
 `text-style()` | `x`: `normal` | Set the text style of an element to $style.
-`text-transform(x)` | `x`: `none` | Set the text transform property of an element to `x`.<br>`x` can be `none`, `capitalize`, `uppercase`, `lowercase` or `initial`.
+`text-transform(x)` | `x`: `none` | Set the text transform property of an element to `x`.<br>`x` can be `none`, `capitalize`, `uppercase`,<br>`lowercase` or `initial`.
 `text-weight(x)` | `x`: `normal` | Set the text weight of an element to `x`.
 
 ### Transform
