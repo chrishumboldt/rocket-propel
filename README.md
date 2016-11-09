@@ -88,9 +88,15 @@ Propel will apply all the necessary browser prefixes where needed but no longer 
 Find the other available mixins below:
 
 ### Variables
+Variable | Default
+---- | ----
+`$column-limit` | 12
+`$font-family` | 'Open Sans', Helvetica, Arial, sans-serif
+`$images-root` | ''
+`$limit-width` | 68.750em
 
 ##### Breakpoints
-Mixin | Value | Evaluates To
+Variable | Value | Evaluates To
 ---- | ---- | ----
 `$bp-x3-small` | 12.500em | 200px
 `$bp-x2-small` | 18.750em | 300px
@@ -463,9 +469,9 @@ Class | Options | Description
 ---- | ---- | ----
 `._back-pos-[x]` | `[x]`: `t` `r` `b` `l` `c` | Set the background position of an element.<br>`[x]` is for `top`, `right`, `bottom`, `left` or `center`.
 `._back-repeat-[x]` | `[x]`: `no` `y` `x` | Set the background repeat of an element.<br>`[x]` is for repeat no, along the Y axis or along the X axis.
-`._back-single` | | Set the background of an element to not repeat and to be centered.
-`._back-contain` | | Set the background of an element to not repeat and to contain.
-`._back-cover` | | Set the background of an element to not repeat and to cover.
+`._back-single` | | Set the background of element to no repeat and centered.
+`._back-contain` | | Set the background of element to no repeat and contain.
+`._back-cover` | | Set the background of element to no repeat and cover.
 `._back-black` | | Set the background colour to black.
 `._back-grey` | | Set the background colour to medium grey.
 `._back-grey-light` | | Set the background colour to light grey.
