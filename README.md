@@ -108,7 +108,7 @@ Mixin | Defaults | Description
 	@include height(50px);
 	@include width(50px);
 	@include background-colour($red);
-	@include animate('all', 1s); // Here we attach the animation
+	@include animate('all', 1s); // Here we attach the animation styles
 
 	&:hover {
 		@include position-set(top 20px left 20px)
