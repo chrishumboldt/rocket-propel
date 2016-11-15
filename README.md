@@ -29,7 +29,7 @@ A lightweight SASS mixin library and responsive CSS layout engine.
    * [Spacing Margins](#spacing-margins)
    * [Spacing Padding](#spacing-padding)
    * [Spacing Remove](#spacing-remove)
-   * [Text](#text)
+   * [Text](#text-1)
    * [Transform](#transform)
 * [CSS Implementation](#css-implementation)
    * [Background](#background-1)
@@ -39,7 +39,7 @@ A lightweight SASS mixin library and responsive CSS layout engine.
    * [Position](#position-1)
    * [Sizing](#sizing)
    * [Spacing](#spacing)
-   * [Text](#text-1)
+   * [Text](#text-2)
 * [Blueplate Deprecated](#blueplate-deprecated)
 
 ## Getting Started
