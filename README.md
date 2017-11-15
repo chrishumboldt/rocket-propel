@@ -256,7 +256,7 @@ Set the border property of an element.
 Mixin | Defaults
 ---- | ----
 `border(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
-`border-[s](clr, size, type)` | `[s]`: `top` `right` `bottom` `left`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
+`border-[s](clr, size, type)` | `[s]`: `t` `r` `b` `l`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-h(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-v(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-no()` |
@@ -273,7 +273,7 @@ Set the border radius property on an element.
 Mixin | Options & Defaults |
 ---- | ---- |
 `border-radius(x)` | `x`: `2px` |
-`border-radius-[s](x)` | `[s]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`x`: `2px` |
+`border-radius-[s](x)` | `[s]`: `t` `r` `b` `l` `tl` `tr` `bl` `br`<br>`x`: `2px` |
 `border-radius-no()` | |
 
 ```sass
@@ -402,7 +402,7 @@ Mixin | Defaults | Description
    }
 
    // Change the layout at the large breakpoint
-   @include breakpoint (large) {
+   @include breakpoint ($bp-large) {
       .left {
          @include span-new(3); // Span of 3 is a width of 25% (3/12).
       }
@@ -449,7 +449,7 @@ Mixin | Defaults | Description
 Mixin | Defaults | Description
 ---- | ---- | ----
 `margin(x)` | `x`: `24px` | Set all the margins of an element.
-`margin-[s](x)` | <br>`x`: `24px` | Set the margin side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
+`margin-[s](x)` | <br>`x`: `24px` | Set the margin side of `s` of an element.<br>`s` can be `t`, `r`, `b`, `l`, `h`, `v`.
 `margin-no()` | | Set the margin of an element to 0.
 
 ```sass
@@ -462,7 +462,7 @@ Mixin | Defaults | Description
 Mixin | Defaults | Description
 ---- | ---- | ----
 `padding(x)` | `x`: `24px` | Set all the padding of an element.
-`padding-[s](x)` | <br>`x`: `24px` | Set the padding side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
+`padding-[s](x)` | `x`: `24px` | Set the padding side of `s` of an element.<br>`s` can be `t`, `r`, `b`, `l`, `h`, `v`.
 `padding-no()` | | Set the padding of an element to 0.
 
 ```sass
