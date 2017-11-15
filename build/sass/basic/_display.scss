@@ -1,17 +1,14 @@
 /**
- * File: build/sass/basic/_display.scss
- * Type: SASS partial
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Table of contents
-// Show / hide
+// Display
 // Opacity
 // Overflow
 // Perspective
 // Visibility
 
-// Show / hide
+// Display
 @mixin display($type: block) {
    display: $type;
 }
@@ -31,6 +28,7 @@
 @mixin show($type: block) {
    @include display($type);
 }
+
 // Opacity
 @mixin opacity($opacity: 0.60) {
    opacity: $opacity;
@@ -40,6 +38,7 @@
 @mixin transparency($transparency: 0.60) {
    @include opacity($transparency);
 }
+
 // Overflow
 @mixin overflow($overflow: visible, $orientation: false) {
    @if $orientation == vertical {
@@ -52,12 +51,14 @@
       overflow: $overflow;
    }
 }
+
 // Perspective
 @mixin perspective($perspective: 0px) {
-	-webkit-perspective: $perspective;
-	-moz-perspective: $perspective;
-	perspective: $perspective;
+   -webkit-perspective: $perspective;
+   -moz-perspective: $perspective;
+   perspective: $perspective;
 }
+
 // Visibility
 @mixin visibility($visibility: visible) {
    visibility: $visibility;

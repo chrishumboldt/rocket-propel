@@ -1,20 +1,16 @@
 /**
- * File: build/sass/basic/_global.scss
- * Type: SASS partial
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Variables
 $font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 
-// Global
 @mixin global-setup() {
    @include global-model();
+
    html {
       @include global-html();
    }
 }
-// Basic resets
 @mixin global-model() {
    *,
    *:before,
@@ -31,6 +27,7 @@ $font-family: 'Open Sans', Helvetica, Arial, sans-serif;
    -ms-text-size-adjust: 100%;
    -webkit-texts-size-adjust: 100%;
    -webkit-backface-visibility: hidden;
+
    body {
       margin: 0;
       padding: 0;

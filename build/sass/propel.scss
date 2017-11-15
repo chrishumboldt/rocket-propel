@@ -1,8 +1,6 @@
 /**
- * File: build/sass/propel.scss
- * Type: SASS execute file
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
 @import "import";
-@include propel-css();
+@include mod-propel-css;

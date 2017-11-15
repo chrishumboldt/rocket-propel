@@ -1,10 +1,7 @@
 /**
- * File: build/sass/basic/_size.scss
- * Type: SASS partial
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Size
 @mixin size($width: 0px, $height: 0px) {
    @include width($width);
    @include height($height);

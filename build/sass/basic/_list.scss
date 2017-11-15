@@ -1,10 +1,7 @@
 /**
- * File: build/sass/basic/_list.scss
- * Type: SASS partial
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Lists
 @mixin list-style($style: disc outside none) {
    list-style: $style;
 }

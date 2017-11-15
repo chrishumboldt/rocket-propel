@@ -1,13 +1,10 @@
 /**
- * File: build/sass/basic/_responsive-layout.scss
- * Type: SASS partial
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Table of contents
 // Variables
 // Row
-// Span
+// Spans
 // Offsets
 // Layout
 // Breakpoint
@@ -19,7 +16,7 @@ $limit-width: 68.750em !default;
 $break-main: 43.813em !default;
 $min-max: false !default;
 
-// Containers
+// Row
 @mixin row() {
    width: 100%;
    &:before,
@@ -31,6 +28,7 @@ $min-max: false !default;
       clear: both;
    }
 }
+
 // Spans
 @mixin span($span: $column-limit, $span-column-limit: $column-limit) {
    float: left;
@@ -45,6 +43,7 @@ $min-max: false !default;
    @include offset(0);
    @include offset-r(0);
 }
+
 // Offsets
 @mixin offset($off-by, $span-column-limit: $column-limit) {
    margin-left: percentage($off-by / $span-column-limit);
@@ -52,12 +51,14 @@ $min-max: false !default;
 @mixin offset-r($off-by, $span-column-limit: $column-limit) {
    margin-right: percentage($off-by / $span-column-limit);
 }
+
 // Layout
 @mixin limit($limit: $limit-width) {
    width: 100%;
-	max-width: $limit;
+   max-width: $limit;
    margin: 0 auto;
 }
+
 // Breakpoint
 @mixin breakpoint($breakpoint, $breakpoint-type: false, $orientation: false) {
    @if $breakpoint == retina {
@@ -162,11 +163,7 @@ $min-max: false !default;
       }
    }
 }
-// This will be deprecated soon
-@mixin breakpoint-vertical($breakpoint, $breakpoint-type: false, $orientation: false) {
-	@include breakpoint-v($breakpoint, $breakpoint-type, $orientation);
-}
-// End
+
 // Flexbox
 // Based on: https://github.com/zessx/sass-flexbox/blob/master/sass-flexbox.scss
 // By: Samuel Marchal
