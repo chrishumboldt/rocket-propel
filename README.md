@@ -263,7 +263,7 @@ Mixin | Defaults
 
 ```sass
 .my-element {
-   @include border-left($red, 2px);
+   @include border-l($red, 2px);
 }
 ```
 
@@ -278,7 +278,7 @@ Mixin | Options & Defaults |
 
 ```sass
 .my-element {
-   @include border-radius-top-right(4px);
+   @include border-radius-tr(4px); // This add a border radius to the top right corner.
 }
 ```
 
@@ -454,7 +454,7 @@ Mixin | Defaults | Description
 
 ```sass
 .my-element {
-   @include margin-bottom(12px);
+   @include margin-b(12px);
 }
 ```
 
@@ -467,7 +467,7 @@ Mixin | Defaults | Description
 
 ```sass
 .my-element {
-   @include padding-right(20px);
+   @include padding-r(20px);
 }
 ```
 
