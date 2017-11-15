@@ -518,6 +518,14 @@ Start by including the necessary files.
 </head>
 ```
 
+You can also build the SASS out if you wish to include it in one production file. See an example below.
+
+```sass
+@import "rocket-propel/build/sass/import";
+
+@include rocket-propel-css;
+```
+
 Now class your HTML to manage your layout. For example:
 
 ```html
