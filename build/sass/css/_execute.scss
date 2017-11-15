@@ -1,18 +1,16 @@
 /**
- * File: build/sass/css/_execute.scss
- * Type: SASS CSS execute file
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Execute
-@mixin propel-css() {
-	@include propel-layout();
-	@include propel-responsive-layout();
-	@include propel-display();
-	@include propel-global();
-	@include propel-position();
-	@include propel-text();
-	@include propel-background();
-	@include propel-sizing();
-	@include propel-spacing();
+@mixin mod-propel-css() {
+   @include mod-propel-global;
+
+   @include mod-propel-layout;
+   @include mod-propel-responsive-layout;
+   @include mod-propel-display;
+   @include mod-propel-position;
+   @include mod-propel-text;
+   @include mod-propel-background;
+   @include mod-propel-sizing;
+   @include mod-propel-spacing;
 }

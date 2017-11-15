@@ -58,19 +58,20 @@ Start by importing the necessary file into your own SASS file and include the re
 
 .example {
    @include row();
-}
-.left, .middle, .right {
-   @include span(12); // 100% width
-}
-@include breakpoint(large) {
-   .left {
-      @include span-new(6); // 50% width
+
+   .left, .middle, .right {
+      @include span(12); // 100% width
    }
-   .middle {
-      @include span-new(4); // 33.33% width
-   }
-   .right {
-      @include span-new(2); // 16.66% width
+   @include breakpoint($bp-large) {
+      .left {
+         @include span-new(6); // 50% width
+      }
+      .middle {
+         @include span-new(4); // 33.33% width
+      }
+      .right {
+         @include span-new(2); // 16.66% width
+      }
    }
 }
 ```
@@ -195,15 +196,15 @@ Mixin | Defaults | Description
 ```sass
 // Animate block on hover
 .block {
-	@include position(absolute, top 10px left 10px);
-	@include height(50px);
-	@include width(50px);
-	@include background-colour($red);
-	@include animate('all', 1s); // Here we attach the animation styles
+   @include position(absolute, top 10px left 10px);
+   @include height(50px);
+   @include width(50px);
+   @include background-colour($red);
+   @include animate('all', 1s); // Here we attach the animation styles
 
-	&:hover {
-		@include position-set(top 20px left 20px)
-	}
+   &:hover {
+      @include position-set(top 20px left 20px)
+   }
 }
 ```
 
@@ -245,7 +246,7 @@ $images-root: "assets/img/";
 
 // Set the background
 .my-element {
-	@include background-image-cover("global/background.png");
+   @include background-image-cover("global/background.png");
 }
 ```
 
@@ -255,14 +256,14 @@ Set the border property of an element.
 Mixin | Defaults
 ---- | ----
 `border(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
-`border-[s](clr, size, type)` | `[s]`: `top` `right` `bottom` `left`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
+`border-[s](clr, size, type)` | `[s]`: `t` `r` `b` `l`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-h(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-v(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-no()` |
 
 ```sass
 .my-element {
-	@include border-left($red, 2px);
+   @include border-l($red, 2px);
 }
 ```
 
@@ -272,12 +273,12 @@ Set the border radius property on an element.
 Mixin | Options & Defaults |
 ---- | ---- |
 `border-radius(x)` | `x`: `2px` |
-`border-radius-[s](x)` | `[s]`: `top` `right` `bottom` `left` `top-left` `top-right` `bottom-left` `bottom-right`<br>`x`: `2px` |
+`border-radius-[s](x)` | `[s]`: `t` `r` `b` `l` `tl` `tr` `bl` `br`<br>`x`: `2px` |
 `border-radius-no()` | |
 
 ```sass
 .my-element {
-	@include border-radius-top-right(4px);
+   @include border-radius-tr(4px); // This add a border radius to the top right corner.
 }
 ```
 
@@ -302,7 +303,7 @@ Mixin | Defaults | Description
 
 ```sass
 .my-element {
-	@include drop-shadow($green);
+   @include drop-shadow($green);
 }
 ```
 
@@ -386,29 +387,29 @@ Mixin | Defaults | Description
 
 ```html
 <div class="container">
-	<div class="left">Left Column</div>
-	<div class="right">Right Column</div>
+   <div class="left">Left Column</div>
+   <div class="right">Right Column</div>
 </div>
 ```
 
 ```sass
 .container {
-	@include row();
+   @include row();
 
-	.left,
-	.right {
-		@include span(12); // Span of 12 is a width of 100% (12/12).
-	}
+   .left,
+   .right {
+      @include span(12); // Span of 12 is a width of 100% (12/12).
+   }
 
-	// Change the layout at the large breakpoint
-	@include breakpoint (large) {
-		.left {
-			@include span-new(3); // Span of 3 is a width of 25% (3/12).
-		}
-		.right {
-			@include span-new(9); // Span of 9 is a width of 75% (9/12).
-		}
-	}
+   // Change the layout at the large breakpoint
+   @include breakpoint ($bp-large) {
+      .left {
+         @include span-new(3); // Span of 3 is a width of 25% (3/12).
+      }
+      .right {
+         @include span-new(9); // Span of 9 is a width of 75% (9/12).
+      }
+   }
 }
 ```
 
@@ -428,7 +429,7 @@ Mixin | Defaults | Description
 
 ```sass
 .my-element {
-	@include position(relative, left 10px margin-top 10px)
+   @include position(relative, left 10px margin-top 10px)
 }
 ```
 
@@ -448,12 +449,12 @@ Mixin | Defaults | Description
 Mixin | Defaults | Description
 ---- | ---- | ----
 `margin(x)` | `x`: `24px` | Set all the margins of an element.
-`margin-[s](x)` | <br>`x`: `24px` | Set the margin side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
+`margin-[s](x)` | <br>`x`: `24px` | Set the margin side of `s` of an element.<br>`s` can be `t`, `r`, `b`, `l`, `h`, `v`.
 `margin-no()` | | Set the margin of an element to 0.
 
 ```sass
 .my-element {
-   @include margin-bottom(12px);
+   @include margin-b(12px);
 }
 ```
 
@@ -461,12 +462,12 @@ Mixin | Defaults | Description
 Mixin | Defaults | Description
 ---- | ---- | ----
 `padding(x)` | `x`: `24px` | Set all the padding of an element.
-`padding-[s](x)` | <br>`x`: `24px` | Set the padding side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
+`padding-[s](x)` | `x`: `24px` | Set the padding side of `s` of an element.<br>`s` can be `t`, `r`, `b`, `l`, `h`, `v`.
 `padding-no()` | | Set the padding of an element to 0.
 
 ```sass
 .my-element {
-   @include padding-right(20px);
+   @include padding-r(20px);
 }
 ```
 
@@ -531,7 +532,7 @@ Now class your HTML to manage your layout. For example:
 ```
 
 #### Classes as Modifiers
-Because all classes are declared on the DOM elements themselves, Propel sees them as modifiers and such uses the **_** prefix to reflect this.
+Because all classes are declared on the DOM elements themselves, Propel sees them as global modifiers and such uses the `_` prefix to reflect this. In the case of modules the module name would prefix the modifier but that only happens with extensions to Rocket Propel.
 
 Find the other available classes below:
 
@@ -576,8 +577,8 @@ Class | Options | Description
 
 ```html
 <div class="_center">
-	<div class="_float-r">One</div>
-	<div class="_float-r">Two</div>
+   <div class="_float-r">One</div>
+   <div class="_float-r">Two</div>
 </div>
 ```
 
@@ -598,8 +599,8 @@ Class | Options | Description
 
 ```html
 <div class="_row">
-	<div class="_span-12 _span-large-3">Left Column</div>
-	<div class="_span-12 _span-large-9">Right Column</div>
+<div class="_span-12 _span-large-3">Left Column</div>
+<div class="_span-12 _span-large-9">Right Column</div>
 </div>
 ```
 
@@ -640,7 +641,7 @@ Class | Options | Description
 #### Text
 Class | Options | Description
 ---- | ---- | ----
-`._hide-text` | | Hide the text within an element.
+`._txt-hide` | | Hide the text within an element.
 `._txt-[x]` | `[x]`: `l` `c` `r` | Set the text alignment to `[x]`.<br>`[x]` is for `left`, `center`, `right`.
 `._txt-size-[x]` | `[x]`: `x2s` `xs` `s` `m` `n` `l` `xl` `x2l` | Set the font size to `[x]`.
 `._txt-weight-[x]` | `[x]`: `xl` `l` `n` `b` `xb` | Set the font weight to `[x]`.
@@ -667,13 +668,13 @@ Twitter: <a href="https://twitter.com/chrishumboldt">twitter.com/chrishumboldt</
 GitHub <a href="https://github.com/chrishumboldt">github.com/chrishumboldt</a><br>
 
 ## Copyright and License
-Copyright 2016 Webplate Project
+Copyright 2017 Rocket Project
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,

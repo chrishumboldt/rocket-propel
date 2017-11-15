@@ -1,10 +1,7 @@
 /**
- * File: build/sass/basic/_gradient.scss
- * Type: SASS partial
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Table of contents
 // Animated gradients
 // Gradients
 
@@ -18,14 +15,6 @@
 @mixin gradient-animate-v($top-colour, $bottom-colour) {
    @include gradient-animate(top, $left-colour, $right-colour);
 }
-// Will be deprecated soon!
-@mixin gradient-animate-horizontal($left-colour, $right-colour) {
-   @include gradient-animate(left, $left-colour, $right-colour);
-}
-@mixin gradient-animate-vertical($top-colour, $bottom-colour) {
-   @include gradient-animate(top, $left-colour, $right-colour);
-}
-// End
 @mixin gradient-animate($colour-1, $colour-2, $angle) {
    @if $angle != top {
       background: linear-gradient($angle, $colour-1, $colour-2);
@@ -37,6 +26,7 @@
    -webkit-animation: GradientAnimation 30s ease infinite;
    -moz-animation: GradientAnimation 30s ease infinite;
    animation: GradientAnimation 30s ease infinite;
+
    @-webkit-keyframes GradientAnimation {
       0% {
          background-position: 0 91%;
@@ -78,6 +68,7 @@
    -moz-animation: none;
    animation: none;
 }
+
 // Gradients
 @mixin gradient-angle($left-colour, $right-colour, $angle: -45deg) {
    background: $left-colour;
@@ -124,11 +115,3 @@
 @mixin gradient-no() {
    background: none !important;
 }
-// Will be deprecated soon!
-@mixin gradient-horizontal($left-colour, $right-colour) {
-	@include gradient-h($left-colour, $right-colour);
-}
-@mixin gradient-vertical($top-colour, $bottom-colour) {
-	@include gradient-v($top-colour, $bottom-colour);
-}
-// End

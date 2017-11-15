@@ -1,10 +1,7 @@
 /**
- * File: build/sass/basic/_layout.scss
- * Type: SASS partial
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Table of contents
 // Box sizing
 // Centering
 // Fixes
@@ -20,6 +17,7 @@
    -moz-box-sizing: $option;
    box-sizing: $option;
 }
+
 // Centering
 @mixin center() {
    margin: 0 auto;
@@ -31,11 +29,7 @@
    top: 50%;
    @include transform-translate-y(-50%);
 }
-// Soon to be deprecated
-@mixin center-vertical() {
-   @include center-v();
-}
-// End
+
 // Fixes
 @mixin clearfix() {
    *zoom: 1;
@@ -48,6 +42,7 @@
       clear: both;
    }
 }
+
 // Floats
 @mixin float($float: left) {
    float: $float;
@@ -58,6 +53,7 @@
 @mixin float-no() {
    @include float(none);
 }
+
 // Index
 @mixin z-index($index: 1) {
    z-index: $index;
@@ -65,6 +61,7 @@
 @mixin level($index: 1) {
    @include z-index($index);
 }
+
 // Position
 @mixin position($position: relative, $arguments: false) {
    position: $position;
@@ -73,6 +70,7 @@
 @mixin position-set($arguments: false) {
    @include position-arguments($arguments);
 }
+
 // Square
 @mixin square($size) {
    width: $size;
@@ -80,6 +78,7 @@
    line-height: $size;
    text-align: center;
 }
+
 // Vertical align
 @mixin vertical-align($position) {
    vertical-align: $position;

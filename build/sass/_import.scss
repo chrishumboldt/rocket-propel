@@ -1,13 +1,9 @@
 /**
- * File: build/sass/_import.scss
- * Type: SASS importer
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Table of contents
 // Development
 // Basic
-// Module
 // CSS
 // Execute
 
@@ -36,12 +32,6 @@
 @import "basic/spacing";
 @import "basic/text";
 @import "basic/transform";
-
-// Components
-@import "component/content";
-@import "component/element";
-@import "component/layout";
-@import "component/list";
 
 // CSS
 @import "css/background";

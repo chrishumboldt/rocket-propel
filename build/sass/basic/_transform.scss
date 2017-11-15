@@ -1,16 +1,13 @@
 /**
- * File: build/sass/basic/_transform.scss
- * Type: SASS partial
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Table of contents
 // Transforms
 // Transform easing
 
 // Transforms
 @mixin transform($anything) {
-	-webkit-transform: $anything;
+   -webkit-transform: $anything;
    -o-transform: $anything;
    -moz-transform: $anything;
    transform: $anything;
@@ -22,34 +19,34 @@
    transform-origin: $x $y $z;
 };
 @mixin transform-rotate($rotate: 0deg) {
-	@include transform(rotate($rotate));
+   @include transform(rotate($rotate));
 }
 @mixin transform-rotate-x($rotate: 0deg) {
-	@include transform(rotateX($rotate));
+   @include transform(rotateX($rotate));
 }
 @mixin transform-rotate-y($rotate: 0deg) {
-	@include transform(rotateY($rotate));
+   @include transform(rotateY($rotate));
 }
 @mixin transform-rotate-z($rotate: 0deg) {
-	@include transform(rotateZ($rotate));
+   @include transform(rotateZ($rotate));
 }
 @mixin transform-scale($x: 1, $y: 1) {
-	@include transform(scale($x, $y));
+   @include transform(scale($x, $y));
 }
 @mixin transform-scale-3d($x: 1, $y: 1, $z: 1) {
-	@include transform(scale3d($x, $y, $z));
+   @include transform(scale3d($x, $y, $z));
 }
 @mixin transform-translate-3d($x: 0px, $y: 0px, $z: 0px) {
-	@include transform(translate3d($x, $y, $z));
+   @include transform(translate3d($x, $y, $z));
 }
 @mixin transform-translate-x($x: 0px) {
-	@include transform(translateX($x));
+   @include transform(translateX($x));
 }
 @mixin transform-translate-y($y: 0px) {
-	@include transform(translateY($y));
+   @include transform(translateY($y));
 }
 @mixin transform-translate-z($z: 0px) {
-	@include transform(translateZ($z));
+   @include transform(translateZ($z));
 }
 
 // Transform easing

@@ -1,10 +1,7 @@
 /**
- * File: build/sass/basic/_text.scss
- * Type: SASS partial
- * Author: Chris Humboldt
+@author Chris Humboldt
 **/
 
-// Table of contents
 // Variables
 // Font
 // Text
@@ -146,7 +143,7 @@ $weight-heavy: 900;
    @include font-style($style);
 }
 @mixin text-transform($transform: none) {
-	text-transform: $transform;
+   text-transform: $transform;
 }
 @mixin text-weight($weight: normal) {
    @if $weight == thin {
