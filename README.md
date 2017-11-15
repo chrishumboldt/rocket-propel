@@ -532,7 +532,7 @@ Now class your HTML to manage your layout. For example:
 ```
 
 #### Classes as Modifiers
-Because all classes are declared on the DOM elements themselves, Propel sees them as global modifiers and such uses the **_** prefix to reflect this. In the case of modules the module name would prefix the modifier but that only happens with extensions to Rocket Propel.
+Because all classes are declared on the DOM elements themselves, Propel sees them as global modifiers and such uses the `_` prefix to reflect this. In the case of modules the module name would prefix the modifier but that only happens with extensions to Rocket Propel.
 
 Find the other available classes below:
 
