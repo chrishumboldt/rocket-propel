@@ -1,18 +1,17 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
-// Animated gradients
-// Gradients
-
-// Animated gradients
+/**
+ * Animated gradients.
+ */
 @mixin gradient-animate-angle($top-left-colour, $bottom-right-colour) {
    @include gradient-animate($top-left-colour, $bottom-right-colour, 135deg);
 }
-@mixin gradient-animate-h($left-colour, $right-colour) {
+@mixin gradient-animate-horizontal($left-colour, $right-colour) {
    @include gradient-animate(left, $left-colour, $right-colour);
 }
-@mixin gradient-animate-v($top-colour, $bottom-colour) {
+@mixin gradient-animate-vertical($top-colour, $bottom-colour) {
    @include gradient-animate(top, $left-colour, $right-colour);
 }
 @mixin gradient-animate($colour-1, $colour-2, $angle) {
@@ -61,15 +60,16 @@
       }
    }
 }
-@mixin gradient-animate-no() {
+@mixin gradient-animate-none() {
    background: none !important;
    background-size: auto;
    -webkit-animation: none;
    -moz-animation: none;
    animation: none;
 }
-
-// Gradients
+/**
+ * Gradients
+ */
 @mixin gradient-angle($left-colour, $right-colour, $angle: -45deg) {
    background: $left-colour;
    /* Fallback solid color for old browsers */
@@ -84,7 +84,7 @@
    background: -webkit-linear-gradient($angle, $left-colour 0%, $right-colour 100%);
    /* Chrome 10+, Safari 5.1+ */
 }
-@mixin gradient-h($left-colour, $right-colour) {
+@mixin gradient-horizontal($left-colour, $right-colour) {
    background: $left-colour;
    /* Fallback solid color for old browsers */
    background: linear-gradient(top right, $left-colour 0%, $right-colour 100%);
@@ -98,7 +98,7 @@
    background: -webkit-linear-gradient(left, $left-colour 0%, $right-colour 100%);
    /* Chrome 10+, Safari 5.1+ */
 }
-@mixin gradient-v($top-colour, $bottom-colour) {
+@mixin gradient-vertical($top-colour, $bottom-colour) {
    background: $top-colour;
    /* Fallback solid color for old browsers */
    background: linear-gradient(to bottom, $top-colour 0%, $bottom-colour 100%);
@@ -112,6 +112,6 @@
    background: -webkit-linear-gradient(top, $top-colour 0%, $bottom-colour 100%);
    /* Chrome 10+, Safari 5.1+ */
 }
-@mixin gradient-no() {
+@mixin gradient-none() {
    background: none !important;
 }

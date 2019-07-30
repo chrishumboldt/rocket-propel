@@ -1,30 +1,30 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
 @mixin mod-propel-background() {
-	._back-pos-l {
+	._back-pos-left {
 		@include background-position(left);
 	}
-	._back-pos-r {
+	._back-pos-right {
 		@include background-position(right);
 	}
-	._back-pos-t {
+	._back-pos-top {
 		@include background-position(top);
 	}
-	._back-pos-b {
+	._back-pos-bottom {
 		@include background-position(bottom);
 	}
-	._back-pos-c {
+	._back-pos-center {
 		@include background-position(center);
 	}
-	._back-repeat-no {
+	._back-repeat-none {
 		@include background-repeat(no-repeat);
 	}
-	._back-repeat-v {
+	._back-repeat-vertical {
 		@include background-repeat(repeat-y);
 	}
-	._back-repeat-h {
+	._back-repeat-horizontal {
 		@include background-repeat(repeat-x);
 	}
 	._back-single {

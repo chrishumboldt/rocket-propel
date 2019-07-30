@@ -1,16 +1,7 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
-// Variables
-// General
-// Background images
-// Deprecated - will be deleted
-
-// Variables
-$images-root: "" !default;
-
-// General
 @mixin background-attachment($attachment: scroll) {
    background-attachment: $attachment;
 }
@@ -50,27 +41,29 @@ $images-root: "" !default;
    @include background-repeat(no-repeat);
 }
 
-// Background images
-@mixin background-image($image, $position: top left) {
-   background-image: url("#{$images-root}/#{$image}");
+/**
+ * Background images.
+ */
+@mixin background-image($imagePath, $position: top left) {
+   background-image: url("#{$imagePath}");
    @include background-position($position);
 }
-@mixin background-image-contain($image, $position: center) {
-   @include background-image($image, $position);
+@mixin background-image-contain($imagePath, $position: center) {
+   @include background-image($imagePath, $position);
    @include background-repeat(no-repeat);
    @include background-size(contain);
 }
-@mixin background-image-cover($image, $position: center) {
-   @include background-image($image, $position);
+@mixin background-image-cover($imagePath, $position: center) {
+   @include background-image($imagePath, $position);
    @include background-repeat(no-repeat);
    @include background-size(cover);
 }
-@mixin background-image-parallax($image, $position: center) {
-   @include background-image($image, $position);
+@mixin background-image-parallax($imagePath, $position: center) {
+   @include background-image($imagePath, $position);
    @include background-attachment(fixed);
    @include background-size(cover);
 }
-@mixin background-image-single($image, $position: center) {
-   @include background-image($image, $position);
+@mixin background-image-single($imagePath, $position: center) {
+   @include background-image($imagePath, $position);
    @include background-repeat(no-repeat);
 }

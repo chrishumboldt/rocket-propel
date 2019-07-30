@@ -1,9 +1,8 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
 @mixin mod-propel-responsive-layout() {
-   // Containers
    ._row {
       @include row();
       ._row {
@@ -24,18 +23,16 @@
          ._offset-#{$index} {
             @include offset($index);
          }
-         ._offset-r-#{$index} {
-            @include offset-r($index);
+         ._offset-right-#{$index} {
+            @include offset-right($index);
          }
       }
    }
-
-   // Limit
+   /* Limit */
    ._limit {
       @include limit();
    }
-
-   // Large view
+   /* Large view */
    @include breakpoint($bp-large) {
       ._row {
          @for $index from 1 through $column-limit {
@@ -48,14 +45,13 @@
             ._offset-large-#{$index} {
                @include offset($index);
             }
-            ._offset-large-r-#{$index} {
-               @include offset-r($index);
+            ._offset-large-right-#{$index} {
+               @include offset-right($index);
             }
          }
       }
    }
-
-   // Small view
+   /* Small view */
    @include breakpoint($bp-small) {
       ._row {
          @for $index from 1 through $column-limit {
@@ -68,8 +64,8 @@
             ._offset-small-#{$index} {
                @include offset($index);
             }
-            ._offset-small-r-#{$index} {
-               @include offset-r($index);
+            ._offset-small-right-#{$index} {
+               @include offset-right($index);
             }
          }
       }

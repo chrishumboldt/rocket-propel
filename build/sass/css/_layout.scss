@@ -1,15 +1,15 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
 @mixin mod-propel-layout() {
-   ._float-no {
-      @include float-no();
+   ._float-none {
+      @include float-none();
    }
-   ._float-l {
+   ._float-left {
       @include float(left);
    }
-   ._float-r {
+   ._float-right {
       @include float(right);
    }
    ._float-clear {
@@ -18,20 +18,20 @@
    ._center {
       @include center();
    }
-   ._center-v {
-      @include center-v();
+   ._center-vertical {
+      @include center-vertical();
    }
-   ._valign-t {
+   ._valign-top {
       @include vertical-align(top);
    }
-   ._valign-m {
+   ._valign-middle {
       @include vertical-align(middle);
    }
-   ._valign-b {
+   ._valign-bottom {
       @include vertical-align(bottom);
    }
 
-   // Limit
+   /* Limit */
    ._limit,
    ._limit-x2-small,
    ._limit-x-small,

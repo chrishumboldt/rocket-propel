@@ -1,13 +1,10 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
-// Mono
-// Primary
-// Secondary
-// Lists
-
-// Mono
+/**
+ * Mono.
+ */
 $white: #fff;
 $black: #000;
 $black-base: lighten($black, 22%);
@@ -18,8 +15,9 @@ $grey: lighten($black, 50%);
 $grey-dark: lighten($black, 40%);
 $grey-x-dark: lighten($black, 35%);
 $grey-x2-dark: lighten($black, 30%);
-
-// Primary
+/**
+ * Primary.
+ */
 $aqua: #1abc9c;
 $blue: #3498db;
 $green: #2ecc71;
@@ -28,8 +26,9 @@ $pink: #eb5367;
 $purple: #9b59b6;
 $red: #e74c3c;
 $yellow: #f1c40f;
-
-// Secondary
+/**
+ * Secondary.
+ */
 $asbestos: #7f8c8d;
 $asphalt: #34495e;
 $bondi-blue: #008D9C;
@@ -45,8 +44,9 @@ $off-white: #f5f7fa;
 $off-white-dark: #e6e9ed;
 $river-bed: #434d5a;
 $silver: #bdc3c7;
-
-// Lists
+/**
+ * Lists.
+ */
 $ar-colours-mono: (
 	"white": $white,
 	"black": $black,

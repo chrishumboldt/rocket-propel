@@ -1,14 +1,7 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
-// Display
-// Opacity
-// Overflow
-// Perspective
-// Visibility
-
-// Display
 @mixin display($type: block) {
    display: $type;
 }
@@ -28,8 +21,9 @@
 @mixin show($type: block) {
    @include display($type);
 }
-
-// Opacity
+/**
+ * Opacity.
+ */
 @mixin opacity($opacity: 0.60) {
    opacity: $opacity;
    $opacity-ie: $opacity * 100;
@@ -38,28 +32,29 @@
 @mixin transparency($transparency: 0.60) {
    @include opacity($transparency);
 }
-
-// Overflow
+/**
+ * Overflow.
+ */
 @mixin overflow($overflow: visible, $orientation: false) {
    @if $orientation == vertical {
       overflow-y: $overflow;
-   }
-   @else if $orientation == horizontal {
+   } @else if $orientation == horizontal {
       overflow-x: $overflow;
-   }
-   @else {
+   } @else {
       overflow: $overflow;
    }
 }
-
-// Perspective
+/**
+ * Perspective.
+ */
 @mixin perspective($perspective: 0px) {
    -webkit-perspective: $perspective;
    -moz-perspective: $perspective;
    perspective: $perspective;
 }
-
-// Visibility
+/**
+ * Visibility.
+ */
 @mixin visibility($visibility: visible) {
    visibility: $visibility;
 }

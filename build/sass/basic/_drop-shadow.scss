@@ -1,6 +1,6 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
 @mixin drop-shadow($color: fade-out(#000, 0.6), $size: 3px, $vertical-offset: 0px, $horizontal-offset: 0px) {
    box-shadow: $horizontal-offset $vertical-offset $size $color;
@@ -12,7 +12,7 @@
    -webkit-box-shadow: inset $horizontal-offset $vertical-offset $size $color;
    -moz-box-shadow: inset $horizontal-offset $vertical-offset $size $color;
 }
-@mixin drop-shadow-no() {
+@mixin drop-shadow-none() {
    box-shadow: none;
    -webkit-box-shadow: none;
    -moz-box-shadow: none;

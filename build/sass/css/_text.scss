@@ -1,18 +1,18 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
 @mixin mod-propel-text() {
    ._txt-hide {
       @include text-hide();
    }
-   ._txt-l {
+   ._txt-left {
       @include text-align(left);
    }
-   ._txt-c {
+   ._txt-center {
       @include text-align(center);
    }
-   ._txt-r {
+   ._txt-right {
       @include text-align(right);
    }
    ._txt-size-x2l {
@@ -21,13 +21,13 @@
    ._txt-size-xl {
       @include text-size(x-large);
    }
-   ._txt-size-l {
+   ._txt-size-left {
       @include text-size(large);
    }
-   ._txt-size-m {
+   ._txt-size-middle {
       @include text-size(medium);
    }
-   ._txt-size-n {
+   ._txt-size-default {
       @include text-size(base);
    }
    ._txt-size-s {
@@ -45,7 +45,7 @@
    ._txt-weight-b, ._txt-bold {
       @include text-weight(bold);
    }
-   ._txt-weight-n {
+   ._txt-weight-default {
       @include text-weight(base);
    }
    ._txt-weight-l, ._txt-light {

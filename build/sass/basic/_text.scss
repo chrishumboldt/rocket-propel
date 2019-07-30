@@ -1,12 +1,7 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
-// Variables
-// Font
-// Text
-
-// Variables
 $georgia: Georgia, Cambria, "Times New Roman", Times, serif;
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $impact: Impact, Charcoal, sans-serif;
@@ -37,7 +32,9 @@ $weight-base: 400;
 $weight-bold: 700;
 $weight-heavy: 900;
 
-// Font
+/**
+ * Font.
+ */
 @mixin font-family($font: $helvetica) {
    font-family: $font;
 }
@@ -58,7 +55,9 @@ $weight-heavy: 900;
 @mixin letter-spacing($letter-spacing: normal) {
    letter-spacing: $letter-spacing;
 }
-// Text
+/**
+ * Text.
+ */
 @mixin text($arguments: false) {
    @include text-arguments($arguments);
 }
@@ -107,35 +106,25 @@ $weight-heavy: 900;
 @mixin text-size($size: $size-base) {
    @if $size == x2-small {
       @include font-size($size-x2-small);
-   }
-   @else if $size == x-small {
+   } @else if $size == x-small {
       @include font-size($size-x-small);
-   }
-   @else if $size == small {
+   } @else if $size == small {
       @include font-size($size-small);
-   }
-   @else if $size == minor {
+   } @else if $size == minor {
       @include font-size($size-minor);
-   }
-   @else if $size == base {
+   } @else if $size == base {
       @include font-size($size-base);
-   }
-   @else if $size == slight {
+   } @else if $size == slight {
       @include font-size($size-slight);
-   }
-   @else if $size == medium {
+   } @else if $size == medium {
       @include font-size($size-medium);
-   }
-   @else if $size == large {
+   } @else if $size == large {
       @include font-size($size-large);
-   }
-   @else if $size == x-large {
+   } @else if $size == x-large {
       @include font-size($size-x-large);
-   }
-   @else if $size == x2-large {
+   } @else if $size == x2-large {
       @include font-size($size-x2-large);
-   }
-   @else {
+   } @else {
       @include font-size($size);
    }
 }
@@ -148,20 +137,15 @@ $weight-heavy: 900;
 @mixin text-weight($weight: normal) {
    @if $weight == thin {
       @include font-weight($weight-thin);
-   }
-   @else if $weight == light {
+   } @else if $weight == light {
       @include font-weight($weight-light);
-   }
-   @else if $weight == base {
+   } @else if $weight == base {
       @include font-weight($weight-base);
-   }
-   @else if $weight == bold {
+   } @else if $weight == bold {
       @include font-weight($weight-bold);
-   }
-   @else if $weight == heavy {
+   } @else if $weight == heavy {
       @include font-weight($weight-heavy);
-   }
-   @else {
+   } @else {
       @include font-weight($weight);
    }
 }
@@ -170,8 +154,7 @@ $weight-heavy: 900;
    word-wrap: $wrap;
    @if $wrap == break-word {
       word-break: break-all;
-   }
-   @else {
+   } @else {
       word-break: $wrap;
    }
 }
