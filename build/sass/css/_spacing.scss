@@ -1,127 +1,125 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
 $spacing-limit: 10 !default;
 
 @mixin mod-propel-spacing() {
-   ._spacing-no {
-      @include spacing-no();
+   ._spacing-none {
+      @include spacing-none();
    }
-   ._pad-no {
+   ._pad-none {
       @include padding(0px);
    }
-   ._mgn-no {
+   ._mgn-none {
       @include margin(0px);
    }
-
-   // All padding
+   /* All padding */
    ._pad-all {
-      @include padding-h($space-minor);
-      @include padding-v($space-base);
+      @include padding-horizontal($space-minor);
+      @include padding-vertical($space-base);
 
       @include breakpoint($bp-medium) {
-         @include padding-h($space-base);
-         @include padding-v($space-slight);
+         @include padding-horizontal($space-base);
+         @include padding-vertical($space-slight);
       }
 
       @include breakpoint($bp-x-large) {
-         @include padding-h($space-slight);
-         @include padding-v($space-medium);
+         @include padding-horizontal($space-slight);
+         @include padding-vertical($space-medium);
       }
    }
-   .pad-all_flush {
+   ._pad-all-flush {
       @include breakpoint($bp-medium) {
          @include padding($space-base);
       }
 
       @include breakpoint($bp-large) {
-         @include padding-v($space-slight);
+         @include padding-vertical($space-slight);
       }
 
       @include breakpoint($bp-x-large) {
-         @include padding-h($space-slight);
-         @include padding-v($space-medium);
+         @include padding-horizontal($space-slight);
+         @include padding-vertical($space-medium);
       }
    }
-   .pad-all_small {
-      @include padding-h($space-x-small);
-      @include padding-v($space-small);
+   ._pad-all-small {
+      @include padding-horizontal($space-x-small);
+      @include padding-vertical($space-small);
 
       @include breakpoint($bp-medium) {
-         @include padding-h($space-small);
+         @include padding-horizontal($space-small);
       }
 
       @include breakpoint($bp-large) {
-         @include padding-v($space-minor);
+         @include padding-vertical($space-minor);
       }
 
       @include breakpoint($bp-x-large) {
-         @include padding-h($space-minor);
-         @include padding-v($space-base);
+         @include padding-horizontal($space-minor);
+         @include padding-vertical($space-base);
       }
    }
-   .pad-all_minor {
-      @include padding-h($space-small);
-      @include padding-v($space-minor);
+   ._pad-all-minor {
+      @include padding-horizontal($space-small);
+      @include padding-vertical($space-minor);
 
       @include breakpoint($bp-medium) {
-         @include padding-h($space-minor);
+         @include padding-horizontal($space-minor);
       }
 
       @include breakpoint($bp-large) {
-         @include padding-v($space-base);
+         @include padding-vertical($space-base);
       }
 
       @include breakpoint($bp-x-large) {
-         @include padding-h($space-base);
-         @include padding-v($space-slight);
+         @include padding-horizontal($space-base);
+         @include padding-vertical($space-slight);
       }
    }
-   .pad-all_medium {
-      @include padding-h($space-minor);
-      @include padding-v($space-base);
+   ._pad-all-medium {
+      @include padding-horizontal($space-minor);
+      @include padding-vertical($space-base);
 
       @include breakpoint($bp-small) {
-         @include padding-v($space-slight);
+         @include padding-vertical($space-slight);
       }
 
       @include breakpoint($bp-medium) {
-         @include padding-h($space-base);
+         @include padding-horizontal($space-base);
       }
 
       @include breakpoint($bp-large) {
-         @include padding-v($space-medium);
+         @include padding-vertical($space-medium);
       }
 
       @include breakpoint($bp-x-large) {
-         @include padding-h($space-slight);
-         @include padding-v($space-large);
+         @include padding-horizontal($space-slight);
+         @include padding-vertical($space-large);
       }
    }
-   .pad-all_large {
-      @include padding-h($space-minor);
-      @include padding-v($space-base);
+   ._pad-all-large {
+      @include padding-horizontal($space-minor);
+      @include padding-vertical($space-base);
 
       @include breakpoint($bp-small) {
-         @include padding-v($space-slight);
+         @include padding-vertical($space-slight);
       }
 
       @include breakpoint($bp-medium) {
-         @include padding-h($space-slight);
-         @include padding-v($space-medium);
+         @include padding-horizontal($space-slight);
+         @include padding-vertical($space-medium);
       }
 
       @include breakpoint($bp-large) {
-         @include padding-v($space-large);
+         @include padding-vertical($space-large);
       }
 
       @include breakpoint($bp-x-large) {
-         @include padding-v($space-x-large);
+         @include padding-vertical($space-x-large);
       }
    }
-
-   // Spacing loop
+   /* Spacing loop */
    @for $index from 1 through $spacing-limit {
       $multiplication: 1px;
       $class-name: ($index * 1);
@@ -129,32 +127,32 @@ $spacing-limit: 10 !default;
       ._pad-#{$class-name} {
          @include padding($multiplication * $index);
       }
-      ._pad-r-#{$class-name} {
-         @include padding-r($multiplication * $index);
+      ._pad-top-#{$class-name} {
+         @include padding-right($multiplication * $index);
       }
-      ._pad-l-#{$class-name} {
-         @include padding-l($multiplication * $index);
+      ._pad-left-#{$class-name} {
+         @include padding-left($multiplication * $index);
       }
-      ._pad-t-#{$class-name} {
-         @include padding-t($multiplication * $index);
+      ._pad-top-#{$class-name} {
+         @include padding-top($multiplication * $index);
       }
-      ._pad-b-#{$class-name} {
-         @include padding-b($multiplication * $index);
+      ._pad-bottom-#{$class-name} {
+         @include padding-bottom($multiplication * $index);
       }
       ._mgn-#{$class-name} {
          @include margin($multiplication * $index);
       }
-      ._mgn-r-#{$class-name} {
-         @include margin-r($multiplication * $index);
+      ._mgn-top-#{$class-name} {
+         @include margin-right($multiplication * $index);
       }
-      ._mgn-l-#{$class-name} {
-         @include margin-l($multiplication * $index);
+      ._mgn-left-#{$class-name} {
+         @include margin-left($multiplication * $index);
       }
-      ._mgn-t-#{$class-name} {
-         @include margin-t($multiplication * $index);
+      ._mgn-top-#{$class-name} {
+         @include margin-top($multiplication * $index);
       }
-      ._mgn-b-#{$class-name} {
-         @include margin-b($multiplication * $index);
+      ._mgn-bottom-#{$class-name} {
+         @include margin-bottom($multiplication * $index);
       }
    }
 }

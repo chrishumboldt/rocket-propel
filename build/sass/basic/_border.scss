@@ -1,40 +1,40 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
-// Border lines
-// Border radius
-// Border shades
-
-// Border lines
+/**
+ * Border lines.
+ */
 @mixin border($colour: $grey, $size: 1px, $type: solid) {
    border: $size $type $colour;
 }
-@mixin border-t($colour: $grey, $size: 1px, $type: solid) {
+@mixin border-top($colour: $grey, $size: 1px, $type: solid) {
    border-top: $size $type $colour;
 }
-@mixin border-b($colour: $grey, $size: 1px, $type: solid) {
+@mixin border-bottom($colour: $grey, $size: 1px, $type: solid) {
    border-bottom: $size $type $colour;
 }
-@mixin border-l($colour: $grey, $size: 1px, $type: solid) {
+@mixin border-left($colour: $grey, $size: 1px, $type: solid) {
    border-left: $size $type $colour;
 }
-@mixin border-r($colour: $grey, $size: 1px, $type: solid) {
+@mixin border-right($colour: $grey, $size: 1px, $type: solid) {
    border-right: $size $type $colour;
 }
-@mixin border-v($colour: $grey, $size: 1px, $type: solid) {
+@mixin border-vertical($colour: $grey, $size: 1px, $type: solid) {
    @include border-top($colour, $size, $type);
    @include border-bottom($colour, $size, $type);
 }
-@mixin border-h($colour: $grey, $size: 1px, $type: solid) {
+@mixin border-horizontal($colour: $grey, $size: 1px, $type: solid) {
    @include border-left($colour, $size, $type);
    @include border-right($colour, $size, $type);
 }
-@mixin border-no() {
+@mixin border-none() {
    border: medium none $black;
 }
 
-// Border radius
+/**
+ * Border radius.
+ */
 @mixin border-radius($radius: 2px) {
    border-radius: $radius;
    -ms-border-radius: $radius;
@@ -42,63 +42,63 @@
    -webkit-border-radius: $radius;
    background-clip: padding-box;
 }
-@mixin border-radius-t($radius: 2px) {
+@mixin border-radius-top($radius: 2px) {
    border-radius: $radius $radius 0px 0px;
    -ms-border-radius: $radius $radius 0px 0px;
    -moz-border-radius: $radius $radius 0px 0px;
    -webkit-border-radius: $radius $radius 0px 0px;
    background-clip: padding-box;
 }
-@mixin border-radius-b($radius: 2px) {
+@mixin border-radius-bottom($radius: 2px) {
    border-radius: 0px 0px $radius $radius;
    -ms-border-radius: 0px 0px $radius $radius;
    -moz-border-radius: 0px 0px $radius $radius;
    -webkit-border-radius: 0px 0px $radius $radius;
    background-clip: padding-box;
 }
-@mixin border-radius-l($radius: 2px) {
+@mixin border-radius-left($radius: 2px) {
    border-radius: $radius 0px 0px $radius;
    -ms-border-radius: $radius 0px 0px $radius;
    -moz-border-radius: $radius 0px 0px $radius;
    -webkit-border-radius: $radius 0px 0px $radius;
    background-clip: padding-box;
 }
-@mixin border-radius-r($radius: 2px) {
+@mixin border-radius-right($radius: 2px) {
    border-radius: 0px $radius $radius 0px;
    -ms-border-radius: 0px $radius $radius 0px;
    -moz-border-radius: 0px $radius $radius 0px;
    -webkit-border-radius: 0px $radius $radius 0px;
    background-clip: padding-box;
 }
-@mixin border-radius-tr($radius: 2px) {
+@mixin border-radius-top-right($radius: 2px) {
    border-radius: 0px $radius 0px 0px;
    -ms-border-radius: 0px $radius 0px 0px;
    -moz-border-radius: 0px $radius 0px 0px;
    -webkit-border-radius: 0px $radius 0px 0px;
    background-clip: padding-box;
 }
-@mixin border-radius-tl($radius: 2px) {
+@mixin border-radius-top-left($radius: 2px) {
    border-radius: $radius 0px 0px 0px;
    -ms-border-radius: $radius 0px 0px 0px;
    -moz-border-radius: $radius 0px 0px 0px;
    -webkit-border-radius: $radius 0px 0px 0px;
    background-clip: padding-box;
 }
-@mixin border-radius-br($radius: 2px) {
+@mixin border-radius-bottom-right($radius: 2px) {
    border-radius: 0px 0px $radius 0px;
    -ms-border-radius: 0px 0px $radius 0px;
    -moz-border-radius: 0px 0px $radius 0px;
    -webkit-border-radius: 0px 0px $radius 0px;
    background-clip: padding-box;
 }
-@mixin border-radius-bl($radius: 2px) {
+@mixin border-radius-bottom-left($radius: 2px) {
    border-radius: 0px 0px 0px $radius;
    -ms-border-radius: 0px 0px 0px $radius;
    -moz-border-radius: 0px 0px 0px $radius;
    -webkit-border-radius: 0px 0px 0px $radius;
    background-clip: padding-box;
 }
-@mixin border-radius-no() {
+@mixin border-radius-none() {
    border-radius: 0px;
    -ms-border-radius: 0px;
    -moz-border-radius: 0px;

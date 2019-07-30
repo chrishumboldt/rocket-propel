@@ -1,16 +1,16 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
 @mixin rocket-propel-css() {
-   @include mod-propel-global;
+   @include mod-propel-global();
 
-   @include mod-propel-layout;
-   @include mod-propel-responsive-layout;
-   @include mod-propel-display;
-   @include mod-propel-position;
-   @include mod-propel-text;
-   @include mod-propel-background;
-   @include mod-propel-sizing;
-   @include mod-propel-spacing;
+   @include mod-propel-layout();
+   @include mod-propel-responsive-layout();
+   @include mod-propel-display();
+   @include mod-propel-position();
+   @include mod-propel-text();
+   @include mod-propel-background();
+   @include mod-propel-sizing();
+   @include mod-propel-spacing();
 }

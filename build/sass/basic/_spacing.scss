@@ -1,13 +1,7 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
-// Variables
-// Margins
-// Padding
-// Spacing reset
-
-// Variables
 $space-base: 24px !default;
 $space-x2-small: $space-base / 6;
 $space-x-small: $space-base / 4;
@@ -29,64 +23,68 @@ $space-large-em: $space-base-em * 3;
 $space-x-large-em: $space-base-em * 5;
 $space-x2-large-em: $space-base-em * 6;
 
-// Margins
+/**
+ * Margins.
+ */
 @mixin margin($spacing: $space-base) {
    margin: $spacing;
 }
-@mixin margin-t($spacing: $space-base) {
+@mixin margin-top($spacing: $space-base) {
    margin-top: $spacing;
 }
-@mixin margin-b($spacing: $space-base) {
+@mixin margin-bottom($spacing: $space-base) {
    margin-bottom: $spacing;
 }
-@mixin margin-l($spacing: $space-base) {
+@mixin margin-left($spacing: $space-base) {
    margin-left: $spacing;
 }
-@mixin margin-r($spacing: $space-base) {
+@mixin margin-right($spacing: $space-base) {
    margin-right: $spacing;
 }
-@mixin margin-v($spacing: $space-base) {
-   @include margin-t($spacing);
-   @include margin-b($spacing);
+@mixin margin-vertical($spacing: $space-base) {
+   @include margin-top($spacing);
+   @include margin-bottom($spacing);
 }
-@mixin margin-h($spacing: $space-base) {
-   @include margin-l($spacing);
-   @include margin-r($spacing);
+@mixin margin-horizontal($spacing: $space-base) {
+   @include margin-left($spacing);
+   @include margin-right($spacing);
 }
-@mixin margin-no() {
+@mixin margin-none() {
    margin: 0;
 }
-
-// Padding
+/**
+ * Padding.
+ */
 @mixin padding($spacing: $space-base) {
    padding: $spacing;
 }
-@mixin padding-t($spacing: $space-base) {
+@mixin padding-top($spacing: $space-base) {
    padding-top: $spacing;
 }
-@mixin padding-b($spacing: $space-base) {
+@mixin padding-bottom($spacing: $space-base) {
    padding-bottom: $spacing;
 }
-@mixin padding-l($spacing: $space-base) {
+@mixin padding-left($spacing: $space-base) {
    padding-left: $spacing;
 }
-@mixin padding-r($spacing: $space-base) {
+@mixin padding-right($spacing: $space-base) {
    padding-right: $spacing;
 }
-@mixin padding-v($spacing: $space-base) {
-   @include padding-t($spacing);
-   @include padding-b($spacing);
+@mixin padding-vertical($spacing: $space-base) {
+   @include padding-top($spacing);
+   @include padding-bottom($spacing);
 }
-@mixin padding-h($spacing: $space-base) {
-   @include padding-l($spacing);
-   @include padding-r($spacing);
+@mixin padding-horizontal($spacing: $space-base) {
+   @include padding-left($spacing);
+   @include padding-right($spacing);
 }
-@mixin padding-no() {
+@mixin padding-none() {
    padding: 0;
 }
-
-// Spacing reset
-@mixin spacing-no() {
+/**
+ * Spacing reset.
+ */
+@mixin spacing-none() {
    padding: 0;
    margin: 0;
 }

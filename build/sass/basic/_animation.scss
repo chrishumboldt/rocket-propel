@@ -1,12 +1,11 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
-// Animate
-// Animation
-// Keyframes
 
-// Animate
+/**
+ * Animate.
+ */
 @mixin transition($attribute, $transition-speed: 0.2s, $delay: 0s, $easing: ease-out) {
    @if $attribute == transform {
       -webkit-transition: -webkit-#{$attribute} $transition-speed $easing $delay;
@@ -20,7 +19,7 @@
       transition: $attribute $transition-speed $easing $delay;
    }
 }
-@mixin transition-no() {
+@mixin transition-none() {
    -webkit-transition: none !important;
    -moz-transition: none !important;
    -ms-transition: none !important;
@@ -35,14 +34,16 @@
 @mixin animate($attribute, $transition-speed: 0.2s, $delay: 0s, $easing: ease-out) {
    @include transition($attribute, $transition-speed, $delay, $easing);
 }
-@mixin animate-no() {
-   @include transition-no();
+@mixin animate-none() {
+   @include transition-none();
 }
 @mixin animate-timing-function($timing) {
    @include transition-timing-function($timing);
 }
 
-// Animation
+/**
+ * Animation.
+ */
 @mixin animation-delay($delay) {
    -webkit-animation-delay: $delay;
    -moz-animation-delay: $delay;
@@ -100,7 +101,9 @@
    }
 }
 
-// Keyframes
+/**
+ * Keyframes.
+ */
 @mixin keyframes($name) {
    @-webkit-keyframes #{$name} {
       @content;

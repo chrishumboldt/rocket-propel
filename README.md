@@ -181,7 +181,7 @@ Variable | Value
 Mixin | Defaults | Description
 ---- | ---- | ----
 `animate(attr, speed)` | `speed`: `0.2s` | Set the transition style of attribute `attr`.
-`animate-no()` | | Remove all transition styles for an element.
+`animate-none()` | | Remove all transition styles for an element.
 `animate-timing-function(timing)` | | Set the transition `timing` function for an element.
 `animation(n, dur, i, dir, f)` | `dur`: `0.4s`<br>`i`: `false`<br>`dir`: `false`<br>`f`: `false` | Set all the animation properties.<br>`n` = name<br>`dur` = duration<br>`i` = iteration<br>`dir` = direction<br>`f` = fill mode
 `animation-delay(x)` | | Set the animation delay property to `x`.
@@ -203,7 +203,7 @@ Mixin | Defaults | Description
    @include animate('all', 1s); // Here we attach the animation styles
 
    &:hover {
-      @include position-set(top 20px left 20px)
+      @include position-set(top 20px left 20px);
    }
 }
 ```
@@ -213,7 +213,7 @@ Mixin | Defaults | Description
 ---- | ---- | ----
 `arrow(pos, clr, size)` | `pos`: `bottom`<br>`clr`: `$white`<br>`size`: `20px` | Attach a CSS arrow to an element.
 `arrow-colour(pos, clr)` | `pos`: `bottom`<br>`clr`: `$white` | Change the colour of an elements CSS arrow.
-`arrow-no(clr)` | `clr`: `$white` | Remove an elements CSS arrow<br>Reset the background colour.
+`arrow-none(clr)` | `clr`: `$white` | Remove an elements CSS arrow<br>Reset the background colour.
 
 #### Background
 Mixin | Defaults | Description
@@ -257,13 +257,13 @@ Mixin | Defaults
 ---- | ----
 `border(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-[s](clr, size, type)` | `[s]`: `t` `r` `b` `l`<br>`clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
-`border-h(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
-`border-v(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
-`border-no()` |
+`border-horizontal(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
+`border-vertical(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
+`border-none()` |
 
 ```sass
 .my-element {
-   @include border-l($red, 2px);
+   @include border-left($red, 2px);
 }
 ```
 
@@ -274,7 +274,7 @@ Mixin | Options & Defaults |
 ---- | ---- |
 `border-radius(x)` | `x`: `2px` |
 `border-radius-[s](x)` | `[s]`: `t` `r` `b` `l` `tl` `tr` `bl` `br`<br>`x`: `2px` |
-`border-radius-no()` | |
+`border-radius-none()` | |
 
 ```sass
 .my-element {
@@ -299,7 +299,7 @@ Mixin | Defaults | Description
 ---- | ---- | ----
 `drop-shadow(clr, size, v, h)` | `clr`: `fade-out(#000, 0.6)`<br>`size`: `3px`<br>`v`: `0px`<br>`h`: `0px` | Set the drop shadow of an element.<br>`v` is the vertical offset.<br>`h` is the horizontal offset.
 `drop-shadow-inset(clr, size, v, h)` | `clr`: `fade-out(#000, 0.6)`<br>`size`: `3px`<br>`v`: `0px`<br>`h`: `0px` | Set an inset drop shadow of an element.<br>`v` is the vertical offset.<br>`h` is the horizontal offset.
-`drop-shadow-no()` | | Remove any drop shadow.
+`drop-shadow-none()` | | Remove any drop shadow.
 
 ```sass
 .my-element {
@@ -318,13 +318,13 @@ Mixin | Description
 Mixin | Defaults | Description
 ---- | ---- | ----
 `gradient-animate(x, y, angle)` | `angle`: `135deg` | Apply animated background gradient.
-`gradient-animate-h(x, y)` | | Apply animated background gradient from left to right.
-`gradient-animate-v(x, y)` | | Apply animated background gradient from top to bottom.
-`gradient-animate-no()` | | Remove any animated background gradient.
+`gradient-animate-horizontal(x, y)` | | Apply animated background gradient from left to right.
+`gradient-animate-vertical(x, y)` | | Apply animated background gradient from top to bottom.
+`gradient-animate-none()` | | Remove any animated background gradient.
 `gradient-angle(x, y, angle)` | `angle`: `-45deg` | Apply background gradient.
-`gradient-h(x, y)` | | Apply background gradient from left to right.
-`gradient-v(x, y)` | | Apply background gradient from top to bottom.
-`gradient-no()` | | Remove any background gradient.
+`gradient-horizontal(x, y)` | | Apply background gradient from left to right.
+`gradient-vertical(x, y)` | | Apply background gradient from top to bottom.
+`gradient-none()` | | Remove any background gradient.
 
 #### Interaction
 Mixin | Defaults | Description
@@ -341,7 +341,7 @@ Mixin | Defaults | Description
 ---- | ---- | ----
 `box-sizing(x)` | `x`: `content-box` | Set the box sizing style of an element.
 `center()` | | Center an element within its container.
-`center-v()` | | Center an element vertically within its container.
+`center-vertical()` | | Center an element vertically within its container.
 `clearfix()` | | Clear the zoom and set the clear style to both for the element.
 `level(int)` | `int`: `1` | Set the z-index of an element to `int`.<br>You can also use the z-index mixin as an alternative.
 `vertical-align(x)` | | Set the vertical alignment of an element to `x`.
@@ -371,16 +371,16 @@ Mixin | Description
 ---- | ----
 `float(x)` | Set the float of an element to `x`.
 `float-clear()` | Clear the float of an element.
-`float-no()` | Set the float of an element to none.
+`float-none()` | Set the float of an element to none.
 
 #### Layout Responsive
 Mixin | Defaults | Description
 ---- | ---- | ----
 `breakpoint(x, y, z)` | `y`: `false`<br>`z`: `false` | Generate a media query based on a Rocket preset or a value.<br>`x`: `large`, `small` or an `em/px` value.<br>`y`: Breakpoint type of `min` or `max`<br>`z`: breakpoint orientation.
-`breakpoint-v(x, y, z)` | `y`: `false`<br>`z`: `false` | The same as breakpoint except it activates vertically.
+`breakpoint-vertical(x, y, z)` | `y`: `false`<br>`z`: `false` | The same as breakpoint except it activates vertically.
 `limit(x)` | `x`: `$limit-width` | Assigns a maximum width to an element and centers it.<br>Anything below the limit will become fluid.<br>Used mainly to contain row elements.
 `offset(x, y)` | `y`: `$column-limit` | Push an element out `x` amount of columns from the left.
-`offset-r(x, y)` | `y`: `$column-limit` | Push an element `x` amount of columns from the right.
+`offset-right(x, y)` | `y`: `$column-limit` | Push an element `x` amount of columns from the right.
 `row()` | | Turns an element into a row.<br>Row is needed to wrap any **span** elements.<br>A row element will default to a 100% width of its container.
 `span(x, y)` | `y`: `$column-limit` | Span an element `x` amount of columns within the `z` total.<br>See and example below.
 `span-new(x, y)` | `y`: `$column-limit` | Apply a new span amount of `x` to an element.
@@ -449,8 +449,8 @@ Mixin | Defaults | Description
 Mixin | Defaults | Description
 ---- | ---- | ----
 `margin(x)` | `x`: `24px` | Set all the margins of an element.
-`margin-[s](x)` | <br>`x`: `24px` | Set the margin side of `s` of an element.<br>`s` can be `t`, `r`, `b`, `l`, `h`, `v`.
-`margin-no()` | | Set the margin of an element to 0.
+`margin-[s](x)` | <br>`x`: `24px` | Set the margin side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
+`margin-none()` | | Set the margin of an element to 0.
 
 ```sass
 .my-element {
@@ -462,19 +462,19 @@ Mixin | Defaults | Description
 Mixin | Defaults | Description
 ---- | ---- | ----
 `padding(x)` | `x`: `24px` | Set all the padding of an element.
-`padding-[s](x)` | `x`: `24px` | Set the padding side of `s` of an element.<br>`s` can be `t`, `r`, `b`, `l`, `h`, `v`.
-`padding-no()` | | Set the padding of an element to 0.
+`padding-[s](x)` | `x`: `24px` | Set the padding side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
+`padding-none()` | | Set the padding of an element to 0.
 
 ```sass
 .my-element {
-   @include padding-r(20px);
+   @include padding-right(20px);
 }
 ```
 
 #### Spacing Remove
 Mixin | Description
 ---- | ----
-`spacing-no()` | Remove all margins and padding from an element.
+`spacing-none()` | Remove all margins and padding from an element.
 
 #### Text
 Mixin | Defaults | Description
@@ -546,7 +546,7 @@ Find the other available classes below:
 #### Background
 Class | Options | Description
 ---- | ---- | ----
-`._back-pos-[x]` | `[x]`: `t` `r` `b` `l` `c` | Set the background position of an element.<br>`[x]` is for `top`, `right`, `bottom`, `left` or `center`.
+`._back-pos-[x]` | `[x]`: `top`, `right`, `bottom`, `left`, `center` | Set the background position of an element.<br>`[x]` is for `top`, `right`, `bottom`, `left` or `center`.
 `._back-repeat-[x]` | `[x]`: `no` `y` `x` | Set the background repeat of an element.<br>`[x]` is for repeat no, along the Y axis or along the X axis.
 `._back-single` | | Set the background of element to no repeat and centered.
 `._back-contain` | | Set the background of element to no repeat and contain.
@@ -578,7 +578,7 @@ Class | Options | Description
 ---- | ---- | ----
 `._center` | | Center an element.
 `._float-[x]` | `[x]`: `l` `r` | Set the float property of an element to `left` or `right`.
-`._float-no` | | Remove the float property from an element.
+`._float-none` | | Remove the float property from an element.
 `._float-clear` | | Stop all floating elements from affecting any element following.
 `._valign-[x]` | `[x]`: `t` `m` `b` | Set the vertical alignment of an element to `top`, `middle` or `bottom`.
 
@@ -598,11 +598,11 @@ Class | Options | Description
 `._span-small-[i]` | `[i]`: `1` to `12` | Set width of an element within a row at the small breakpoint.
 `._limit` | | Limit an elements width to 68.750em (default) and center.
 `._offset-[i]` | `[i]`: `1` to `12` | Offset from the left by span `[i]`. The spans are base 12.
-`._offset-r-[i]` | `[i]`: `1` to `12` | Offset from the right by span `[i]`.
+`._offset-right-[i]` | `[i]`: `1` to `12` | Offset from the right by span `[i]`.
 `._offset-large-[i]` | `[i]`: `1` to `12` | Offset from the left by span `[i]` at the large breakpoint.
-`._offset-large-r-[i]` | `[i]`: `1` to `12` | Offset from the right by span `[i]` at the large breakpoint.
+`._offset-large-right-[i]` | `[i]`: `1` to `12` | Offset from the right by span `[i]` at the large breakpoint.
 `._offset-small-[i]` | `[i]`: `1` to `12` | Offset from the left by span of `[i]` at the small breakpoint.
-`._offset-small-r-[i]` | `[i]`: `1` to `12` | Offset from the right by span of `[i]` at the small breakpoint.
+`._offset-small-right-[i]` | `[i]`: `1` to `12` | Offset from the right by span of `[i]` at the small breakpoint.
 
 ```html
 <div class="_row">
@@ -622,11 +622,11 @@ Class | Description
 #### Sizing
 Class | Options | Description
 ---- | ---- | ----
-`._block-h-[x]` | `[x]`: `10` `20` `50` `100` `200` `500` `1000` | Set the height of an element.<br>`[x]` results in px value.
-`._block-w-[x]` | `[x]`: `10` `20` `50` `100` `200` `500` `1000` | Set the width of an element.<br>`[x]` results in px value.
+`._block-height-[x]` | `[x]`: `10` `20` `50` `100` `200` `500` `1000` | Set the height of an element.<br>`[x]` results in px value.
+`._block-width-[x]` | `[x]`: `10` `20` `50` `100` `200` `500` `1000` | Set the width of an element.<br>`[x]` results in px value.
 
 ```html
-<div class="_block-w-10 _block-h-20">Block</div>
+<div class="_block-width-10 _block-height-20">Block</div>
 ```
 
 #### Spacing
@@ -634,15 +634,15 @@ Class | Options | Description
 ---- | ---- | ----
 `._mgn-[x]` | `[x]`: `1` to `10` | Add `[x]` amount of margin all around.
 `._mgn-[s]-[x]` | `[s]`: `t` `r` `b` `l`<br>`[x]`: `1` to `10` | Add `[x]` amount of margin to the `[s]` side of an element.
-`._mgn-no` | | Remove all margins from an element.
+`._mgn-none` | | Remove all margins from an element.
 `._pad-[x]` | `[x]`: `1` to `10` | Add `[x]` amount of padding all around.
 `._pad-[s]-[x]` | `[s]`: `t` `r` `b` `l`<br>`[x]`: `1` to `10` | Add `[x]` amount of padding to the `[s]` side of an element.
-`._pad-no` | | Remove all padding from an element.
-`._spacing-no` | | Remove all padding and margins from an element.
+`._pad-none` | | Remove all padding from an element.
+`._spacing-none` | | Remove all padding and margins from an element.
 
 ```html
 <div class="_pad-t-10">Padding top of 10 pixels</div>
-<div class="_mgn-r-10">Margin right of 8 pixels</div>
+<div class="_mgn-right-10">Margin right of 8 pixels</div>
 ```
 
 #### Text
@@ -675,7 +675,7 @@ Twitter: <a href="https://twitter.com/chrishumboldt">twitter.com/chrishumboldt</
 GitHub <a href="https://github.com/chrishumboldt">github.com/chrishumboldt</a><br>
 
 ## Copyright and License
-Copyright 2017 Rocket Project
+Copyright 2019 Rocket Project
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

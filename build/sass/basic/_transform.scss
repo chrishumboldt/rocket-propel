@@ -1,11 +1,7 @@
 /**
-@author Chris Humboldt
-**/
+ * @author Chris Humboldt
+ */
 
-// Transforms
-// Transform easing
-
-// Transforms
 @mixin transform($anything) {
    -webkit-transform: $anything;
    -o-transform: $anything;
@@ -48,8 +44,9 @@
 @mixin transform-translate-z($z: 0px) {
    @include transform(translateZ($z));
 }
-
-// Transform easing
+/**
+ * Transform easing.
+ */
 @mixin transform-easing($x: 0px, $y: 0px, $z: 0px, $transition-speed: 0.2s) {
    @include transform-translate-3d($x, $y, $z);
    -webkit-transition: -webkit-transform $transition-speed ease-out;
