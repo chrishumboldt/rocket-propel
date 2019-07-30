@@ -53,7 +53,7 @@ npm install rocket-propel
 Start by importing the necessary file into your own SASS file and include the required mixins.
 
 **SASS**
-```sass
+```scss
 @import "rocket-propel/build/sass/import";
 
 .example {
@@ -193,7 +193,7 @@ Mixin | Defaults | Description
 `animation-timing-function(x)` | `x`: `ease-out` | Set the animation timing function property.
 `keyframes(x)` | | Generate the animation keyframes with name `x`.
 
-```sass
+```scss
 // Animate block on hover
 .block {
    @include position(absolute, top 10px left 10px);
@@ -240,7 +240,7 @@ Mixin | Defaults | Description
 `background-image-parallax(url)` | | Set a parallax style background image on an element.
 `background-image-single(url, pos)` | `pos`: `center` | Set a single background image on an element.
 
-```sass
+```scss
 // Change the images root if you want to.
 $images-root: "assets/img/";
 
@@ -261,7 +261,7 @@ Mixin | Defaults
 `border-vertical(clr, size, type)` | `clr`: `$grey`<br>`size`: `1px`<br>`type`: `solid`
 `border-none()` |
 
-```sass
+```scss
 .my-element {
    @include border-left($red, 2px);
 }
@@ -276,7 +276,7 @@ Mixin | Options & Defaults |
 `border-radius-[s](x)` | `[s]`: `t` `r` `b` `l` `tl` `tr` `bl` `br`<br>`x`: `2px` |
 `border-radius-none()` | |
 
-```sass
+```scss
 .my-element {
    @include border-radius-tr(4px); // This add a border radius to the top right corner.
 }
@@ -301,7 +301,7 @@ Mixin | Defaults | Description
 `drop-shadow-inset(clr, size, v, h)` | `clr`: `fade-out(#000, 0.6)`<br>`size`: `3px`<br>`v`: `0px`<br>`h`: `0px` | Set an inset drop shadow of an element.<br>`v` is the vertical offset.<br>`h` is the horizontal offset.
 `drop-shadow-none()` | | Remove any drop shadow.
 
-```sass
+```scss
 .my-element {
    @include drop-shadow($green);
 }
@@ -392,7 +392,7 @@ Mixin | Defaults | Description
 </div>
 ```
 
-```sass
+```scss
 .container {
    @include row();
 
@@ -427,7 +427,7 @@ Mixin | Defaults | Description
 `position(x, opt)` | `x`: `relative` | Set the position of an element to `x`.<br>`opt` is optional.<br>`opt` can include `top`, `right`, `bottom`, `left`,<br>`margin-top`, `margin-right`, `margin-bottom` and `margin-left`.
 `position-set(opt)` | | `opt` can include `top`, `right`, `bottom`, `left`,<br>`margin-top`, `margin-right`, `margin-bottom` and `margin-left`.
 
-```sass
+```scss
 .my-element {
    @include position(relative, left 10px margin-top 10px)
 }
@@ -452,7 +452,7 @@ Mixin | Defaults | Description
 `margin-[s](x)` | <br>`x`: `24px` | Set the margin side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
 `margin-none()` | | Set the margin of an element to 0.
 
-```sass
+```scss
 .my-element {
    @include margin-b(12px);
 }
@@ -465,7 +465,7 @@ Mixin | Defaults | Description
 `padding-[s](x)` | `x`: `24px` | Set the padding side of `s` of an element.<br>`s` can be `top`, `right`, `bottom`, `left`, `horizontal`, `vertical`.
 `padding-none()` | | Set the padding of an element to 0.
 
-```sass
+```scss
 .my-element {
    @include padding-right(20px);
 }
@@ -520,7 +520,7 @@ Start by including the necessary files.
 
 Alternatively you can also build the SASS out if you wish to include all your CSS in one production file. See an example below.
 
-```sass
+```scss
 @import "rocket-propel/build/sass/import";
 @include rocket-propel-css;
 ```
