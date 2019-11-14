@@ -1,6 +1,4 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 @mixin background-attachment($attachment: scroll) {
    background-attachment: $attachment;
@@ -41,9 +39,7 @@
    @include background-repeat(no-repeat);
 }
 
-/**
- * Background images.
- */
+// Background images
 @mixin background-image($imagePath, $position: top left) {
    background-image: url("#{$imagePath}");
    @include background-position($position);

@@ -1,18 +1,13 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
-/**
- * Box sizing.
- */
+// Box sizing
 @mixin box-sizing($option: content-box) {
    -webkit-box-sizing: $option;
    -moz-box-sizing: $option;
    box-sizing: $option;
 }
-/**
- * Centering.
- */
+
+// Centering
 @mixin center() {
    margin: 0 auto;
 }
@@ -23,9 +18,8 @@
    top: 50%;
    @include transform-translate-y(-50%);
 }
-/**
- * Fixes.
- */
+
+// Fixes
 @mixin clearfix() {
    *zoom: 1;
    &:before,
@@ -37,9 +31,8 @@
       clear: both;
    }
 }
-/**
- * Floats.
- */
+
+// Floats
 @mixin float($float: left) {
    float: $float;
 }
@@ -49,18 +42,16 @@
 @mixin float-none() {
    @include float(none);
 }
-/**
- * Index.
- */
+
+// Index
 @mixin z-index($index: 1) {
    z-index: $index;
 }
 @mixin level($index: 1) {
    @include z-index($index);
 }
-/**
- * Position.
- */
+
+// Position
 @mixin position($position: relative, $arguments: false) {
    position: $position;
    @include position-set($arguments);
@@ -68,18 +59,16 @@
 @mixin position-set($arguments: false) {
    @include position-arguments($arguments);
 }
-/**
- * Square.
- */
+
+// Square
 @mixin square($size) {
    width: $size;
    height: $size;
    line-height: $size;
    text-align: center;
 }
-/**
- * Vertical align.
- */
+
+// Vertical align
 @mixin vertical-align($position) {
    vertical-align: $position;
 }

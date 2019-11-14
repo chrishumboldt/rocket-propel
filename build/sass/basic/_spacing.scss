@@ -1,6 +1,4 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 $space-base: 24px !default;
 $space-x2-small: $space-base / 6;
@@ -23,9 +21,7 @@ $space-large-em: $space-base-em * 3;
 $space-x-large-em: $space-base-em * 5;
 $space-x2-large-em: $space-base-em * 6;
 
-/**
- * Margins.
- */
+// Margins
 @mixin margin($spacing: $space-base) {
    margin: $spacing;
 }
@@ -52,9 +48,8 @@ $space-x2-large-em: $space-base-em * 6;
 @mixin margin-none() {
    margin: 0;
 }
-/**
- * Padding.
- */
+
+// Padding
 @mixin padding($spacing: $space-base) {
    padding: $spacing;
 }
@@ -81,9 +76,8 @@ $space-x2-large-em: $space-base-em * 6;
 @mixin padding-none() {
    padding: 0;
 }
-/**
- * Spacing reset.
- */
+
+// Spacing reset
 @mixin spacing-none() {
    padding: 0;
    margin: 0;

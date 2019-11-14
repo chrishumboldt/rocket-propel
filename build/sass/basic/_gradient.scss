@@ -1,10 +1,6 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
-/**
- * Animated gradients.
- */
+// Animated gradients
 @mixin gradient-animate-angle($top-left-colour, $bottom-right-colour) {
    @include gradient-animate($top-left-colour, $bottom-right-colour, 135deg);
 }
@@ -67,9 +63,7 @@
    -moz-animation: none;
    animation: none;
 }
-/**
- * Gradients
- */
+// Gradients
 @mixin gradient-angle($left-colour, $right-colour, $angle: -45deg) {
    background: $left-colour;
    /* Fallback solid color for old browsers */

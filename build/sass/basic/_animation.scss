@@ -1,11 +1,6 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
-
-/**
- * Animate.
- */
+// Animate
 @mixin transition($attribute, $transition-speed: 0.2s, $delay: 0s, $easing: ease-out) {
    @if $attribute == transform {
       -webkit-transition: -webkit-#{$attribute} $transition-speed $easing $delay;
@@ -41,9 +36,7 @@
    @include transition-timing-function($timing);
 }
 
-/**
- * Animation.
- */
+// Animation
 @mixin animation-delay($delay) {
    -webkit-animation-delay: $delay;
    -moz-animation-delay: $delay;
@@ -101,9 +94,7 @@
    }
 }
 
-/**
- * Keyframes.
- */
+// Keyframes
 @mixin keyframes($name) {
    @-webkit-keyframes #{$name} {
       @content;

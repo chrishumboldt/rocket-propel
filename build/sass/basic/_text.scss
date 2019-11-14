@@ -1,6 +1,4 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 $georgia: Georgia, Cambria, "Times New Roman", Times, serif;
 $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -32,9 +30,7 @@ $weight-base: 400;
 $weight-bold: 700;
 $weight-heavy: 900;
 
-/**
- * Font.
- */
+// Font
 @mixin font-family($font: $helvetica) {
    font-family: $font;
 }
@@ -55,9 +51,8 @@ $weight-heavy: 900;
 @mixin letter-spacing($letter-spacing: normal) {
    letter-spacing: $letter-spacing;
 }
-/**
- * Text.
- */
+
+// Text
 @mixin text($arguments: false) {
    @include text-arguments($arguments);
 }

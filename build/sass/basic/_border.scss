@@ -1,10 +1,6 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
-/**
- * Border lines.
- */
+// Border lines
 @mixin border($colour: $grey, $size: 1px, $type: solid) {
    border: $size $type $colour;
 }
@@ -32,9 +28,7 @@
    border: medium none $black;
 }
 
-/**
- * Border radius.
- */
+// Border radius
 @mixin border-radius($radius: 2px) {
    border-radius: $radius;
    -ms-border-radius: $radius;

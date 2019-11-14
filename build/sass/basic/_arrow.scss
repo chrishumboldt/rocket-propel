@@ -1,6 +1,4 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 @mixin arrow($position: bottom, $colour: $white, $size: 20px) {
    position: relative;
@@ -40,9 +38,7 @@
    @include arrow-colour($position, $colour);
 }
 
-/**
- * Arrow colour.
- */
+// Arrow colour
 @mixin arrow-colour($position: bottom, $colour: $white) {
    background: $colour;
    &:after {
@@ -61,9 +57,7 @@
    }
 }
 
-/**
- * No arrow.
- */
+// No arrow
 @mixin arrow-no($colour: $white) {
    background: $colour;
    &:after {

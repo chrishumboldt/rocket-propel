@@ -1,15 +1,10 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
-/**
- * Development.
- */
+// Development
 @import "development/function";
 @import "development/mixin";
-/**
- * Basic.
- */
+
+// Basic
 @import "basic/animation";
 @import "basic/arrow";
 @import "basic/background";
@@ -30,9 +25,8 @@
 @import "basic/spacing";
 @import "basic/text";
 @import "basic/transform";
-/**
- * CSS.
- */
+
+// CSS
 @import "css/background";
 @import "css/display";
 @import "css/global";
@@ -42,7 +36,6 @@
 @import "css/sizing";
 @import "css/spacing";
 @import "css/text";
-/**
- * Execute.
- */
+
+// Execute
 @import "css/execute";

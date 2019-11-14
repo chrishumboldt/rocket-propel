@@ -1,15 +1,11 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 $column-limit: 12 !default;
 $limit-width: 68.750em !default;
 $break-main: 43.813em !default;
 $min-max: false !default;
 
-/**
- * Row.
- */
+// Row
 @mixin row() {
    width: 100%;
    &:before,
@@ -21,9 +17,8 @@ $min-max: false !default;
       clear: both;
    }
 }
-/**
- * Spans.
- */
+
+// Spans
 @mixin span($span: $column-limit, $span-column-limit: $column-limit) {
    float: left;
    position: relative;
@@ -37,26 +32,23 @@ $min-max: false !default;
    @include offset(0);
    @include offset-right(0);
 }
-/**
- * Offsets.
- */
+
+// Offsets
 @mixin offset($off-by, $span-column-limit: $column-limit) {
    margin-left: percentage($off-by / $span-column-limit);
 }
 @mixin offset-right($off-by, $span-column-limit: $column-limit) {
    margin-right: percentage($off-by / $span-column-limit);
 }
-/**
- * Layout.
- */
+
+// Layout
 @mixin limit($limit: $limit-width) {
    width: 100%;
    max-width: $limit;
    margin: 0 auto;
 }
-/**
- * Breakpoint.
- */
+
+// Breakpoint
 @mixin breakpoint($breakpoint, $breakpoint-type: false, $orientation: false) {
    @if $breakpoint == retina {
       @media screen and (-webkit-min-device-pixel-ratio: 1.75),
@@ -145,11 +137,10 @@ $min-max: false !default;
       }
    }
 }
-/**
- * Flexbox
- * Based on: https://github.com/zessx/sass-flexbox/blob/master/sass-flexbox.scss
- * By: Samuel Marchal
- */
+
+// Flexbox
+// Based on: https://github.com/zessx/sass-flexbox/blob/master/sass-flexbox.scss
+// By: Samuel Marchal
 @mixin align-content($align: flex-start) {
    @if $align == flex-start {
       -ms-flex-line-pack: start;
