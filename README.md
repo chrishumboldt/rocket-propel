@@ -95,46 +95,31 @@ Propel comes pre-packaged with a host of SASS variables. They are all listed bel
 
 Variable | Default
 ---- | ----
-`$column-limit` | 12
-`$font-family` | 'Open Sans', Helvetica, Arial, sans-serif
-`$images-root` | ''
-`$limit-width` | 68.750em
+`$columnLimit` | 12
+`$fontFamily` | 'Open Sans', Helvetica, Arial, sans-serif
+`$limitWidth` | 68.750em
 
 ##### Breakpoints
 Variable | Value | Evaluates To
 ---- | ---- | ----
-`$bp-x3-small` | 12.500em | 200px
-`$bp-x2-small` | 18.750em | 300px
-`$bp-x-small` | 21.875em | 350px
-`$bp-small` | 28.125em | 450px
-`$bp-medium` | 34.375em | 550px
-`$bp-large` | 43.750em | 700px
-`$bp-x-large` | 56.250em | 900px
-`$bp-x2-large` | 68.750em | 1100px
-`$bp-x3-large` | 78.125em | 1250px
-`$bp-huge` | 87.500em | 1400px
-`$bp-gargantuan` | 125.000em | 2000px
+`$bpSmall` | 21.875em | 350px
+`$bpMedium` | 46.875em | 700px
+`$bpLarge` | 68.750em | 1100px
 
 ##### Colours
 Type | Variables
 ---- | ----
-Mono | `$black` `$black-base` `$grey-x2-light` `$grey-x-light` `$grey-light` `$grey` `$grey-dark` `$grey-x-dark` `$grey-x2-dark`
+Mono | `$black` `$blackBase` `$greyX2Light` `$greyXLight` `$greyLight` `$grey` `$greyDark` `$greyXDark` `$greyX2Dark`
 Primary | `$aqua` `$blue` `$green` `$orange` `$pink` `$purple` `$red` `$yellow`
-Secondary | `$asbestos` `$asphalt` `$bondi-blue` `$cloud` `$concrete` `$grey-blue-x-light` `$grey-blue-light` `$grey-blue` `$grey-blue-dark` `$grey-blue-x-dark` `$midnight` `$off-white` `$off-white-dark` `$river-bed` `$silver`
+Secondary | `$asbestos` `$asphalt` `$bondiBlue` `$cloud` `$concrete` `$greyBlueXLight` `$greyBlueLight` `$greyBlue` `$greyBlueDark` `$greyBlueXDark` `$midnight` `$offWhite` `$offWhiteDark` `$riverBed` `$silver`
 
 ##### Spacing
 Variable | Value
 ---- | ----
-`$space-base` | 24px
-`$space-x2-small` | 4px
-`$space-x-small` | 6px
-`$space-small` | 12px
-`$space-minor` | 16px
-`$space-slight` | 36px
-`$space-medium` | 48px
-`$space-large` | 72px
-`$space-x-large` | 120px
-`$space-x2-large` | 144px
+`$spaceBase` | 24px
+`$spaceSmall` | 12px
+`$spaceMedium` | 48px
+`$spaceLarge` | 72px
 
 ##### Text
 Variable | Value
@@ -143,12 +128,12 @@ Variable | Value
 `$helvetica` | "Helvetica Neue", Helvetica, Arial, sans-serif
 `$impact` | Impact, Charcoal, sans-serif
 `$lato` | 'Lato', sans-serif
-`$lucinda-grande` | "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
+`$lucindaGrande` | "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
 `$monospace` | Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace
-`$open-sans` | 'Open Sans', Helvetica, Arial, sans-serif
+`$openSans` | 'Open Sans', Helvetica, Arial, sans-serif
 `$roboto` | 'Roboto', 'Helvetic Neue', Helvetica, Arial
 `$tahoma` | Tahoma, Geneva, sans-serif
-`$times-new-roman` | "Times New Roman", Times, serif
+`$timesNewRoman` | "Times New Roman", Times, serif
 `$trebuchet` | "Trebuchet MS", Helvetica, sans-serif
 `$verdana` | Verdana, Geneva, sans-serif
 
@@ -157,25 +142,19 @@ The size evaluates to an em value and then down to a pixel value.
 
 Variable | Evaluates To
 ---- | ----
-`$size-x2-small` | 8px
-`$size-x-small` | 10px
-`$size-small` | 12px
-`$size-minor` | 14px
-`$size-base` | 16px
-`$size-slight` | 18px
-`$size-medium` | 20px
-`$size-large` | 24px
-`$size-x-large` | 36px
-`$size-x2-large` | 48px
+`$sizeSmall` | 14px
+`$sizeBase` | 16px
+`$sizeMedium` | 18px
+`$sizeLarge` | 24px
 
 ##### Text Weight
 Variable | Value
 ---- | ----
-`$weight-thin` | 100
-`$weight-light` | 300
-`$weight-base` | 400
-`$weight-bold` | 700
-`$weight-heavy` | 900
+`$weightThin` | 100
+`$weightLight` | 300
+`$weightBase` | 400
+`$weightBold` | 700
+`$weightHeavy` | 900
 
 #### Animation
 Mixin | Defaults | Description
@@ -230,8 +209,6 @@ Mixin | Defaults | Description
 `background-single()` | | Set the background position to center<br>Stop the background from repeating.
 
 #### Background Images
-**Note** that all the image urls already include the relative image path as per `$images-root` settings variable.
-
 Mixin | Defaults | Description
 ---- | ---- | ----
 `background-image(url, pos)` | `pos`: `top left` | Set the background image on an element.
@@ -241,9 +218,6 @@ Mixin | Defaults | Description
 `background-image-single(url, pos)` | `pos`: `center` | Set a single background image on an element.
 
 ```scss
-// Change the images root if you want to.
-$images-root: "assets/img/";
-
 // Set the background
 .my-element {
    @include background-image-cover("global/background.png");
@@ -378,12 +352,12 @@ Mixin | Defaults | Description
 ---- | ---- | ----
 `breakpoint(x, y, z)` | `y`: `false`<br>`z`: `false` | Generate a media query based on a Rocket preset or a value.<br>`x`: `large`, `small` or an `em/px` value.<br>`y`: Breakpoint type of `min` or `max`<br>`z`: breakpoint orientation.
 `breakpoint-vertical(x, y, z)` | `y`: `false`<br>`z`: `false` | The same as breakpoint except it activates vertically.
-`limit(x)` | `x`: `$limit-width` | Assigns a maximum width to an element and centers it.<br>Anything below the limit will become fluid.<br>Used mainly to contain row elements.
-`offset(x, y)` | `y`: `$column-limit` | Push an element out `x` amount of columns from the left.
-`offset-right(x, y)` | `y`: `$column-limit` | Push an element `x` amount of columns from the right.
+`limit(x)` | `x`: `$limitWidth` | Assigns a maximum width to an element and centers it.<br>Anything below the limit will become fluid.<br>Used mainly to contain row elements.
+`offset(x, y)` | `y`: `$columnLimit` | Push an element out `x` amount of columns from the left.
+`offset-right(x, y)` | `y`: `$columnLimit` | Push an element `x` amount of columns from the right.
 `row()` | | Turns an element into a row.<br>Row is needed to wrap any **span** elements.<br>A row element will default to a 100% width of its container.
-`span(x, y)` | `y`: `$column-limit` | Span an element `x` amount of columns within the `z` total.<br>See and example below.
-`span-new(x, y)` | `y`: `$column-limit` | Apply a new span amount of `x` to an element.
+`span(x, y)` | `y`: `$columnLimit` | Span an element `x` amount of columns within the `z` total.<br>See and example below.
+`span-new(x, y)` | `y`: `$columnLimit` | Apply a new span amount of `x` to an element.
 
 ```html
 <div class="container">
@@ -664,9 +638,6 @@ Class | Options | Description
 <div class="_txt-weight-xl">Very light text.</div>
 <div class="_txt-r">Text aligned right.</div>
 ```
-
-## Blueplate Deprecated
-The original library, Blueplate, has been deprecated. The entire Webplate project is being refactored and rebranded with a new development philosophy. Blueplate will be maintained only with bug fixes under the **blueplate** branch.
 
 ## Author
 Created and maintained by Chris Humboldt<br>

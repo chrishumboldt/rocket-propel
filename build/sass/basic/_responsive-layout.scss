@@ -1,9 +1,11 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
-$column-limit: 12 !default;
-$limit-width: 68.750em !default;
-$break-main: 43.813em !default;
-$min-max: false !default;
+$columnLimit: 12 !default;
+$limitWidth: 68.750em !default;
+$breakMain: 43.813em !default;
+$minMax: false !default;
 
 // Row
 @mixin row() {
@@ -19,37 +21,37 @@ $min-max: false !default;
 }
 
 // Spans
-@mixin span($span: $column-limit, $span-column-limit: $column-limit) {
+@mixin span($span: $columnLimit, $spanColumnLimit: $columnLimit) {
    float: left;
    position: relative;
-   width: percentage($span / $span-column-limit);
+   width: percentage($span / $spanColumnLimit);
 }
-@mixin span-new($span: $column-limit, $span-column-limit: $column-limit) {
-   width: percentage($span / $span-column-limit);
+@mixin span-new($span: $columnLimit, $spanColumnLimit: $columnLimit) {
+   width: percentage($span / $spanColumnLimit);
 }
 @mixin span-reset() {
-   @include span($column-limit);
+   @include span($columnLimit);
    @include offset(0);
    @include offset-right(0);
 }
 
 // Offsets
-@mixin offset($off-by, $span-column-limit: $column-limit) {
-   margin-left: percentage($off-by / $span-column-limit);
+@mixin offset($offBy, $spanColumnLimit: $columnLimit) {
+   margin-left: percentage($offBy / $spanColumnLimit);
 }
-@mixin offset-right($off-by, $span-column-limit: $column-limit) {
-   margin-right: percentage($off-by / $span-column-limit);
+@mixin offset-right($offBy, $spanColumnLimit: $columnLimit) {
+   margin-right: percentage($offBy / $spanColumnLimit);
 }
 
 // Layout
-@mixin limit($limit: $limit-width) {
+@mixin limit($limit: $limitWidth) {
    width: 100%;
    max-width: $limit;
    margin: 0 auto;
 }
 
 // Breakpoint
-@mixin breakpoint($breakpoint, $breakpoint-type: false, $orientation: false) {
+@mixin breakpoint($breakpoint, $breakpointType: false, $orientation: false) {
    @if $breakpoint == retina {
       @media screen and (-webkit-min-device-pixel-ratio: 1.75),
       (min-resolution: 168dpi) {
@@ -57,42 +59,42 @@ $min-max: false !default;
       }
    } @else {
       /* Min max */
-      @if $breakpoint-type == false {
+      @if $breakpointType == false {
          @if $breakpoint == small {
-            $min-max: max-width !global;
+            $minMax: max-width !global;
          } @else if $breakpoint == fluid {
-            $min-max: max-width !global;
+            $minMax: max-width !global;
          } @else {
-            $min-max: min-width !global;
+            $minMax: min-width !global;
          }
       } @else {
-         @if $breakpoint-type == max {
-            $min-max: max-width !global;
+         @if $breakpointType == max {
+            $minMax: max-width !global;
          } @else {
-            $min-max: min-width !global;
+            $minMax: min-width !global;
          }
       }
       /* Breakpoint */
       @if $breakpoint == large {
-         $breakpoint: $break-main;
+         $breakpoint: $breakMain;
       } @else if $breakpoint == fluid {
-         $breakpoint: $limit-width;
+         $breakpoint: $limitWidth;
       } @else if $breakpoint == small {
-         $breakpoint: $break-main;
+         $breakpoint: $breakMain;
       }
       /* Return (check orientation) */
       @if $orientation != false {
-         @media only screen and ($min-max: $breakpoint) and (orientation : $orientation) {
+         @media only screen and ($minMax: $breakpoint) and (orientation : $orientation) {
             @content;
          }
       } @else {
-         @media only screen and ($min-max: $breakpoint) {
+         @media only screen and ($minMax: $breakpoint) {
             @content;
          }
       }
    }
 }
-@mixin breakpoint-vertical($breakpoint, $breakpoint-type: false, $orientation: false) {
+@mixin breakpoint-vertical($breakpoint, $breakpointType: false, $orientation: false) {
    @if $breakpoint == retina {
       @media screen and (-webkit-min-device-pixel-ratio: 1.75),
       (min-resolution: 168dpi) {
@@ -101,37 +103,37 @@ $min-max: false !default;
    }
    @else {
       /* Min max */
-      @if $breakpoint-type == false {
+      @if $breakpointType == false {
          /* Large */
          @if $breakpoint == small {
-            $min-max: max-height !global;
+            $minMax: max-height !global;
          } @else if $breakpoint == fluid {
-            $min-max: max-height !global;
+            $minMax: max-height !global;
          } @else {
-            $min-max: min-height !global;
+            $minMax: min-height !global;
          }
       } @else {
-         @if $breakpoint-type == max {
-            $min-max: max-height !global;
+         @if $breakpointType == max {
+            $minMax: max-height !global;
          } @else {
-            $min-max: min-height !global;
+            $minMax: min-height !global;
          }
       }
       /* Breakpoint */
       @if $breakpoint == large {
-         $breakpoint: $break-main;
+         $breakpoint: $breakMain;
       } @else if $breakpoint == fluid {
-         $breakpoint: $limit-width;
+         $breakpoint: $limitWidth;
       } @else if $breakpoint == small {
-         $breakpoint: $break-main;
+         $breakpoint: $breakMain;
       }
       /* Return (check orientation) */
       @if $orientation != false {
-         @media only screen and ($min-max: $breakpoint) and (orientation : $orientation) {
+         @media only screen and ($minMax: $breakpoint) and (orientation : $orientation) {
             @content;
          }
       } @else {
-         @media only screen and ($min-max: $breakpoint) {
+         @media only screen and ($minMax: $breakpoint) {
             @content;
          }
       }

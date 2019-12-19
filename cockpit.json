@@ -1,6 +1,0 @@
-{
-   "build": [{
-      "name": "propel",
-      "css": ["~/propel.scss"]
-   }]
-}

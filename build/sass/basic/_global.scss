@@ -1,6 +1,8 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
-$font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$fontFamily: 'Open Sans', Helvetica, Arial, sans-serif;
 
 @mixin global-setup() {
    @include global-model();
@@ -19,7 +21,7 @@ $font-family: 'Open Sans', Helvetica, Arial, sans-serif;
    }
 }
 @mixin global-html() {
-   font-family: $font-family;
+   font-family: $fontFamily;
    color: lighten(#000, 20%);
    background-color: #fff;
    -ms-text-size-adjust: 100%;

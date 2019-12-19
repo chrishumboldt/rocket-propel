@@ -1,6 +1,6 @@
 {
    "name": "@chrishumboldt/rocket-propel",
-   "version": "5.0.2",
+   "version": "6.0.0",
    "description": "A lightweight SASS mixin library and responsive CSS layout engine.",
    "repository": {
       "type": "git",
@@ -20,8 +20,5 @@
    "bugs": {
       "url": "https://github.com/chrishumboldt/Rocket-Propel/issues"
    },
-   "homepage": "https://github.com/chrishumboldt/Rocket-Propel#readme",
-   "devDependencies": {
-      "rocket-demo": "^2.0.0"
-   }
+   "homepage": "https://github.com/chrishumboldt/Rocket-Propel#readme"
 }

@@ -1,14 +1,16 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
-@mixin drop-shadow($color: fade-out(#000, 0.6), $size: 3px, $vertical-offset: 0px, $horizontal-offset: 0px) {
-   box-shadow: $horizontal-offset $vertical-offset $size $color;
-   -webkit-box-shadow: $horizontal-offset $vertical-offset $size $color;
-   -moz-box-shadow: $horizontal-offset $vertical-offset $size $color;
+@mixin drop-shadow($color: fade-out(#000, 0.6), $size: 3px, $verticalOffset: 0px, $horizontalOffset: 0px) {
+   box-shadow: $horizontalOffset $verticalOffset $size $color;
+   -webkit-box-shadow: $horizontalOffset $verticalOffset $size $color;
+   -moz-box-shadow: $horizontalOffset $verticalOffset $size $color;
 }
-@mixin drop-shadow-inset($color: fade-out(#000, 0.6), $size: 3px, $vertical-offset: 0px, $horizontal-offset: 0px) {
-   box-shadow: inset $horizontal-offset $vertical-offset $size $color;
-   -webkit-box-shadow: inset $horizontal-offset $vertical-offset $size $color;
-   -moz-box-shadow: inset $horizontal-offset $vertical-offset $size $color;
+@mixin drop-shadow-inset($color: fade-out(#000, 0.6), $size: 3px, $verticalOffset: 0px, $horizontalOffset: 0px) {
+   box-shadow: inset $horizontalOffset $verticalOffset $size $color;
+   -webkit-box-shadow: inset $horizontalOffset $verticalOffset $size $color;
+   -moz-box-shadow: inset $horizontalOffset $verticalOffset $size $color;
 }
 @mixin drop-shadow-none() {
    box-shadow: none;

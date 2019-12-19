@@ -1,4 +1,6 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
 @mixin mod-propel-responsive-layout() {
    ._row {
@@ -11,13 +13,13 @@
          @include float(left);
       }
 
-      @for $index from 1 through $column-limit {
+      @for $index from 1 through $columnLimit {
          ._span-#{$index} {
             @include span-new($index);
          }
       }
 
-      @for $index from 1 through ($column-limit - 1) {
+      @for $index from 1 through ($columnLimit - 1) {
          ._offset-#{$index} {
             @include offset($index);
          }
@@ -33,13 +35,13 @@
    /* Large view */
    @include breakpoint($bp-large) {
       ._row {
-         @for $index from 1 through $column-limit {
+         @for $index from 1 through $columnLimit {
             ._span-large-#{$index} {
                @include span-new($index);
             }
          }
 
-         @for $index from 1 through ($column-limit - 1) {
+         @for $index from 1 through ($columnLimit - 1) {
             ._offset-large-#{$index} {
                @include offset($index);
             }
@@ -52,13 +54,13 @@
    /* Small view */
    @include breakpoint($bp-small) {
       ._row {
-         @for $index from 1 through $column-limit {
+         @for $index from 1 through $columnLimit {
             ._span-small-#{$index} {
                @include span-new($index);
             }
          }
 
-         @for $index from 1 through ($column-limit - 1) {
+         @for $index from 1 through ($columnLimit - 1) {
             ._offset-small-#{$index} {
                @include offset($index);
             }

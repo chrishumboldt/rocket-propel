@@ -1,16 +1,18 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
 // Mono
 $white: #fff;
 $black: #000;
-$black-base: lighten($black, 22%);
-$grey-x2-light: lighten($black, 98%);
-$grey-x-light: lighten($black, 96%);
-$grey-light: lighten($black, 90%);
+$blackBase: lighten($black, 22%);
+$greyX2Light: lighten($black, 98%);
+$greyXLight: lighten($black, 96%);
+$greyLight: lighten($black, 90%);
 $grey: lighten($black, 50%);
-$grey-dark: lighten($black, 40%);
-$grey-x-dark: lighten($black, 35%);
-$grey-x2-dark: lighten($black, 30%);
+$greyDark: lighten($black, 40%);
+$greyXDark: lighten($black, 35%);
+$greyX2Dark: lighten($black, 30%);
 
 // Primary
 $aqua: #1abc9c;
@@ -25,36 +27,36 @@ $yellow: #f1c40f;
 // Secondary
 $asbestos: #7f8c8d;
 $asphalt: #34495e;
-$bondi-blue: #008D9C;
+$bondiBlue: #008D9C;
 $cloud: #ecf0f1;
 $concrete: #95a5a6;
-$grey-blue-x-light: #f8f9fA;
-$grey-blue-light: #ccd1d9;
-$grey-blue: #aab2bd;
-$grey-blue-dark: #656d78;
-$grey-blue-x-dark: #434a54;
+$greyBlueXLight: #f8f9fA;
+$greyBlueLight: #ccd1d9;
+$greyBlue: #aab2bd;
+$greyBlueDark: #656d78;
+$greyBlueXDark: #434a54;
 $midnight: #2c3e50;
-$off-white: #f5f7fa;
-$off-white-dark: #e6e9ed;
-$river-bed: #434d5a;
+$offWhite: #f5f7fa;
+$offWhiteDark: #e6e9ed;
+$riverBed: #434d5a;
 $silver: #bdc3c7;
 
 // Lists
 $ar-colours-mono: (
 	"white": $white,
 	"black": $black,
-	"black-base": $black-base,
-	"grey-x2-light": $grey-x2-light,
-	"grey-x-light": $grey-x-light,
-	"grey-light": $grey-light,
+	"black-base": $blackBase,
+	"greyX2Light": $greyX2Light,
+	"greyXLight": $greyXLight,
+	"greyLight": $greyLight,
 	"grey": $grey,
-	"grey-dark": $grey-dark,
-	"grey-x-dark": $grey-x-dark,
-	"grey-x2-dark": $grey-x2-dark
+	"greyDark": $greyDark,
+	"greyXDark": $greyXDark,
+	"greyX2Dark": $greyX2Dark
 );
 $ar-colours-primary: (
 	"grey": $grey,
-	"black": $black-base,
+	"black": $blackBase,
 	"white": $white,
 	"aqua": $aqua,
 	"blue": $blue,
@@ -68,22 +70,22 @@ $ar-colours-primary: (
 $ar-colours-secondary: (
 	"asbestos": $asbestos,
 	"asphalt": $asphalt,
-	"bondi-blue": $bondi-blue,
+	"bondiBlue": $bondiBlue,
 	"cloud": $cloud,
 	"concrete": $concrete,
-	"grey-blue-light": $grey-blue-light,
-	"grey-blue": $grey-blue,
-	"grey-blue-dark": $grey-blue-dark,
-	"grey-blue-x-dark": $grey-blue-x-dark,
+	"greyBlueLight": $greyBlueLight,
+	"greyBlue": $greyBlue,
+	"greyBlueDark": $greyBlueDark,
+	"greyBlueXDark": $greyBlueXDark,
 	"midnight": $midnight,
-	"off-white": $off-white,
-	"off-white-dark": $off-white-dark,
-	"river-bed": $river-bed,
+	"offWhite": $offWhite,
+	"offWhiteDark": $offWhiteDark,
+	"river-bed": $riverBed,
 	"silver": $silver
 );
 $ar-colours-buttons: (
-	"grey": $grey-light,
-	"black": $black-base,
+	"grey": $greyLight,
+	"black": $blackBase,
 	"white": $white,
 	"aqua": $aqua,
 	"blue": $blue,
@@ -95,8 +97,8 @@ $ar-colours-buttons: (
 	"yellow": $yellow
 );
 $ar-colours-form: (
-	"grey": $grey-light,
-	"black": $black-base,
+	"grey": $greyLight,
+	"black": $blackBase,
 	"white": $white,
 	"aqua": $aqua,
 	"blue": $blue,
@@ -106,5 +108,5 @@ $ar-colours-form: (
 	"purple": $purple,
 	"red": $red,
 	"yellow": $yellow,
-	"grey-blue": $grey-blue
+	"greyBlue": $greyBlue
 );

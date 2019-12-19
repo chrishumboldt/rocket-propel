@@ -1,4 +1,6 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
 @mixin mod-propel-background() {
 	._back-pos-left {
@@ -40,11 +42,11 @@
 	._back-grey {
 		@include background-colour($grey);
 	}
-	._back-grey-light {
-		@include background-colour($grey-light);
+	._back-greyLight {
+		@include background-colour($greyLight);
 	}
-	._back-grey-x-light {
-		@include background-colour($grey-x-light);
+	._back-greyXLight {
+		@include background-colour($greyXLight);
 	}
 	._back-white {
 		@include background-colour($white);

@@ -1,4 +1,6 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
 @mixin mod-propel-layout() {
    ._float-none {
@@ -31,18 +33,18 @@
 
    /* Limit */
    ._limit,
-   ._limit-x2-small,
-   ._limit-x-small,
+   ._limit-x2Small,
+   ._limit-xSmall,
    ._limit-small,
    ._limit-minor,
    ._limit-medium,
    ._limit-large {
       @include limit();
    }
-   ._limit-x2-small {
+   ._limit-x2Small {
       @include width-max(25em);
    }
-   ._limit-x-small {
+   ._limit-xSmall {
       @include width-max(40em);
    }
    ._limit-small {

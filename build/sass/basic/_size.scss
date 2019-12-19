@@ -1,16 +1,18 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
 @mixin size($width: 0px, $height: 0px) {
    @include width($width);
    @include height($height);
 }
-@mixin height($height: 0px, $height-max: false, $height-min: false) {
+@mixin height($height: 0px, $heightMax: false, $heightMin: false) {
    height: $height;
-   @if $height-max != false {
-      @include height-max($height-max);
+   @if $heightMax != false {
+      @include height-max($heightMax);
    }
-   @if $height-min != false {
-      @include height-min($height-min);
+   @if $heightMin != false {
+      @include height-min($heightMin);
    }
 }
 @mixin height-max($height: 0px) {
@@ -19,13 +21,13 @@
 @mixin height-min($height: 0px) {
    min-height: $height;
 }
-@mixin width($width: 0px, $width-max: false, $width-min: false) {
+@mixin width($width: 0px, $widthMax: false, $widthMin: false) {
    width: $width;
-   @if $width-max != false {
-      @include width-max($width-max);
+   @if $widthMax != false {
+      @include width-max($widthMax);
    }
-   @if $width-min != false {
-      @include width-min($width-min);
+   @if $widthMin != false {
+      @include width-min($widthMin);
    }
 }
 @mixin width-max($width: 0px) {

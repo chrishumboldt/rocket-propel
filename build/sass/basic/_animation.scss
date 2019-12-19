@@ -1,17 +1,19 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
 // Animate
-@mixin transition($attribute, $transition-speed: 0.2s, $delay: 0s, $easing: ease-out) {
+@mixin transition($attribute, $transitionSpeed: 0.2s, $delay: 0s, $easing: ease-out) {
    @if $attribute == transform {
-      -webkit-transition: -webkit-#{$attribute} $transition-speed $easing $delay;
-      -moz-transition: -moz-#{$attribute} $transition-speed $easing $delay;
-      -ms-transition: -ms-#{$attribute} $transition-speed $easing $delay;
-      transition: $attribute $transition-speed $easing $delay;
+      -webkit-transition: -webkit-#{$attribute} $transitionSpeed $easing $delay;
+      -moz-transition: -moz-#{$attribute} $transitionSpeed $easing $delay;
+      -ms-transition: -ms-#{$attribute} $transitionSpeed $easing $delay;
+      transition: $attribute $transitionSpeed $easing $delay;
    } @else {
-      -webkit-transition: $attribute $transition-speed $easing $delay;
-      -moz-transition: $attribute $transition-speed $easing $delay;
-      -ms-transition: $attribute $transition-speed $easing $delay;
-      transition: $attribute $transition-speed $easing $delay;
+      -webkit-transition: $attribute $transitionSpeed $easing $delay;
+      -moz-transition: $attribute $transitionSpeed $easing $delay;
+      -ms-transition: $attribute $transitionSpeed $easing $delay;
+      transition: $attribute $transitionSpeed $easing $delay;
    }
 }
 @mixin transition-none() {
@@ -26,8 +28,8 @@
    -ms-transition-timing-function: $timing;
    transition-timing-function: $timing;
 }
-@mixin animate($attribute, $transition-speed: 0.2s, $delay: 0s, $easing: ease-out) {
-   @include transition($attribute, $transition-speed, $delay, $easing);
+@mixin animate($attribute, $transitionSpeed: 0.2s, $delay: 0s, $easing: ease-out) {
+   @include transition($attribute, $transitionSpeed, $delay, $easing);
 }
 @mixin animate-none() {
    @include transition-none();
@@ -79,7 +81,7 @@
    -ms-animation-timing-function: $timing;
    animation-timing-function: $timing;
 }
-@mixin animation($name, $duration: 0.4s, $iteration: false, $direction: false, $fill-mode: false) {
+@mixin animation($name, $duration: 0.4s, $iteration: false, $direction: false, $fillMode: false) {
    @include animation-name($name);
    @include animation-duration($duration);
 
@@ -89,8 +91,8 @@
    @if $direction != false {
       @include animation-direction($direction);
    }
-   @if $fill-mode != false {
-      @include animation-fill-mode($fill-mode);
+   @if $fillMode != false {
+      @include animation-fill-mode($fillMode);
    }
 }
 

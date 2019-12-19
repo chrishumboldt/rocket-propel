@@ -1,4 +1,6 @@
-// @author Chris Humboldt
+/**
+ * @author Chris Humboldt
+ */
 
 @mixin mod-propel-text() {
    ._txt-hide {
@@ -14,10 +16,10 @@
       @include text-align(right);
    }
    ._txt-size-x2l {
-      @include text-size(x2-large);
+      @include text-size(x2Large);
    }
    ._txt-size-xl {
-      @include text-size(x-large);
+      @include text-size(xLarge);
    }
    ._txt-size-left {
       @include text-size(large);
@@ -32,10 +34,10 @@
       @include text-size(small);
    }
    ._txt-size-xs {
-      @include text-size(x-small);
+      @include text-size(xSmall);
    }
    ._txt-size-x2s {
-      @include text-size(x2-small);
+      @include text-size(x2Small);
    }
    ._txt-weight-xb {
       @include text-weight(heavy);
@@ -73,10 +75,10 @@
 
    @include breakpoint($bp-large) {
       ._txt-size-x2l-large {
-         @include text-size(x2-large);
+         @include text-size(x2Large);
       }
       ._txt-size-xl-large {
-         @include text-size(x-large);
+         @include text-size(xLarge);
       }
       ._txt-size-l-large {
          @include text-size(large);
@@ -91,10 +93,10 @@
          @include text-size(small);
       }
       ._txt-size-xs-large {
-         @include text-size(x-small);
+         @include text-size(xSmall);
       }
       ._txt-size-x2s-large {
-         @include text-size(x2-small);
+         @include text-size(x2Small);
       }
       ._txt-weight-xb-large {
          @include text-weight(heavy);
