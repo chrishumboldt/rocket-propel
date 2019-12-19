@@ -42,7 +42,7 @@ $riverBed: #434d5a;
 $silver: #bdc3c7;
 
 // Lists
-$ar-colours-mono: (
+$coloursMono: (
 	"white": $white,
 	"black": $black,
 	"black-base": $blackBase,
@@ -54,7 +54,7 @@ $ar-colours-mono: (
 	"greyXDark": $greyXDark,
 	"greyX2Dark": $greyX2Dark
 );
-$ar-colours-primary: (
+$coloursPrimary: (
 	"grey": $grey,
 	"black": $blackBase,
 	"white": $white,
@@ -67,7 +67,7 @@ $ar-colours-primary: (
 	"red": $red,
 	"yellow": $yellow
 );
-$ar-colours-secondary: (
+$coloursSecondary: (
 	"asbestos": $asbestos,
 	"asphalt": $asphalt,
 	"bondiBlue": $bondiBlue,
@@ -83,7 +83,7 @@ $ar-colours-secondary: (
 	"river-bed": $riverBed,
 	"silver": $silver
 );
-$ar-colours-buttons: (
+$coloursButtons: (
 	"grey": $greyLight,
 	"black": $blackBase,
 	"white": $white,
@@ -96,7 +96,7 @@ $ar-colours-buttons: (
 	"red": $red,
 	"yellow": $yellow
 );
-$ar-colours-form: (
+$coloursForm: (
 	"grey": $greyLight,
 	"black": $blackBase,
 	"white": $white,
