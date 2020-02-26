@@ -16,15 +16,15 @@
 }
 @mixin transition-property($attributes) {
   @if $attributes == transform {
-    -webkit-transition-property: -webkit-#{$attributes};
-    -moz-transition-property: -moz-#{$attributes};
-    -ms-transition-property: -ms-#{$attributes};
-    transition-property: $attributes;
+    -webkit-transition-property: -webkit-#{unquote($attributes)};
+    -moz-transition-property: -moz-#{unquote($attributes)};
+    -ms-transition-property: -ms-#{unquote($attributes)};
+    transition-property: unquote($attributes);
   } @else {
-    -webkit-transition-property: $attributes;
-    -moz-transition-property: $attributes;
-    -ms-transition-property: $attributes;
-    transition-property: $attributes;
+    -webkit-transition-property: unquote($attributes);
+    -moz-transition-property: unquote($attributes);
+    -ms-transition-property: unquote($attributes);
+    transition-property: unquote($attributes);
   }
 }
 @mixin transition-delay($delay: 0s) {
