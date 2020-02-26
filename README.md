@@ -62,7 +62,7 @@ Start by importing the necessary file into your own SASS file and include the re
    .left, .middle, .right {
       @include span(12); // 100% width
    }
-   @include breakpoint($bp-large) {
+   @include breakpoint($bpLarge) {
       .left {
          @include span-new(6); // 50% width
       }
@@ -376,7 +376,7 @@ Mixin | Defaults | Description
    }
 
    // Change the layout at the large breakpoint
-   @include breakpoint ($bp-large) {
+   @include breakpoint ($bpLarge) {
       .left {
          @include span-new(3); // Span of 3 is a width of 25% (3/12).
       }

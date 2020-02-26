@@ -94,27 +94,16 @@ $weightHeavy: 900;
 @mixin text-shadow($distance: 2px, $blur: 2px, $colour: fade-out(#000, 0.5), $angle: 0px) {
    text-shadow: $angle $distance $blur $colour;
 }
+
 @mixin text-size($size: $sizeBase) {
-   @if $size == x2Small {
-      @include font-size($sizeX2Small);
-   } @else if $size == xSmall {
-      @include font-size($sizeXSmall);
-   } @else if $size == small {
+   @if $size == small {
       @include font-size($sizeSmall);
-   } @else if $size == minor {
-      @include font-size($sizeMinor);
    } @else if $size == base {
       @include font-size($sizeBase);
-   } @else if $size == slight {
-      @include font-size($sizeSlight);
    } @else if $size == medium {
       @include font-size($sizeMedium);
    } @else if $size == large {
       @include font-size($sizeLarge);
-   } @else if $size == xLarge {
-      @include font-size($sizeXLarge);
-   } @else if $size == x2Large {
-      @include font-size($sizeX2Large);
    } @else {
       @include font-size($size);
    }

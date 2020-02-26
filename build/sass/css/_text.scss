@@ -15,16 +15,10 @@
    ._txt-right {
       @include text-align(right);
    }
-   ._txt-size-x2l {
-      @include text-size(x2Large);
-   }
-   ._txt-size-xl {
-      @include text-size(xLarge);
-   }
-   ._txt-size-left {
+   ._txt-size-large {
       @include text-size(large);
    }
-   ._txt-size-middle {
+   ._txt-size-medium {
       @include text-size(medium);
    }
    ._txt-size-default {
@@ -32,12 +26,6 @@
    }
    ._txt-size-s {
       @include text-size(small);
-   }
-   ._txt-size-xs {
-      @include text-size(xSmall);
-   }
-   ._txt-size-x2s {
-      @include text-size(x2Small);
    }
    ._txt-weight-xb {
       @include text-weight(heavy);
@@ -73,13 +61,7 @@
       @include text-colour($grey);
    }
 
-   @include breakpoint($bp-large) {
-      ._txt-size-x2l-large {
-         @include text-size(x2Large);
-      }
-      ._txt-size-xl-large {
-         @include text-size(xLarge);
-      }
+   @include breakpoint($bpLarge) {
       ._txt-size-l-large {
          @include text-size(large);
       }
@@ -91,12 +73,6 @@
       }
       ._txt-size-s-large {
          @include text-size(small);
-      }
-      ._txt-size-xs-large {
-         @include text-size(xSmall);
-      }
-      ._txt-size-x2s-large {
-         @include text-size(x2Small);
       }
       ._txt-weight-xb-large {
          @include text-weight(heavy);

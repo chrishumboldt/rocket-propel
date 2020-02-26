@@ -33,7 +33,7 @@
       @include limit();
    }
    /* Large view */
-   @include breakpoint($bp-large) {
+   @include breakpoint($bpLarge) {
       ._row {
          @for $index from 1 through $columnLimit {
             ._span-large-#{$index} {
@@ -52,7 +52,7 @@
       }
    }
    /* Small view */
-   @include breakpoint($bp-small) {
+   @include breakpoint($bpSmall) {
       ._row {
          @for $index from 1 through $columnLimit {
             ._span-small-#{$index} {

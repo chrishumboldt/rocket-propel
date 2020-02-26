@@ -1,24 +1,32 @@
 {
-   "name": "@chrishumboldt/rocket-propel",
-   "version": "6.0.2",
-   "description": "A lightweight SASS mixin library and responsive CSS layout engine.",
-   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/chrishumboldt/Rocket-Propel.git"
-   },
-   "keywords": [
-      "Rocket",
-      "Part",
-      "Modules",
-      "SASS",
-      "Library",
-      "Mixins",
-      "CSS"
-   ],
-   "author": "Chris Humboldt <chrismodem@gmail.com>",
-   "license": "Apache-2.0",
-   "bugs": {
-      "url": "https://github.com/chrishumboldt/Rocket-Propel/issues"
-   },
-   "homepage": "https://github.com/chrishumboldt/Rocket-Propel#readme"
+  "name": "@chrishumboldt/rocket-propel",
+  "version": "6.0.2",
+  "description": "A lightweight SASS mixin library and responsive CSS layout engine.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrishumboldt/Rocket-Propel.git"
+  },
+  "keywords": [
+    "Rocket",
+    "Part",
+    "Modules",
+    "SASS",
+    "Library",
+    "Mixins",
+    "CSS"
+  ],
+  "author": "Chris Humboldt <chrismodem@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/chrishumboldt/Rocket-Propel/issues"
+  },
+  "homepage": "https://github.com/chrishumboldt/Rocket-Propel#readme",
+  "scripts": {
+    "rocket:publish:major": "node publish.js version=major",
+    "rocket:publish:minor": "node publish.js version=minor",
+    "rocket:publish:patch": "node publish.js version=patch"
+  },
+  "devDependencies": {
+    "sass": "^1.26.1"
+  }
 }
