@@ -10,8 +10,10 @@ const version = process.argv[2] ? process.argv[2].split('=')[1] : 'patch';
 
 const commands = [
   `rm -rf css`,
-  `npm version ${version}`,
   `node node_modules/sass/sass.js ./build/sass/propel.scss ./css/propel.min.css`,
+  `git add -A`,
+  `git commit -m "Version ${version}"`,
+  `npm version ${version}`,
   `npm publish --access public`
 ];
 
