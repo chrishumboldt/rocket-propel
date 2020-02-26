@@ -624,7 +624,7 @@ Class | Options | Description
 ---- | ---- | ----
 `._txt-hide` | | Hide the text within an element.
 `._txt-[x]` | `[x]`: `l` `c` `r` | Set the text alignment to `[x]`.<br>`[x]` is for `left`, `center`, `right`.
-`._txt-size-[x]` | `[x]`: `x2s` `xs` `s` `m` `n` `l` `xl` `x2l` | Set the font size to `[x]`.
+`._txt-size-[x]` | `[x]`: `s` `m` `n` `l` | Set the font size to `[x]`.
 `._txt-weight-[x]` | `[x]`: `xl` `l` `n` `b` `xb` | Set the font weight to `[x]`.
 `._txt-light` | | Set the font weight to light.
 `._txt-bold` | | Set the font weight to bold.
