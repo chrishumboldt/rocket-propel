@@ -4,18 +4,18 @@
 
 // Animate
 @mixin transition(
-  $attribute,
+  $attributes,
   $transitionSpeed: 0.2s,
   $delay: 0s,
   $easing: ease-out
 ) {
-  @include transition-property($attribute);
+  @include transition-property($attributes);
   @include transition-duration($transitionSpeed);
   @include transition-delay($delay);
   @include transition-timing-function($easing);
 }
 @mixin transition-property($attributes) {
-  @if $attribute == transform {
+  @if $attributes == transform {
     -webkit-transition-property: -webkit-#{$attributes};
     -moz-transition-property: -moz-#{$attributes};
     -ms-transition-property: -ms-#{$attributes};
