@@ -15,17 +15,10 @@
   @include transition-timing-function($easing);
 }
 @mixin transition-property($attributes) {
-  @if $attributes == transform {
-    -webkit-transition-property: -webkit-#{unquote($attributes)};
-    -moz-transition-property: -moz-#{unquote($attributes)};
-    -ms-transition-property: -ms-#{unquote($attributes)};
-    transition-property: unquote($attributes);
-  } @else {
-    -webkit-transition-property: unquote($attributes);
-    -moz-transition-property: unquote($attributes);
-    -ms-transition-property: unquote($attributes);
-    transition-property: unquote($attributes);
-  }
+  -webkit-transition-property: unquote($attributes);
+  -moz-transition-property: unquote($attributes);
+  -ms-transition-property: unquote($attributes);
+  transition-property: unquote($attributes);
 }
 @mixin transition-delay($delay: 0s) {
   -webkit-transition-delay: $delay;
