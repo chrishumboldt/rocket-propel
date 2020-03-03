@@ -13,17 +13,10 @@
   @include transition-timing-function($easing);
 }
 @mixin transition-property($attributes) {
-  @if $attribute == transform {
-    -webkit-transition-property: -webkit-#{$attributes};
-    -moz-transition-property: -moz-#{$attributes};
-    -ms-transition-property: -ms-#{$attributes};
-    transition-property: $attributes;
-  } @else {
-    -webkit-transition-property: $attributes;
-    -moz-transition-property: $attributes;
-    -ms-transition-property: $attributes;
-    transition-property: $attributes;
-  }
+  -webkit-transition-property: $attributes;
+  -moz-transition-property: $attributes;
+  -ms-transition-property: $attributes;
+  transition-property: $attributes;
 }
 @mixin transition-delay($delay: 0s) {
   -webkit-transition-delay: $delay;
