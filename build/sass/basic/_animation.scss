@@ -2,21 +2,21 @@
 
 // Animate
 @mixin transition(
-  $attribute,
+  $attributes,
   $transitionSpeed: 0.2s,
   $delay: 0s,
   $easing: ease-out
 ) {
-  @include transition-property($attribute);
+  @include transition-property($attributes);
   @include transition-duration($transitionSpeed);
   @include transition-delay($delay);
   @include transition-timing-function($easing);
 }
 @mixin transition-property($attributes) {
-  -webkit-transition-property: $attributes;
-  -moz-transition-property: $attributes;
-  -ms-transition-property: $attributes;
-  transition-property: $attributes;
+  -webkit-transition-property: unquote($attributes);
+  -moz-transition-property: unquote($attributes);
+  -ms-transition-property: unquote($attributes);
+  transition-property: unquote($attributes);
 }
 @mixin transition-delay($delay: 0s) {
   -webkit-transition-delay: $delay;

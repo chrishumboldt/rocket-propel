@@ -9,7 +9,7 @@ const version = process.argv[2] ? process.argv[2].split('=')[1] : 'patch';
 const commands = [
   `rm -rf css`,
   `git add -A`,
-  `git commit -m "Publishin ${version} version."`,
+  `git commit -m "Publishig ${version} version."`,
   `npm version ${version}`,
   `npm run rocket:build`,
   `npm publish --access public`
