@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/chrishumboldt/Rocket-Propel#readme",
   "scripts": {
+    "rocket:build": "node node_modules/sass/sass.js ./build/sass/propel.scss ./css/propel.min.css",
     "rocket:publish:major": "node publish.js version=major",
     "rocket:publish:minor": "node publish.js version=minor",
     "rocket:publish:patch": "node publish.js version=patch"

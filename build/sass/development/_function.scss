@@ -1,6 +1,4 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 @function calculate-rem-size($size) {
    $remSize: $size / 16px;

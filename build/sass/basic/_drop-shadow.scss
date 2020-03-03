@@ -1,6 +1,4 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 @mixin drop-shadow($color: fade-out(#000, 0.6), $size: 3px, $verticalOffset: 0px, $horizontalOffset: 0px) {
    box-shadow: $horizontalOffset $verticalOffset $size $color;

@@ -1,6 +1,4 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 // Animated gradients
 @mixin gradient-animate-angle($topLeftColour, $bottomRightColour) {
@@ -68,45 +66,24 @@
 // Gradients
 @mixin gradient-angle($leftColour, $rightColour, $angle: -45deg) {
    background: $leftColour;
-   /* Fallback solid color for old browsers */
    background: linear-gradient($angle, $leftColour 0%, $rightColour 100%);
-   /* W3C */
    background: -moz-linear-gradient($angle, $leftColour 0%, $rightColour 100%);
-   /* FF 3.6+ */
    background: -ms-linear-gradient($angle, $leftColour 0%, $rightColour 100%);
-   /* IE 10+ */
-   background: -o-linear-gradient($angle, $leftColour 0%, $rightColour 100%);
-   /* Opera 11.10+ */
    background: -webkit-linear-gradient($angle, $leftColour 0%, $rightColour 100%);
-   /* Chrome 10+, Safari 5.1+ */
 }
 @mixin gradient-horizontal($leftColour, $rightColour) {
    background: $leftColour;
-   /* Fallback solid color for old browsers */
-   background: linear-gradient(top right, $leftColour 0%, $rightColour 100%);
-   /* W3C */
-   background: -moz-linear-gradient(left, $leftColour 0%, $rightColour 100%);
-   /* FF 3.6+ */
-   background: -ms-linear-gradient(left, $leftColour 0%, $rightColour 100%);
-   /* IE 10+ */
-   background: -o-linear-gradient(left, $leftColour 0%, $rightColour 100%);
-   /* Opera 11.10+ */
-   background: -webkit-linear-gradient(left, $leftColour 0%, $rightColour 100%);
-   /* Chrome 10+, Safari 5.1+ */
+   background: linear-gradient(to right, $leftColour 0%, $rightColour 100%);
+   background: -moz-linear-gradient(to right, $leftColour 0%, $rightColour 100%);
+   background: -ms-linear-gradient(to right, $leftColour 0%, $rightColour 100%);
+   background: -webkit-linear-gradient(to right, $leftColour 0%, $rightColour 100%);
 }
 @mixin gradient-vertical($topColour, $bottomColour) {
    background: $topColour;
-   /* Fallback solid color for old browsers */
    background: linear-gradient(to bottom, $topColour 0%, $bottomColour 100%);
-   /* W3C */
-   background: -moz-linear-gradient(top, $topColour 0%, $bottomColour 100%);
-   /* FF 3.6+ */
-   background: -ms-linear-gradient(top, $topColour 0%, $bottomColour 100%);
-   /* IE 10+ */
-   background: -o-linear-gradient(top, $topColour 0%, $bottomColour 100%);
-   /* Opera 11.10+ */
-   background: -webkit-linear-gradient(top, $topColour 0%, $bottomColour 100%);
-   /* Chrome 10+, Safari 5.1+ */
+   background: -moz-linear-gradient(to bottom, $topColour 0%, $bottomColour 100%);
+   background: -ms-linear-gradient(to bottom, $topColour 0%, $bottomColour 100%);
+   background: -webkit-linear-gradient(to bottom, $topColour 0%, $bottomColour 100%);
 }
 @mixin gradient-none() {
    background: none !important;

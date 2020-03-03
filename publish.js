@@ -1,6 +1,4 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 const { spawn } = require('child_process');
 
@@ -10,8 +8,10 @@ const version = process.argv[2] ? process.argv[2].split('=')[1] : 'patch';
 
 const commands = [
   `rm -rf css`,
+  `git add -A`,
+  `git commit -m "Publishin ${version} version."`,
   `npm version ${version}`,
-  `node node_modules/sass/sass.js ./build/sass/propel.scss ./css/propel.min.css`,
+  `npm run build`,
   `npm publish --access public`
 ];
 

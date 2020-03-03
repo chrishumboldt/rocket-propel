@@ -1,8 +1,8 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 @mixin ios-render() {
+  perspective: 1000;
    -webkit-perspective: 1000;
+   backface-visibility: hidden;
    -webkit-backface-visibility: hidden;
 }

@@ -1,6 +1,4 @@
-/**
- * @author Chris Humboldt
- */
+// @author Chris Humboldt
 
 $fontFamily: 'Open Sans', Helvetica, Arial, sans-serif;
 
@@ -24,8 +22,10 @@ $fontFamily: 'Open Sans', Helvetica, Arial, sans-serif;
    font-family: $fontFamily;
    color: lighten(#000, 20%);
    background-color: #fff;
+   text-size-adjust: 100%;
    -ms-text-size-adjust: 100%;
    -webkit-texts-size-adjust: 100%;
+   backface-visibility: hidden;
    -webkit-backface-visibility: hidden;
 
    body {
