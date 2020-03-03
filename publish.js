@@ -11,7 +11,7 @@ const commands = [
   `git add -A`,
   `git commit -m "Publishin ${version} version."`,
   `npm version ${version}`,
-  `npm run build`,
+  `npm run rocket:build`,
   `npm publish --access public`
 ];
 
