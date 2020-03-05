@@ -1,4 +1,4 @@
-# Propel 
+# Propel
 A lightweight SASS mixin library and responsive CSS layout engine.
 
 ## Table of Contents
